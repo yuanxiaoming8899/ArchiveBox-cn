@@ -1,487 +1,638 @@
-<div align="center">
-<em><img src="https://archivebox.io/icon.png" height="90px"></em>
-<h1>ArchiveBox<br/><sub>Open-source self-hosted web archiving.</sub></h1>
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
+<em><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/bbc7ceaccc568c103f9db2bdd9dc53b7999a957bbbf62cb8c8544dac47316626/68747470733a2f2f61726368697665626f782e696f2f69636f6e2e706e67"><img src="https://camo.githubusercontent.com/bbc7ceaccc568c103f9db2bdd9dc53b7999a957bbbf62cb8c8544dac47316626/68747470733a2f2f61726368697665626f782e696f2f69636f6e2e706e67" height="90px" data-canonical-src="https://archivebox.io/icon.png" style="max-width: 100%;"></a></em>
+<h1 tabindex="-1" dir="auto"><a id="user-content-archiveboxopen-source-self-hosted-web-archiving" class="anchor" aria-hidden="true" tabindex="-1" href="#archiveboxopen-source-self-hosted-web-archiving"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox</font></font><br><sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源自托管网络存档。</font></font></sub></h1>
+<br>
+<p dir="auto"><g-emoji class="g-emoji" alias="arrow_forward"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">▶️</font></font></g-emoji> <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="https://demo.archivebox.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="https://github.com/ArchiveBox/ArchiveBox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> |
+</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="#background--motivation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">信息与动机</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">|
+</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区</font></font></a></p>
+<br>
 
-<br/>
+<p dir="auto"><a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/LICENSE"><img src="https://camo.githubusercontent.com/1cbb51d54e855a79ad403f4eae370e28c04a6a6a5928c335bae0f97c24c0f9de/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f70656e5f736f757263652d4d49542d677265656e2e7376673f6c6f676f3d676974266c6f676f436f6c6f723d677265656e" data-canonical-src="https://img.shields.io/badge/Open_source-MIT-green.svg?logo=git&amp;logoColor=green" style="max-width: 100%;"></a>
+<a href="https://github.com/ArchiveBox/ArchiveBox"><img src="https://camo.githubusercontent.com/93cfb5310a21786f88f5bd03612938b4e5953ba05e6268e05e2780d627367c82/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f41726368697665426f782f41726368697665426f782e7376673f6c6f676f3d676974687562266c6162656c3d5374617273266c6f676f436f6c6f723d626c7565" data-canonical-src="https://img.shields.io/github/stars/ArchiveBox/ArchiveBox.svg?logo=github&amp;label=Stars&amp;logoColor=blue" style="max-width: 100%;"></a>
+<a href="https://github.com/ArchiveBox/ArchiveBox/commits/dev"><img src="https://camo.githubusercontent.com/265b61c743e24d4bb4b78ca12ec59e76d9901a2cae4061d99c757cd9f7eddb51/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f41726368697665426f782f41726368697665426f782e7376673f6c6f676f3d5375626c696d652b54657874266c6f676f436f6c6f723d677265656e266c6162656c3d416374697665" data-canonical-src="https://img.shields.io/github/last-commit/ArchiveBox/ArchiveBox.svg?logo=Sublime+Text&amp;logoColor=green&amp;label=Active" style="max-width: 100%;"></a> &nbsp;
+<a href="https://pypi.org/project/archivebox/" rel="nofollow"><img src="https://camo.githubusercontent.com/8031483a0024415a8c61bcf888fe48fb98455326c09090887c87b53a45c4e37d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d79656c6c6f772e7376673f6c6f676f3d707974686f6e266c6f676f436f6c6f723d79656c6c6f77" data-canonical-src="https://img.shields.io/badge/Python-yellow.svg?logo=python&amp;logoColor=yellow" style="max-width: 100%;"></a>
+<a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Install#dependencies"><img src="https://camo.githubusercontent.com/3b22cf5b0803658371b8a9d0d4edc4080d7149f183f5d5896008a20c3f475efb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4368726f6d69756d2d6f72616e67652e7376673f6c6f676f3d476f6f676c652b4368726f6d65266c6f676f436f6c6f723d6f72616e6765" data-canonical-src="https://img.shields.io/badge/Chromium-orange.svg?logo=Google+Chrome&amp;logoColor=orange" style="max-width: 100%;"></a>
+<a href="https://hub.docker.com/r/archivebox/archivebox" rel="nofollow"><img src="https://camo.githubusercontent.com/c948ca17bab5f30e87ad7ebdee644dd1301b7636cb64c6f5c38aa342fff9cbd0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f636b65722d6c69676874626c75652e7376673f6c6f676f3d646f636b6572266c6f676f436f6c6f723d6c69676874626c7565" data-canonical-src="https://img.shields.io/badge/Docker-lightblue.svg?logo=docker&amp;logoColor=lightblue" style="max-width: 100%;"></a></p>
 
-▶️ <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart">Quickstart</a> |
-<a href="https://demo.archivebox.io">Demo</a> |
-<a href="https://github.com/ArchiveBox/ArchiveBox">GitHub</a> |
-<a href="https://github.com/ArchiveBox/ArchiveBox/wiki">Documentation</a> |
-<a href="#background--motivation">Info & Motivation</a> |
-<a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community">Community</a>
-
-<br/>
-
-<!--<a href="http://webchat.freenode.net?channels=ArchiveBox&uio=d4"><img src="https://img.shields.io/badge/Community_chat-IRC-%2328A745.svg"/></a>-->
-
-<a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/LICENSE"><img src="https://img.shields.io/badge/Open_source-MIT-green.svg?logo=git&logoColor=green"/></a>
-<a href="https://github.com/ArchiveBox/ArchiveBox"><img src="https://img.shields.io/github/stars/ArchiveBox/ArchiveBox.svg?logo=github&label=Stars&logoColor=blue"/></a>
-<a href="https://github.com/ArchiveBox/ArchiveBox/commits/dev"><img src="https://img.shields.io/github/last-commit/ArchiveBox/ArchiveBox.svg?logo=Sublime+Text&logoColor=green&label=Active"/></a> &nbsp;
-<a href="https://pypi.org/project/archivebox/"><img src="https://img.shields.io/badge/Python-yellow.svg?logo=python&logoColor=yellow"/></a>
-<a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Install#dependencies"><img src="https://img.shields.io/badge/Chromium-orange.svg?logo=Google+Chrome&logoColor=orange"/></a>
-<a href="https://hub.docker.com/r/archivebox/archivebox"><img src="https://img.shields.io/badge/Docker-lightblue.svg?logo=docker&logoColor=lightblue"/></a>
-
-
-<!--<pre lang="bash" align="left"><code style="white-space: pre-line; text-align: left" align="left">
-curl -sSL 'https://get.archivebox.io' | sh    # (or see pip/brew/Docker instructions below)
-</code></pre>-->
-
-<hr/>
+<hr>
 </div>
-
-**ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view websites offline.**
-
-Without active preservation effort, everything on the internet eventually dissapears or degrades. Archive.org does a great job as a free central archive, but they require all archives to be public, and they can't save every type of content.
-
-*ArchiveBox is an open source tool that helps you archive web content on your own (or privately within an organization): save copies of browser bookmarks, preserve evidence for legal cases, backup photos from FB / Insta / Flickr, download your media from YT / Soundcloud / etc., snapshot research papers & academic citations, and more...*
-
-> ➡️ *Use ArchiveBox as a [command-line package](#quickstart) and/or [self-hosted web app](#quickstart) on Linux, macOS, or in [Docker](#quickstart).*
-
-<hr/>
-
-📥 **You can feed ArchiveBox URLs one at a time, or schedule regular imports** from browser bookmarks or history, feeds like RSS, bookmark services like Pocket/Pinboard, and more. See <a href="#input-formats">input formats</a> for a full list.
-
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/90f1ce3c-75bb-401d-88ed-6297694b76ae" alt="snapshot detail page" align="right" width="190px"/>
-
-💾 **It saves snapshots of the URLs you feed it in several redundant formats.**  
-It also detects any content featured *inside* each webpage & extracts it out into a folder:
-- `HTML/Generic websites -> HTML, PDF, PNG, WARC, Singlefile`
-- `YouTube/SoundCloud/etc. -> MP3/MP4 + subtitles, description, thumbnail`
-- `News articles -> article body TXT + title, author, featured images`
-- `Github/Gitlab/etc. links -> git cloned source code`
-- *[and more...](#output-formats)*
-
-It uses normal filesystem folders to organize archives (no complicated proprietary formats), and offers a CLI + web UI.  
-
----
-
-🏛️ ArchiveBox is used by many *[professionals](https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102) and [hobbyists](https://zulip.archivebox.io/#narrow/stream/158-development)* who save content off the web, for example:
-
-- **Individuals:**
-  `backing up browser bookmarks/history`, `saving FB/Insta/etc. content`, `shopping lists`  
-- **Journalists:**
-  `crawling and collecting research`, `preserving quoted material`, `fact-checking and review`  
-- **Lawyers:**
-  `evidence collection`, `hashing & integrity verifying`, `search, tagging, & review`  
-- **Researchers:**
-  `collecting AI training sets`, `feeding analysis / web crawling pipelines`
-
-The goal is to sleep soundly knowing the part of the internet you care about will be automatically preserved in durable, easily accessible formats [for decades](#background--motivation) after it goes down.
-
-<div align="center">
-<br/><br/>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/5a7d95f2-6977-4de6-9f08-42851a1fe1d2" height="70px" alt="bookshelf graphic"> &nbsp; <img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/b2765a33-0d1e-4019-a1db-920c7e00e20e" height="75px" alt="logo" align="top"/> &nbsp; <img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/5a7d95f2-6977-4de6-9f08-42851a1fe1d2" height="70px" alt="bookshelf graphic">
-<br/><br/>
-<small><a href="https://demo.archivebox.io">Demo</a> | <a href="#screenshots">Screenshots</a> | <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage">Usage</a></small>
-<br/>
-<sub>. . . . . . . . . . . . . . . . . . . . . . . . . . . .</sub>
-<br/><br/>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 是一个功能强大的自托管互联网存档解决方案，用于离线收集、保存和查看网站。</font></font></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果没有积极的保护工作，互联网上的所有内容最终都会消失或退化。</font><font style="vertical-align: inherit;">Archive.org 作为免费的中央档案馆做得很好，但他们要求所有档案都是公开的，而且他们无法保存每种类型的内容。</font></font></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 是一款开源工具，可帮助您自行（或在组织内私下）存档网页内容：保存浏览器书签的副本、保留法律案件的证据、从 FB / Insta / Flickr 备份照片、从 YT / 下载媒体Soundcloud / 等、快照研究论文和学术引文等等...</font></font></em></p>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">➡️在 Linux、macOS 或</font><em><a href="#quickstart"><font style="vertical-align: inherit;">Docker</font></a></em><em><font style="vertical-align: inherit;">中</font></em></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 ArchiveBox 作为</font></font><a href="#quickstart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">命令行包</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和/或</font></font><a href="#quickstart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自托管 Web 应用程序</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><a href="#quickstart"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></em></p>
+</blockquote>
+<hr>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📥</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以一次提供一个 ArchiveBox URL，或者安排定期</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从浏览器书签或历史记录、RSS 等提要、Pocket/Pinboard 等书签服务等中导入。</font><font style="vertical-align: inherit;">请参阅</font></font><a href="#input-formats"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入格式</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取完整列表。</font></font></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/281633338-90f1ce3c-75bb-401d-88ed-6297694b76ae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjgxNjMzMzM4LTkwZjFjZTNjLTc1YmItNDAxZC04OGVkLTYyOTc2OTRiNzZhZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04OTA2NjBjYzU2YTUyZDhiZjIzZGVhOWU2MmZiN2M4YzUxZGQyNDlmNjZjYTFjMTVjOWQ2ODYyZmZhOWZjOTUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.X6s8pp8Xt6WOPC0TCLEjgGpOMX4XJjj56tpMcizRusk"><img src="https://private-user-images.githubusercontent.com/511499/281633338-90f1ce3c-75bb-401d-88ed-6297694b76ae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjgxNjMzMzM4LTkwZjFjZTNjLTc1YmItNDAxZC04OGVkLTYyOTc2OTRiNzZhZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04OTA2NjBjYzU2YTUyZDhiZjIzZGVhOWU2MmZiN2M4YzUxZGQyNDlmNjZjYTFjMTVjOWQ2ODYyZmZhOWZjOTUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.X6s8pp8Xt6WOPC0TCLEjgGpOMX4XJjj56tpMcizRusk" alt="快照详情页" align="right" width="190px" style="max-width: 100%;"></a>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💾</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它以多种冗余格式保存您提供给它的 URL 的快照。</font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+它还检测每个网页</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的任何内容并将其提取到文件夹中：</font></font></p>
+<ul dir="auto">
+<li><code>HTML/Generic websites -&gt; HTML, PDF, PNG, WARC, Singlefile</code></li>
+<li><code>YouTube/SoundCloud/etc. -&gt; MP3/MP4 + subtitles, description, thumbnail</code></li>
+<li><code>News articles -&gt; article body TXT + title, author, featured images</code></li>
+<li><code>Github/Gitlab/etc. links -&gt; git cloned source code</code></li>
+<li><em><a href="#output-formats"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和更多...</font></font></a></em></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它使用普通的文件系统文件夹来组织档案（没有复杂的专有格式），并提供 CLI + Web UI。</font></font></p>
+<hr>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🏛️ ArchiveBox 被许多</font></font><em><a href="https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">专业人士</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://zulip.archivebox.io/#narrow/stream/158-development" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爱好者</font></font></a></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用，他们从网络上保存内容，例如：</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">个人：</font></font></strong>
+<code>backing up browser bookmarks/history</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><code>saving FB/Insta/etc. content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>shopping lists</code></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">记者</font></font></strong>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><code>crawling and collecting research</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、、</font></font><code>preserving quoted material</code><font style="vertical-align: inherit;"></font><code>fact-checking and review</code></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">律师：</font></font></strong>
+<code>evidence collection</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>hashing &amp; integrity verifying</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>search, tagging, &amp; review</code></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">研究人员：</font></font></strong>
+<code>collecting AI training sets</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ,</font></font><code>feeding analysis / web crawling pipelines</code></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的目标是让您高枕无忧，因为您知道您关心的互联网部分将</font><font style="vertical-align: inherit;">在发生故障后自动以持久且易于访问的格式保存</font></font><a href="#background--motivation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数十年。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<div align="center" dir="auto">
+<br><br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289509-5a7d95f2-6977-4de6-9f08-42851a1fe1d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTA5LTVhN2Q5NWYyLTY5NzctNGRlNi05ZjA4LTQyODUxYTFmZTFkMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kOGI0MDFmMzc0NjQyNzRhNTgyNGVjM2Q5ODU4MDliNDgxOTA5N2MwODQ2NWM3MGM3YWQwMDc1MzFjM2E1ZWJlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vyAWHrA6jFfM49buuZqKoAUeZt6DfZRC9H2ZNxpEdYM"><img src="https://private-user-images.githubusercontent.com/511499/294289509-5a7d95f2-6977-4de6-9f08-42851a1fe1d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTA5LTVhN2Q5NWYyLTY5NzctNGRlNi05ZjA4LTQyODUxYTFmZTFkMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kOGI0MDFmMzc0NjQyNzRhNTgyNGVjM2Q5ODU4MDliNDgxOTA5N2MwODQ2NWM3MGM3YWQwMDc1MzFjM2E1ZWJlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vyAWHrA6jFfM49buuZqKoAUeZt6DfZRC9H2ZNxpEdYM" height="70px" alt="书架图形" style="max-width: 100%;"></a> &nbsp; <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289579-b2765a33-0d1e-4019-a1db-920c7e00e20e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTc5LWIyNzY1YTMzLTBkMWUtNDAxOS1hMWRiLTkyMGM3ZTAwZTIwZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01Mjc3MmQ1YWI4NTJkZmE1ODlkNTExMDhkZjZkNTczZGQzNjE2Mzg5YzgwMTk3NDIwZWM5MGFjMWQ1ODMxMWM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.em95pMajMvkARi3T0vDS6AfZuw2MPVnlsphMR9ny0oc"><img src="https://private-user-images.githubusercontent.com/511499/294289579-b2765a33-0d1e-4019-a1db-920c7e00e20e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTc5LWIyNzY1YTMzLTBkMWUtNDAxOS1hMWRiLTkyMGM3ZTAwZTIwZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01Mjc3MmQ1YWI4NTJkZmE1ODlkNTExMDhkZjZkNTczZGQzNjE2Mzg5YzgwMTk3NDIwZWM5MGFjMWQ1ODMxMWM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.em95pMajMvkARi3T0vDS6AfZuw2MPVnlsphMR9ny0oc" height="75px" alt="标识" align="top" style="max-width: 100%;"></a> &nbsp; <a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289509-5a7d95f2-6977-4de6-9f08-42851a1fe1d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTA5LTVhN2Q5NWYyLTY5NzctNGRlNi05ZjA4LTQyODUxYTFmZTFkMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kOGI0MDFmMzc0NjQyNzRhNTgyNGVjM2Q5ODU4MDliNDgxOTA5N2MwODQ2NWM3MGM3YWQwMDc1MzFjM2E1ZWJlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vyAWHrA6jFfM49buuZqKoAUeZt6DfZRC9H2ZNxpEdYM"><img src="https://private-user-images.githubusercontent.com/511499/294289509-5a7d95f2-6977-4de6-9f08-42851a1fe1d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTA5LTVhN2Q5NWYyLTY5NzctNGRlNi05ZjA4LTQyODUxYTFmZTFkMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kOGI0MDFmMzc0NjQyNzRhNTgyNGVjM2Q5ODU4MDliNDgxOTA5N2MwODQ2NWM3MGM3YWQwMDc1MzFjM2E1ZWJlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vyAWHrA6jFfM49buuZqKoAUeZt6DfZRC9H2ZNxpEdYM" height="70px" alt="书架图形" style="max-width: 100%;"></a>
+<br><br>
+<a href="https://demo.archivebox.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="#screenshots"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截图</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></a>
+<br>
+<sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font></font></sub>
+<br><br>
 </div>
+<br>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📦 使用</font></font><code>docker</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ </font></font><code>apt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ </font></font><code>brew</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ </font></font><code>pip3</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ </font></font><code>nix</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ 等获取 ArchiveBox（</font></font><a href="#quickstart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅下面的快速入门</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。</font></font></strong></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> Get ArchiveBox with Docker or Docker Compose (recommended)</span>
+docker run -v <span class="pl-smi">$PWD</span>/data:/data -it archivebox/archivebox:dev init --setup
 
-<br/>
+<span class="pl-c"><span class="pl-c">#</span> Or install with your preferred package manager (see Quickstart below for apt, brew, and more)</span>
+pip3 install archivebox
 
-**📦&nbsp; Get ArchiveBox with `docker` / `apt` / `brew` / `pip3` / `nix` / etc. ([see Quickstart below](#quickstart)).**
-
-```bash
-# Get ArchiveBox with Docker or Docker Compose (recommended)
+<span class="pl-c"><span class="pl-c">#</span> Or use the optional auto setup script to install it</span>
+curl -sSL <span class="pl-s"><span class="pl-pds">'</span>https://get.archivebox.io<span class="pl-pds">'</span></span> <span class="pl-k">|</span> sh</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# Get ArchiveBox with Docker or Docker Compose (recommended)
 docker run -v $PWD/data:/data -it archivebox/archivebox:dev init --setup
 
 # Or install with your preferred package manager (see Quickstart below for apt, brew, and more)
 pip3 install archivebox
 
 # Or use the optional auto setup script to install it
-curl -sSL 'https://get.archivebox.io' | sh
-```
-
-**🔢 Example usage: adding links to archive.**
-```bash
-archivebox add 'https://example.com'                                   # add URLs one at a time
+curl -sSL 'https://get.archivebox.io' | sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔢 示例用法：添加存档链接。</font></font></strong></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox add <span class="pl-s"><span class="pl-pds">'</span>https://example.com<span class="pl-pds">'</span></span>                                   <span class="pl-c"><span class="pl-c">#</span> add URLs one at a time</span>
+archivebox add <span class="pl-k">&lt;</span> <span class="pl-k">~</span>/Downloads/bookmarks.json                            <span class="pl-c"><span class="pl-c">#</span> or pipe in URLs in any text-based format</span>
+archivebox schedule --every=day --depth=1 https://example.com/rss.xml  <span class="pl-c"><span class="pl-c">#</span> or auto-import URLs regularly on a schedule</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox add 'https://example.com'                                   # add URLs one at a time
 archivebox add < ~/Downloads/bookmarks.json                            # or pipe in URLs in any text-based format
-archivebox schedule --every=day --depth=1 https://example.com/rss.xml  # or auto-import URLs regularly on a schedule
-```
-**🔢 Example usage: viewing the archived content.**
-```bash
-archivebox server 0.0.0.0:8000            # use the interactive web UI
+archivebox schedule --every=day --depth=1 https://example.com/rss.xml  # or auto-import URLs regularly on a schedule" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔢 使用示例：查看存档内容。</font></font></strong></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox server 0.0.0.0:8000            <span class="pl-c"><span class="pl-c">#</span> use the interactive web UI</span>
+archivebox list <span class="pl-s"><span class="pl-pds">'</span>https://example.com<span class="pl-pds">'</span></span>     <span class="pl-c"><span class="pl-c">#</span> use the CLI commands (--help for more)</span>
+ls ./archive/<span class="pl-k">*</span>/index.json                 <span class="pl-c"><span class="pl-c">#</span> or browse directly via the filesystem</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox server 0.0.0.0:8000            # use the interactive web UI
 archivebox list 'https://example.com'     # use the CLI commands (--help for more)
-ls ./archive/*/index.json                 # or browse directly via the filesystem
-```
-
-<div align="center">
-<br/><br/>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/8d67382c-e0ce-4286-89f7-7915f09b930c" width="22%" alt="cli init screenshot" align="top">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/dad2bc51-e7e5-484e-bb26-f956ed692d16" width="22%" alt="cli init screenshot" align="top">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/e8e0b6f8-8fdf-4b7f-8124-c10d8699bdb2" width="22%" alt="server snapshot admin screenshot" align="top">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ace0954a-ddac-4520-9d18-1c77b1ec50b2" width="28.6%" alt="server snapshot details page screenshot" align="top"/>
-<br/><br/>
+ls ./archive/*/index.json                 # or browse directly via the filesystem" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div align="center" dir="auto">
+<br><br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289519-8d67382c-e0ce-4286-89f7-7915f09b930c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTE5LThkNjczODJjLWUwY2UtNDI4Ni04OWY3LTc5MTVmMDliOTMwYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05OGJkMTlhNDAyYzAyNTI2OGMxMmFkYWI1NjMwMDdkYmIyOTg3ODRkOTUyZDlkZGY5MmQxMDg5NjZlMjQ5OTk2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-NqvKtrumrzgNjblJoEf5E2bxKrTiNyTY_U8z_9PAoU"><img src="https://private-user-images.githubusercontent.com/511499/294289519-8d67382c-e0ce-4286-89f7-7915f09b930c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTE5LThkNjczODJjLWUwY2UtNDI4Ni04OWY3LTc5MTVmMDliOTMwYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05OGJkMTlhNDAyYzAyNTI2OGMxMmFkYWI1NjMwMDdkYmIyOTg3ODRkOTUyZDlkZGY5MmQxMDg5NjZlMjQ5OTk2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-NqvKtrumrzgNjblJoEf5E2bxKrTiNyTY_U8z_9PAoU" width="22%" alt="cli 初始化屏幕截图" align="top" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289562-dad2bc51-e7e5-484e-bb26-f956ed692d16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTYyLWRhZDJiYzUxLWU3ZTUtNDg0ZS1iYjI2LWY5NTZlZDY5MmQxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNjU4OGVmY2Y1MTc0ZjE3YzBiNDg2NzQxMmJhN2QwZWNhZDBiMTI4OTEwM2NiYTQ4NzliNDYzMWM5MGU5YzFkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.K0g-woLRFNyDZ_5yKc2EoH2WRm6b6L-LbhmWTErM2c0"><img src="https://private-user-images.githubusercontent.com/511499/294289562-dad2bc51-e7e5-484e-bb26-f956ed692d16.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTYyLWRhZDJiYzUxLWU3ZTUtNDg0ZS1iYjI2LWY5NTZlZDY5MmQxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNjU4OGVmY2Y1MTc0ZjE3YzBiNDg2NzQxMmJhN2QwZWNhZDBiMTI4OTEwM2NiYTQ4NzliNDYzMWM5MGU5YzFkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.K0g-woLRFNyDZ_5yKc2EoH2WRm6b6L-LbhmWTErM2c0" width="22%" alt="cli 初始化屏幕截图" align="top" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289510-e8e0b6f8-8fdf-4b7f-8124-c10d8699bdb2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTEwLWU4ZTBiNmY4LThmZGYtNGI3Zi04MTI0LWMxMGQ4Njk5YmRiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNTlhZDk1YmM2YWJhYzFmMjBhZmJlOTVmMzE4YWE5MThlZjVhY2M0NzUxMTU5MTg0Y2RiMmRjMTYyMTdjZGU2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.e2SmOxcxgofGygXp9QximBFxpul_YrHAWmmNoF-Om9E"><img src="https://private-user-images.githubusercontent.com/511499/294289510-e8e0b6f8-8fdf-4b7f-8124-c10d8699bdb2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTEwLWU4ZTBiNmY4LThmZGYtNGI3Zi04MTI0LWMxMGQ4Njk5YmRiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNTlhZDk1YmM2YWJhYzFmMjBhZmJlOTVmMzE4YWE5MThlZjVhY2M0NzUxMTU5MTg0Y2RiMmRjMTYyMTdjZGU2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.e2SmOxcxgofGygXp9QximBFxpul_YrHAWmmNoF-Om9E" width="22%" alt="服务器快照 管理屏幕截图" align="top" style="max-width: 100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289449-ace0954a-ddac-4520-9d18-1c77b1ec50b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDQ5LWFjZTA5NTRhLWRkYWMtNDUyMC05ZDE4LTFjNzdiMWVjNTBiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMTQwZTU0MDIwNTcxYTQ5Yzk0ZWU3MzM1ZGFkNmRkODQ2NzgyMjEyZmZhY2JlZWNlZWM1ZmYwNzEwMjVjODg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bM5rkh1t5WtFe-Pa3FkKtUva7VO06ogEiNFANUpvb2c"><img src="https://private-user-images.githubusercontent.com/511499/294289449-ace0954a-ddac-4520-9d18-1c77b1ec50b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDQ5LWFjZTA5NTRhLWRkYWMtNDUyMC05ZDE4LTFjNzdiMWVjNTBiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMTQwZTU0MDIwNTcxYTQ5Yzk0ZWU3MzM1ZGFkNmRkODQ2NzgyMjEyZmZhY2JlZWNlZWM1ZmYwNzEwMjVjODg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bM5rkh1t5WtFe-Pa3FkKtUva7VO06ogEiNFANUpvb2c" width="28.6%" alt="服务器快照详情页截图" align="top" style="max-width: 100%;"></a>
+<br><br>
 </div>
-
-## Key Features
-
-- [**Free & open source**](https://github.com/ArchiveBox/ArchiveBox/blob/dev/LICENSE), doesn't require signing up online, stores all data locally
-- [**Powerful, intuitive command line interface**](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#CLI-Usage) with [modular optional dependencies](#dependencies) 
-- [**Comprehensive documentation**](https://github.com/ArchiveBox/ArchiveBox/wiki), [active development](https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap), and [rich community](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community)
-- [**Extracts a wide variety of content out-of-the-box**](https://github.com/ArchiveBox/ArchiveBox/issues/51): [media (yt-dlp), articles (readability), code (git), etc.](#output-formats)
-- [**Supports scheduled/realtime importing**](https://github.com/ArchiveBox/ArchiveBox/wiki/Scheduled-Archiving) from [many types of sources](#input-formats)
-- [**Uses standard, durable, long-term formats**](#saves-lots-of-useful-stuff-for-each-imported-link) like HTML, JSON, PDF, PNG, MP4, TXT, and WARC
-- [**Usable as a oneshot CLI**](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#CLI-Usage), [**self-hosted web UI**](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#UI-Usage), [Python API](https://docs.archivebox.io/en/latest/modules.html) (BETA), [REST API](https://github.com/ArchiveBox/ArchiveBox/issues/496) (ALPHA), or [desktop app](https://github.com/ArchiveBox/electron-archivebox) (ALPHA)
-- [**Saves all pages to archive.org as well**](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#save_archive_dot_org) by default for redundancy (can be [disabled](https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#stealth-mode) for local-only mode)
-- Advanced users: support for archiving [content requiring login/paywall/cookies](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#chrome_user_data_dir) (see wiki security caveats!)
-- Planned: support for running [JS during archiving](https://github.com/ArchiveBox/ArchiveBox/issues/51) to adblock, [autoscroll](https://github.com/ArchiveBox/ArchiveBox/issues/80), [modal-hide](https://github.com/ArchiveBox/ArchiveBox/issues/175), [thread-expand](https://github.com/ArchiveBox/ArchiveBox/issues/345)
-
-<br/>
-
-## 🤝 Professional Integration
-
-*[Contact us](https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102) if your institution/org wants to use ArchiveBox professionally.*
-
-- setup & support, team permissioning, hashing, audit logging, backups, custom archiving etc.  
-- for **individuals**, **NGOs**, **academia**, **governments**, **journalism**, **law**, and more...
-
-*We are a 501(c)(3) nonprofit and all our work goes towards supporting open-source development.* 
-
-<br/>
-
-<div align="center">
-<br/>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/0db52ea7-4a2c-441d-b47f-5553a5d8fe96" width="49%" alt="grass"/><img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/0db52ea7-4a2c-441d-b47f-5553a5d8fe96" width="49%" alt="grass"/>
+<h2 tabindex="-1" dir="auto"><a id="user-content-key-features" class="anchor" aria-hidden="true" tabindex="-1" href="#key-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要特征</font></font></h2>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/LICENSE"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免费开源</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，无需在线注册，所有数据存储在本地</font></font></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#CLI-Usage"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">强大、直观的命令行界面，</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有</font></font><a href="#dependencies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块化可选依赖项</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全面的文档</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">积极的开发</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">丰富的社区</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/issues/51" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/51/hovercard"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提取各种开箱即用的内容</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="#output-formats"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">媒体（yt-dlp）、文章（可读性）、代码（git）等。</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Scheduled-Archiving"><strong><font style="vertical-align: inherit;"></font></strong></a><font style="vertical-align: inherit;"><a href="#input-formats"><font style="vertical-align: inherit;">支持多种来源的</font></a><font style="vertical-align: inherit;">定时</font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Scheduled-Archiving"><strong><font style="vertical-align: inherit;">/实时导入</font></strong></a></font><a href="#input-formats"><font style="vertical-align: inherit;"></font></a></li>
+<li><a href="#saves-lots-of-useful-stuff-for-each-imported-link"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用标准、持久、长期的格式，</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例如 HTML、JSON、PDF、PNG、MP4、TXT 和 WARC</font></font></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#CLI-Usage"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可用作一次性 CLI</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#UI-Usage"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自托管 Web UI</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://docs.archivebox.io/en/latest/modules.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Python API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> (BETA)、</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues/496" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/496/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> REST API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> (ALPHA) 或</font></font><a href="https://github.com/ArchiveBox/electron-archivebox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">桌面应用程序</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(ALPHA)</font></font></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#save_archive_dot_org"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下也将所有页面保存到 archive.org 以</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实现冗余（可以</font><font style="vertical-align: inherit;">在仅限本地模式下</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#stealth-mode"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用）</font></font></a><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高级用户：支持存档</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#chrome_user_data_dir"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需要登录/付费专区/cookie 的内容</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（请参阅 wiki 安全警告！）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">计划：支持</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues/51" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/51/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在归档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">到 adblock、</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues/80" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/80/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">autoscroll</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues/175" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/175/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">modal-hide</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues/345" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/345/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thread-expand期间运行 JS</font></font></a></li>
+</ul>
+<br>
+<h2 tabindex="-1" dir="auto"><a id="user-content--professional-integration" class="anchor" aria-hidden="true" tabindex="-1" href="#-professional-integration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤝 专业整合</font></font></h2>
+<p dir="auto"><em><a href="https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您的机构/组织想要专业使用 ArchiveBox，</font><a href="https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102" rel="nofollow"><font style="vertical-align: inherit;">请联系我们。</font></a></font></em></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置和支持、团队许可、散列、审核日志记录、备份、自定义归档等。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">个人</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">非政府组织</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学术界</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">政府</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新闻业</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">法律</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等等......</font></font></li>
+</ul>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们是一家 501(c)(3) 非营利组织，我们所有的工作都致力于支持开源开发。</font></font></em></p>
+<br>
+<div align="center" dir="auto">
+<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289555-0db52ea7-4a2c-441d-b47f-5553a5d8fe96.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTU1LTBkYjUyZWE3LTRhMmMtNDQxZC1iNDdmLTU1NTNhNWQ4ZmU5Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYzg3Y2ZjY2E2NjliNWRiODJkY2JmYzY5ZWQzYzg1OTI4MzdhNDUxYjg1NDFkYzEwOTYwMjc5NTYwNTBjMzVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8lS4llf1ZN4HgabdOnG7TU2BQqmjbR9HpjBK1L0DDwo"><img src="https://private-user-images.githubusercontent.com/511499/294289555-0db52ea7-4a2c-441d-b47f-5553a5d8fe96.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTU1LTBkYjUyZWE3LTRhMmMtNDQxZC1iNDdmLTU1NTNhNWQ4ZmU5Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYzg3Y2ZjY2E2NjliNWRiODJkY2JmYzY5ZWQzYzg1OTI4MzdhNDUxYjg1NDFkYzEwOTYwMjc5NTYwNTBjMzVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8lS4llf1ZN4HgabdOnG7TU2BQqmjbR9HpjBK1L0DDwo" width="49%" alt="草" style="max-width: 100%;"></a><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289555-0db52ea7-4a2c-441d-b47f-5553a5d8fe96.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTU1LTBkYjUyZWE3LTRhMmMtNDQxZC1iNDdmLTU1NTNhNWQ4ZmU5Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYzg3Y2ZjY2E2NjliNWRiODJkY2JmYzY5ZWQzYzg1OTI4MzdhNDUxYjg1NDFkYzEwOTYwMjc5NTYwNTBjMzVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8lS4llf1ZN4HgabdOnG7TU2BQqmjbR9HpjBK1L0DDwo"><img src="https://private-user-images.githubusercontent.com/511499/294289555-0db52ea7-4a2c-441d-b47f-5553a5d8fe96.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTU1LTBkYjUyZWE3LTRhMmMtNDQxZC1iNDdmLTU1NTNhNWQ4ZmU5Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYzg3Y2ZjY2E2NjliNWRiODJkY2JmYzY5ZWQzYzg1OTI4MzdhNDUxYjg1NDFkYzEwOTYwMjc5NTYwNTBjMzVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8lS4llf1ZN4HgabdOnG7TU2BQqmjbR9HpjBK1L0DDwo" width="49%" alt="草" style="max-width: 100%;"></a>
 </div>
-
-# Quickstart
-
-**🖥&nbsp; Supported OSs:** Linux/BSD, macOS, Windows (Docker) &nbsp; **👾&nbsp; CPUs:** `amd64` (`x86_64`), `arm64` (`arm8`), `arm7` <sup>(raspi>=3)</sup><br/>
-<sub>Note: On `arm7` the `playwright` package is not available, so `chromium` must be installed manually if needed.</sub>
-
-<br/>
-
-#### ✳️&nbsp; Easy Setup
-
+<h1 tabindex="-1" dir="auto"><a id="user-content-quickstart" class="anchor" aria-hidden="true" tabindex="-1" href="#quickstart"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></h1>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🖥 支持的操作系统：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Linux/BSD、macOS、Windows (Docker) &nbsp;  </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👾 CPU：(</font></font></strong> <code>amd64</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) </font></font><code>x86_64</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>arm64</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><code>arm8</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)、</font></font><code>arm7</code> <sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(raspi&gt;=3)注意：</font></font></sup><font style="vertical-align: inherit;"><sub><font style="vertical-align: inherit;">软件包</font></sub></font><br>
+<sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上</font><font style="vertical-align: inherit;">不可用，因此</font><font style="vertical-align: inherit;">如果需要，必须手动安装。</font></font><code>arm7</code><font style="vertical-align: inherit;"></font><code>playwright</code><font style="vertical-align: inherit;"></font><code>chromium</code><font style="vertical-align: inherit;"></font></sub></p>
+<br>
+<h4 tabindex="-1" dir="auto"><a id="user-content-️-easy-setup" class="anchor" aria-hidden="true" tabindex="-1" href="#️-easy-setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✳️ 简单设置</font></font></h4>
 <details>
-<summary><b><img src="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png" alt="Docker" height="28px" align="top"/> <code>docker-compose</code></b>  (macOS/Linux/Windows) &nbsp; <b>👈&nbsp; recommended</b> &nbsp; <i>(click to expand)</i></summary>
-<br/>
-<i>👍 Docker Compose is recommended for the easiest install/update UX + best security + all the <a href="#dependencies">extras</a> out-of-the-box.</i>
-<br/><br/>
-<ol>
-<li>Install <a href="https://docs.docker.com/get-docker/">Docker</a> and <a href="https://docs.docker.com/compose/install/#install-using-pip">Docker Compose</a> on your system (if not already installed).</li>
-<li>Download the <a href="https://raw.githubusercontent.com/ArchiveBox/ArchiveBox/dev/docker-compose.yml" download><code>docker-compose.yml</code></a> file into a new empty directory (can be anywhere).
-<pre lang="bash"><code style="white-space: pre-line">mkdir ~/archivebox && cd ~/archivebox
-curl -O 'https://raw.githubusercontent.com/ArchiveBox/ArchiveBox/dev/docker-compose.yml'
-</code></pre></li>
-<li>Run the initial setup and create an admin user.
-<pre lang="bash"><code style="white-space: pre-line">docker compose run archivebox init --setup
-</code></pre></li>
-<li>Optional: Start the server then login to the Web UI <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> ⇢ Admin.
-<pre lang="bash"><code style="white-space: pre-line">docker compose up
+<summary><b><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png"><img src="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png" alt="码头工人" height="28px" align="top" style="max-width: 100%;"></a> <code>docker-compose</code></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">  (macOS/Linux/Windows) &nbsp;  </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👈推荐</font></font></b> &nbsp; <i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（点击展开）</font></font></i></summary>
+<br>
+<i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👍 建议使用 Docker Compose，以实现最简单的安装/更新 UX + 最佳安全性 + 所有</font><font style="vertical-align: inherit;">开箱即用的</font></font><a href="#dependencies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">额外功能。</font></font></a><font style="vertical-align: inherit;"></font></i>
+<br><br>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您的系统上安装</font></font><a href="https://docs.docker.com/get-docker/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://docs.docker.com/compose/install/#install-using-pip" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker Compose</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（如果尚未安装）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将</font></font><a href="https://raw.githubusercontent.com/ArchiveBox/ArchiveBox/dev/docker-compose.yml" rel="nofollow"><code>docker-compose.yml</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件下载到新的空目录（可以是任何地方）。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>mkdir <span class="pl-k">~</span>/archivebox <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> <span class="pl-k">~</span>/archivebox
+curl -O <span class="pl-s"><span class="pl-pds">'</span>https://raw.githubusercontent.com/ArchiveBox/ArchiveBox/dev/docker-compose.yml<span class="pl-pds">'</span></span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir ~/archivebox &amp;&amp; cd ~/archivebox
+curl -O 'https://raw.githubusercontent.com/ArchiveBox/ArchiveBox/dev/docker-compose.yml'" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行初始设置并创建管理员用户。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>docker compose run archivebox init --setup</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="docker compose run archivebox init --setup" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选：启动服务器，然后登录 Web UI </font></font><a href="http://127.0.0.1:8000" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://127.0.0.1:8000</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ⇢ Admin。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>docker compose up
+<span class="pl-c"><span class="pl-c">#</span> completely optional, CLI can always be used without running a server</span>
+<span class="pl-c"><span class="pl-c">#</span> docker compose run [-T] archivebox [subcommand] [--args]</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="docker compose up
 # completely optional, CLI can always be used without running a server
-# docker compose run [-T] archivebox [subcommand] [--args]
-</code></pre></li>
+# docker compose run [-T] archivebox [subcommand] [--args]" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div></li>
 </ol>
-
-See <a href="#%EF%B8%8F-cli-usage">below</a> for more usage examples using the CLI, Web UI, or filesystem/SQL/Python to manage your archive.
-<br/><br/>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="#%EF%B8%8F-cli-usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多使用示例，使用 CLI、Web UI 或文件系统/SQL/Python 来管理存档。
+</font></font><br><br></p>
 </details>
-
 <details>
-<summary><b><img src="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png" alt="Docker" height="28px" align="top"/> <code>docker run</code></b>  (macOS/Linux/Windows)</summary>
-<br/>
-<ol>
-<li>Install <a href="https://docs.docker.com/get-docker/">Docker</a> on your system (if not already installed).</li>
-<li>Create a new empty directory and initialize your collection (can be anywhere).
-<pre lang="bash"><code style="white-space: pre-line">mkdir ~/archivebox && cd ~/archivebox
-docker run -v $PWD:/data -it archivebox/archivebox init --setup
-</code></pre>
+<summary><b><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png"><img src="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png" alt="码头工人" height="28px" align="top" style="max-width: 100%;"></a> <code>docker run</code></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">  （macOS/Linux/Windows）</font></font></summary>
+<br>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您的系统上安装</font></font><a href="https://docs.docker.com/get-docker/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（如果尚未安装）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个新的空目录并初始化您的集合（可以在任何地方）。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>mkdir <span class="pl-k">~</span>/archivebox <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> <span class="pl-k">~</span>/archivebox
+docker run -v <span class="pl-smi">$PWD</span>:/data -it archivebox/archivebox init --setup</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir ~/archivebox &amp;&amp; cd ~/archivebox
+docker run -v $PWD:/data -it archivebox/archivebox init --setup" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
-<li>Optional: Start the server then login to the Web UI <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> ⇢ Admin.
-<pre lang="bash"><code style="white-space: pre-line">docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选：启动服务器，然后登录 Web UI </font></font><a href="http://127.0.0.1:8000" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://127.0.0.1:8000</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ⇢ Admin。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>docker run -v <span class="pl-smi">$PWD</span>:/data -p 8000:8000 archivebox/archivebox
+<span class="pl-c"><span class="pl-c">#</span> completely optional, CLI can always be used without running a server</span>
+<span class="pl-c"><span class="pl-c">#</span> docker run -v $PWD:/data -it [subcommand] [--args]</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox
 # completely optional, CLI can always be used without running a server
-# docker run -v $PWD:/data -it [subcommand] [--args]
-</code></pre>
+# docker run -v $PWD:/data -it [subcommand] [--args]" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
 </ol>
-
-See <a href="#%EF%B8%8F-cli-usage">below</a> for more usage examples using the CLI, Web UI, or filesystem/SQL/Python to manage your archive.
-<br/><br/>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="#%EF%B8%8F-cli-usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多使用示例，使用 CLI、Web UI 或文件系统/SQL/Python 来管理存档。
+</font></font><br><br></p>
 </details>
-
 <details>
-<summary><b><img src="https://user-images.githubusercontent.com/511499/117456282-08665e80-af16-11eb-91a1-8102eff54091.png" alt="curl sh automatic setup script" height="28px" align="top"/> <code>bash</code> auto-setup script</b>  (macOS/Linux)</summary>
-<br/>
-<ol>
-<li>Install <a href="https://docs.docker.com/get-docker/">Docker</a> on your system (optional, highly recommended but not required).</li>
-<li>Run the automatic setup script.
-<pre lang="bash"><code style="white-space: pre-line">curl -sSL 'https://get.archivebox.io' | sh</code></pre>
+<summary><b><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117456282-08665e80-af16-11eb-91a1-8102eff54091.png"><img src="https://user-images.githubusercontent.com/511499/117456282-08665e80-af16-11eb-91a1-8102eff54091.png" alt="curl sh 自动设置脚本" height="28px" align="top" style="max-width: 100%;"></a> <code>bash</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自动设置脚本</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">  (macOS/Linux)</font></font></summary>
+<br>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您的系统上安装</font></font><a href="https://docs.docker.com/get-docker/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（可选，强烈推荐但不是必需的）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行自动安装脚本。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>curl -sSL <span class="pl-s"><span class="pl-pds">'</span>https://get.archivebox.io<span class="pl-pds">'</span></span> <span class="pl-k">|</span> sh</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="curl -sSL 'https://get.archivebox.io' | sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
 </ol>
-
-See <a href="#%EF%B8%8F-cli-usage">below</a> for more usage examples using the CLI, Web UI, or filesystem/SQL/Python to manage your archive.<br/>
-See <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/bin/setup.sh"><code>setup.sh</code></a> for the source code of the auto-install script.<br/>
-See <a href="https://docs.sweeting.me/s/against-curl-sh">"Against curl | sh as an install method"</a> blog post for my thoughts on the shortcomings of this install method.
-<br/><br/>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="#%EF%B8%8F-cli-usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多使用示例，使用 CLI、Web UI 或文件系统/SQL/Python 来管理存档。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+请</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/bin/setup.sh"><code>setup.sh</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参阅 参考资料 自动安装脚本的源代码。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+请参阅</font></font><a href="https://docs.sweeting.me/s/against-curl-sh" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“反对curl | sh作为安装方法”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">博客文章，了解我对此安装方法的缺点的想法。
+</font></font><br><br></p>
 </details>
-
-<br/>
-
-#### 🛠&nbsp; Package Manager Setup
-
-<a name="Manual-Setup"></a>
+<br>
+<h4 tabindex="-1" dir="auto"><a id="user-content--package-manager-setup" class="anchor" aria-hidden="true" tabindex="-1" href="#-package-manager-setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🛠 包管理器设置</font></font></h4>
+<p dir="auto"><a name="user-content-manual-setup"></a></p>
 <details>
-<summary><b><img src="https://user-images.githubusercontent.com/511499/117448075-49597580-af0c-11eb-91ba-f34fff10096b.png" alt="aptitude" height="28px" align="top"/> <code>apt</code></b> (Ubuntu/Debian)</summary>
-<br/>
-<ol>
-<li>Add the ArchiveBox repository to your sources.<br/>
-<pre lang="bash"><code style="white-space: pre-line">echo "deb http://ppa.launchpad.net/archivebox/archivebox/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/archivebox.list
+<summary><b><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117448075-49597580-af0c-11eb-91ba-f34fff10096b.png"><img src="https://user-images.githubusercontent.com/511499/117448075-49597580-af0c-11eb-91ba-f34fff10096b.png" alt="资质" height="28px" align="top" style="max-width: 100%;"></a> <code>apt</code></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Ubuntu/Debian)</font></font></summary>
+<br>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 ArchiveBox 存储库添加到您的源中。</font></font><br>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span>deb http://ppa.launchpad.net/archivebox/archivebox/ubuntu focal main<span class="pl-pds">"</span></span> <span class="pl-k">|</span> sudo tee /etc/apt/sources.list.d/archivebox.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C258F79DCC02E369
-sudo apt update
-</code></pre>
+sudo apt update</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="echo &quot;deb http://ppa.launchpad.net/archivebox/archivebox/ubuntu focal main&quot; | sudo tee /etc/apt/sources.list.d/archivebox.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C258F79DCC02E369
+sudo apt update" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
-<li>Install the ArchiveBox package using <code>apt</code>.
-<pre lang="bash"><code style="white-space: pre-line">sudo apt install archivebox
-sudo python3 -m pip install --upgrade --ignore-installed archivebox   # pip needed because apt only provides a broken older version of Django
-</code></pre>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用安装 ArchiveBox 包</font></font><code>apt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>sudo apt install archivebox
+sudo python3 -m pip install --upgrade --ignore-installed archivebox   <span class="pl-c"><span class="pl-c">#</span> pip needed because apt only provides a broken older version of Django</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="sudo apt install archivebox
+sudo python3 -m pip install --upgrade --ignore-installed archivebox   # pip needed because apt only provides a broken older version of Django" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
-<li>Create a new empty directory and initialize your collection (can be anywhere).
-<pre lang="bash"><code style="white-space: pre-line">mkdir ~/archivebox && cd ~/archivebox
-archivebox init --setup           # if any problems, install with pip instead
-</code></pre>
-<i>Note: If you encounter issues with NPM/NodeJS, <a href="https://github.com/nodesource/distributions#debinstall">install a more recent version</a>.</i><br/><br/>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个新的空目录并初始化您的集合（可以在任何地方）。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>mkdir <span class="pl-k">~</span>/archivebox <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> <span class="pl-k">~</span>/archivebox
+archivebox init --setup           <span class="pl-c"><span class="pl-c">#</span> if any problems, install with pip instead</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir ~/archivebox &amp;&amp; cd ~/archivebox
+archivebox init --setup           # if any problems, install with pip instead" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：如果您遇到 NPM/NodeJS 问题，</font></font><a href="https://github.com/nodesource/distributions#debinstall"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请安装更新版本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></i><br><br>
 </li>
-<li>Optional: Start the server then login to the Web UI <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> ⇢ Admin.
-<pre lang="bash"><code style="white-space: pre-line">archivebox server 0.0.0.0:8000
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选：启动服务器，然后登录 Web UI </font></font><a href="http://127.0.0.1:8000" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://127.0.0.1:8000</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ⇢ Admin。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox server 0.0.0.0:8000
+<span class="pl-c"><span class="pl-c">#</span> completely optional, CLI can always be used without running a server</span>
+<span class="pl-c"><span class="pl-c">#</span> archivebox [subcommand] [--args]</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox server 0.0.0.0:8000
 # completely optional, CLI can always be used without running a server
-# archivebox [subcommand] [--args]
-</code></pre>
+# archivebox [subcommand] [--args]" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
 </ol>
-
-See <a href="#%EF%B8%8F-cli-usage">below</a> for more usage examples using the CLI, Web UI, or filesystem/SQL/Python to manage your archive.<br/>
-See the <a href="https://github.com/ArchiveBox/debian-archivebox"><code>debian-archivebox</code></a> repo for more details about this distribution.
-<br/><br/>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="#%EF%B8%8F-cli-usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多使用示例，使用 CLI、Web UI 或文件系统/SQL/Python 来管理存档。</font><font style="vertical-align: inherit;">有关此发行版的更多详细信息，
+</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+请参阅存储库。</font></font><a href="https://github.com/ArchiveBox/debian-archivebox"><code>debian-archivebox</code></a><font style="vertical-align: inherit;"></font><br><br></p>
 </details>
-
 <details>
-<summary><b><img src="https://user-images.githubusercontent.com/511499/117447803-f2ec3700-af0b-11eb-87d3-671d114f011d.png" alt="homebrew" height="28px" align="top"/> <code>brew</code></b> (macOS)</summary>
-<br/>
-<ol>
-<li>Install <a href="https://brew.sh/#install">Homebrew</a> on your system (if not already installed).</li>
-<li>Install the ArchiveBox package using <code>brew</code>.
-<pre lang="bash"><code style="white-space: pre-line">brew tap archivebox/archivebox
-brew install archivebox
-</code></pre>
+<summary><b><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117447803-f2ec3700-af0b-11eb-87d3-671d114f011d.png"><img src="https://user-images.githubusercontent.com/511499/117447803-f2ec3700-af0b-11eb-87d3-671d114f011d.png" alt="自制的" height="28px" align="top" style="max-width: 100%;"></a> <code>brew</code></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（苹果系统）</font></font></summary>
+<br>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您的系统上安装</font></font><a href="https://brew.sh/#install" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Homebrew</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（如果尚未安装）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用安装 ArchiveBox 包</font></font><code>brew</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>brew tap archivebox/archivebox
+brew install archivebox</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="brew tap archivebox/archivebox
+brew install archivebox" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
-<li>Create a new empty directory and initialize your collection (can be anywhere).
-<pre lang="bash"><code style="white-space: pre-line">mkdir ~/archivebox && cd ~/archivebox
-archivebox init --setup         # if any problems, install with pip instead
-</code></pre>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个新的空目录并初始化您的集合（可以在任何地方）。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>mkdir <span class="pl-k">~</span>/archivebox <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> <span class="pl-k">~</span>/archivebox
+archivebox init --setup         <span class="pl-c"><span class="pl-c">#</span> if any problems, install with pip instead</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir ~/archivebox &amp;&amp; cd ~/archivebox
+archivebox init --setup         # if any problems, install with pip instead" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
-<li>Optional: Start the server then login to the Web UI <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> ⇢ Admin.
-<pre lang="bash"><code style="white-space: pre-line">archivebox server 0.0.0.0:8000
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选：启动服务器，然后登录 Web UI </font></font><a href="http://127.0.0.1:8000" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://127.0.0.1:8000</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ⇢ Admin。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox server 0.0.0.0:8000
+<span class="pl-c"><span class="pl-c">#</span> completely optional, CLI can always be used without running a server</span>
+<span class="pl-c"><span class="pl-c">#</span> archivebox [subcommand] [--args]</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox server 0.0.0.0:8000
 # completely optional, CLI can always be used without running a server
-# archivebox [subcommand] [--args]
-</code></pre>
+# archivebox [subcommand] [--args]" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
 </ol>
-
-See <a href="#%EF%B8%8F-cli-usage">below</a> for more usage examples using the CLI, Web UI, or filesystem/SQL/Python to manage your archive.<br/>
-See the <a href="https://github.com/ArchiveBox/homebrew-archivebox"><code>homebrew-archivebox</code></a> repo for more details about this distribution.
-<br/><br/>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="#%EF%B8%8F-cli-usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多使用示例，使用 CLI、Web UI 或文件系统/SQL/Python 来管理存档。</font><font style="vertical-align: inherit;">有关此发行版的更多详细信息，
+</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+请参阅存储库。</font></font><a href="https://github.com/ArchiveBox/homebrew-archivebox"><code>homebrew-archivebox</code></a><font style="vertical-align: inherit;"></font><br><br></p>
 </details>
-
 <details>
-<summary><b><img src="https://user-images.githubusercontent.com/511499/117447613-ba4c5d80-af0b-11eb-8f89-1d98e31b6a79.png" alt="Pip" height="28px" align="top"/> <code>pip</code></b> (macOS/Linux/BSD)</summary>
-<br/>
-<ol>
-
-<li>Install <a href="https://realpython.com/installing-python/">Python >= v3.9</a> and <a href="https://nodejs.org/en/download/package-manager/">Node >= v18</a> on your system (if not already installed).</li>
-<li>Install the ArchiveBox package using <code>pip3</code>.
-<pre lang="bash"><code style="white-space: pre-line">pip3 install archivebox
-</code></pre>
+<summary><b><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117447613-ba4c5d80-af0b-11eb-8f89-1d98e31b6a79.png"><img src="https://user-images.githubusercontent.com/511499/117447613-ba4c5d80-af0b-11eb-8f89-1d98e31b6a79.png" alt="点" height="28px" align="top" style="max-width: 100%;"></a> <code>pip</code></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（macOS/Linux/BSD）</font></font></summary>
+<br>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您的系统上安装</font></font><a href="https://realpython.com/installing-python/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python &gt;= v3.9</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://nodejs.org/en/download/package-manager/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Node &gt;= v18</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（如果尚未安装）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用安装 ArchiveBox 包</font></font><code>pip3</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip3 install archivebox</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip3 install archivebox" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
-<li>Create a new empty directory and initialize your collection (can be anywhere).
-<pre lang="bash"><code style="white-space: pre-line">mkdir ~/archivebox && cd ~/archivebox
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个新的空目录并初始化您的集合（可以在任何地方）。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>mkdir <span class="pl-k">~</span>/archivebox <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> <span class="pl-k">~</span>/archivebox
 archivebox init --setup
-# install any missing extras like wget/git/ripgrep/etc. manually as needed
-</code></pre>
+<span class="pl-c"><span class="pl-c">#</span> install any missing extras like wget/git/ripgrep/etc. manually as needed</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir ~/archivebox &amp;&amp; cd ~/archivebox
+archivebox init --setup
+# install any missing extras like wget/git/ripgrep/etc. manually as needed" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
-<li>Optional: Start the server then login to the Web UI <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> ⇢ Admin.
-<pre lang="bash"><code style="white-space: pre-line">archivebox server 0.0.0.0:8000
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选：启动服务器，然后登录 Web UI </font></font><a href="http://127.0.0.1:8000" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://127.0.0.1:8000</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ⇢ Admin。
+</font></font><div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox server 0.0.0.0:8000
+<span class="pl-c"><span class="pl-c">#</span> completely optional, CLI can always be used without running a server</span>
+<span class="pl-c"><span class="pl-c">#</span> archivebox [subcommand] [--args]</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox server 0.0.0.0:8000
 # completely optional, CLI can always be used without running a server
-# archivebox [subcommand] [--args]
-</code></pre>
+# archivebox [subcommand] [--args]" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </li>
 </ol>
-
-See <a href="#%EF%B8%8F-cli-usage">below</a> for more usage examples using the CLI, Web UI, or filesystem/SQL/Python to manage your archive.<br/>
-See the <a href="https://github.com/ArchiveBox/pip-archivebox"><code>pip-archivebox</code></a> repo for more details about this distribution.
-<br/><br/>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="#%EF%B8%8F-cli-usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多使用示例，使用 CLI、Web UI 或文件系统/SQL/Python 来管理存档。</font><font style="vertical-align: inherit;">有关此发行版的更多详细信息，
+</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+请参阅存储库。</font></font><a href="https://github.com/ArchiveBox/pip-archivebox"><code>pip-archivebox</code></a><font style="vertical-align: inherit;"></font><br><br></p>
 </details>
-
 <details>
-<summary><img src="https://user-images.githubusercontent.com/511499/118077361-f0616580-b381-11eb-973c-ee894a3349fb.png" alt="Arch" height="28px" align="top"/> <code>pacman</code> / <img src="https://user-images.githubusercontent.com/511499/118077946-29e6a080-b383-11eb-94f0-d4871da08c3f.png" alt="FreeBSD" height="28px" align="top"/> <code>pkg</code> / <img src="https://user-images.githubusercontent.com/511499/118077861-002d7980-b383-11eb-86a7-5936fad9190f.png" alt="Nix" height="28px" align="top"/> <code>nix</code> (Arch/FreeBSD/NixOS/more)</summary>
-<br/>
-
-> [!WARNING]  
-> *These are contributed by external volunteers and may lag behind the official `pip` channel.*
-
-<ul>
-<li>Arch: <a href="https://aur.archlinux.org/packages/archivebox/"><code>yay -S archivebox</code></a> (contributed by <a href="https://github.com/imlonghao"><code>@imlonghao</code></a>)</li>
-<li>FreeBSD: <a href="https://github.com/ArchiveBox/ArchiveBox#%EF%B8%8F-easy-setup"><code>curl -sSL 'https://get.archivebox.io' | sh</code></a> (uses <code>pkg</code> + <code>pip3</code> under-the-hood)</li>
+<summary><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/118077361-f0616580-b381-11eb-973c-ee894a3349fb.png"><img src="https://user-images.githubusercontent.com/511499/118077361-f0616580-b381-11eb-973c-ee894a3349fb.png" alt="拱" height="28px" align="top" style="max-width: 100%;"></a> <code>pacman</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">// </font><font style="vertical-align: inherit;">（</font><font style="vertical-align: inherit;">Arch/FreeBSD/NixOS/更多）</font></font><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/118077946-29e6a080-b383-11eb-94f0-d4871da08c3f.png"><img src="https://user-images.githubusercontent.com/511499/118077946-29e6a080-b383-11eb-94f0-d4871da08c3f.png" alt="自由BSD" height="28px" align="top" style="max-width: 100%;"></a> <code>pkg</code><font style="vertical-align: inherit;"></font><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/118077861-002d7980-b383-11eb-86a7-5936fad9190f.png"><img src="https://user-images.githubusercontent.com/511499/118077861-002d7980-b383-11eb-86a7-5936fad9190f.png" alt="尼克斯" height="28px" align="top" style="max-width: 100%;"></a> <code>nix</code><font style="vertical-align: inherit;"></font></summary>
+<br>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[!警告]</font></font><br>
+<em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些是由外部志愿者贡献的，可能落后于官方</font></font><code>pip</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">渠道。</font></font></em></p>
+</blockquote>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">拱门：（</font></font><a href="https://aur.archlinux.org/packages/archivebox/" rel="nofollow"><code>yay -S archivebox</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font><a href="https://github.com/imlonghao"><code>@imlonghao</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FreeBSD：（</font></font><a href="https://github.com/ArchiveBox/ArchiveBox#%EF%B8%8F-easy-setup"><code>curl -sSL 'https://get.archivebox.io' | sh</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font><code>pkg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+</font></font><code>pip3</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">底层）</font></font></li>
 <li>Nix: <a href="https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/archivebox/default.nix"><code>nix-env --install archivebox</code></a> (contributed by <a href="https://github.com/siraben"><code>@siraben</code></a>)</li>
 <li>More: <a href="https://github.com/ArchiveBox/ArchiveBox/issues/new"><i>contribute another distribution...!</i></a></li>
-</ul>
-See <a href="#%EF%B8%8F-cli-usage">below</a> for usage examples using the CLI, Web UI, or filesystem/SQL/Python to manage your archive.
-<br/><br/>
+</ul><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+请参阅</font></font><a href="#%EF%B8%8F-cli-usage">below</a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参考资料 使用 CLI、Web UI 或文件系统/SQL/Python 来管理存档的使用示例。
+</font></font><br><br>
 </details>
-
-<br/>
-
-#### 🎗&nbsp; Other Options
-
+<br>
+<h4 tabindex="-1" dir="auto"><a id="user-content--other-options" class="anchor" aria-hidden="true" tabindex="-1" href="#-other-options"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🎗 其他选项</font></font></h4>
 <details>
-<summary><b><img src="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png" alt="Docker" height="28px" align="top"/> <code>docker</code> + <img src="https://user-images.githubusercontent.com/511499/117447263-4316c980-af0b-11eb-928d-eaf1292ac646.png" alt="Electron" height="28px" align="top"/> <code>electron</code> Desktop App</b> (macOS/Linux/Windows)</summary>
-<br/>
-<ol>
-<li>Install <a href="https://docs.docker.com/get-docker/">Docker</a> on your system (if not already installed).</li>
-<li>Download a binary release for your OS or build the native app from source<br/>
-<ul>
-<li>macOS: <a href="https://github.com/ArchiveBox/ArchiveBox/releases/download/v0.6.2/Electron-ArchiveBox-macOS-x64-0.6.2.app.zip" download><code>ArchiveBox.app.zip</code></a></li>
+<summary><b><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png"><img src="https://user-images.githubusercontent.com/511499/117447182-29758200-af0b-11eb-97bd-58723fee62ab.png" alt="码头工人" height="28px" align="top" style="max-width: 100%;"></a> <code>docker</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+</font><font style="vertical-align: inherit;">桌面应用程序</font></font><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117447263-4316c980-af0b-11eb-928d-eaf1292ac646.png"><img src="https://user-images.githubusercontent.com/511499/117447263-4316c980-af0b-11eb-928d-eaf1292ac646.png" alt="电子" height="28px" align="top" style="max-width: 100%;"></a> <code>electron</code><font style="vertical-align: inherit;"></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(macOS/Linux/Windows)</font></font></summary>
+<br>
+<ol dir="auto">
+<li>Install <a href="https://docs.docker.com/get-docker/" rel="nofollow">Docker</a> on your system (if not already installed).</li>
+<li>Download a binary release for your OS or build the native app from source<br>
+<ul dir="auto">
+<li>macOS: <a href="https://github.com/ArchiveBox/ArchiveBox/releases/download/v0.6.2/Electron-ArchiveBox-macOS-x64-0.6.2.app.zip"><code>ArchiveBox.app.zip</code></a></li>
 <li>Linux: <code>ArchiveBox.deb</code> (alpha: <a href="https://github.com/ArchiveBox/electron-archivebox#quickstart">build manually</a>)</li>
 <li>Windows: <code>ArchiveBox.exe</code> (beta: <a href="https://github.com/ArchiveBox/electron-archivebox#quickstart">build manually</a>)</li>
 </ul>
 </li>
 </ol>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/575ef92f-bb3e-4a7c-a4ba-986c1fd76ecf" width="320px">
-<br/>
-<i>✨ Alpha (contributors wanted!)</i>: for more info, see the: <a href="https://github.com/ArchiveBox/electron-archivebox">Electron ArchiveBox</a> repo.
-  <br/>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289501-575ef92f-bb3e-4a7c-a4ba-986c1fd76ecf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTAxLTU3NWVmOTJmLWJiM2UtNGE3Yy1hNGJhLTk4NmMxZmQ3NmVjZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZjQ2MmJjMDhmZWY4NzI5ZDRlMDIwM2ZmZDZlZDUyOGY4MjQ0N2VjNjEzMGVkOWMyZTg3MDIzNTllZjQ1ZjNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IfU2M3ThkZ8EQiyBkxktIHvo3ksNHxtBO_uyalztBs4"><img src="https://private-user-images.githubusercontent.com/511499/294289501-575ef92f-bb3e-4a7c-a4ba-986c1fd76ecf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTAxLTU3NWVmOTJmLWJiM2UtNGE3Yy1hNGJhLTk4NmMxZmQ3NmVjZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZjQ2MmJjMDhmZWY4NzI5ZDRlMDIwM2ZmZDZlZDUyOGY4MjQ0N2VjNjEzMGVkOWMyZTg3MDIzNTllZjQ1ZjNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IfU2M3ThkZ8EQiyBkxktIHvo3ksNHxtBO_uyalztBs4" width="320px" style="max-width: 100%;"></a>
+<br>
+<i>✨ Alpha (contributors wanted!)</i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：有关更多信息，请参阅：</font></font><a href="https://github.com/ArchiveBox/electron-archivebox">Electron ArchiveBox</a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">repo。
+  </font></font><br>
 </details>
-
 <details>
-<summary><img src="https://user-images.githubusercontent.com/511499/117448723-1663b180-af0d-11eb-837f-d43959227810.png" alt="paid" height="27px" align="top"/> Paid hosting solutions (cloud VPS)</summary>
-<br/>
-<ul>
-<li><a href="https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102">
- <img src="https://img.shields.io/badge/Custom_Development-ArchiveBox.io-%231a1a1a.svg?style=flat" height="22px"/>
-</a> (<a href="https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102">get hosting, support, and feature customization directy from us</a>)</li>
-<li><a href="https://monadical.com">
- <img src="https://img.shields.io/badge/General_Dev_Consulting-Monadical.com-%231a1a1a.svg?style=flat" height="22px"/>
-</a> (<a href="https://monadical.com/contact-us.html">for a generalist software consultancy that helps with ArchiveBox maintainance</a>)</li>
-<br/>
-Other providers of paid ArchiveBox hosting (not officially endorsed):<br/>
-<br/><br/>
-<li><a href="https://elest.io/open-source/archivebox"><img src="https://img.shields.io/badge/Managed_Hosting-Elest.io-%23193f7e.svg?style=flat" height="22px"/></a></li>
-<li><a href="https://www.stellarhosted.com/archivebox/"><img src="https://img.shields.io/badge/Semi_Managed_Hosting-StellarHosted.com-%23193f7e.svg?style=flat" height="22px"/></a> (USD $29-250/mo, <a href="https://www.stellarhosted.com/archivebox/#pricing">pricing</a>)</li>
-<li><a href="https://www.pikapods.com/pods?run=archivebox"><img src="https://img.shields.io/badge/Semi_Managed_Hosting-PikaPods.com-%2343a047.svg?style=flat" height="22px"/></a> (from USD $2.6/mo)</li>
-<li><a href="https://m.do.co/c/cbc4c0c17840">
- <img src="https://img.shields.io/badge/Unmanaged_VPS-DigitalOcean.com-%232f7cf7.svg?style=flat" height="22px"/>
-</a> (USD $5-50+/mo, <a href="https://m.do.co/c/cbc4c0c17840">🎗&nbsp; referral link</a>, <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04">instructions</a>)</li>
-<li><a href="https://www.vultr.com/?ref=7130289">
- <img src="https://img.shields.io/badge/Unmanaged_VPS-Vultr.com-%232337a8.svg?style=flat" height="22px"/>
-</a> (USD $2.5-50+/mo, <a href="https://www.vultr.com/?ref=7130289">🎗&nbsp; referral link</a>, <a href="https://www.vultr.com/docs/install-docker-compose-on-ubuntu-20-04">instructions</a>)</li>
-<li><a href="https://fly.io/">
- <img src="https://img.shields.io/badge/Unmanaged_App-Fly.io-%239a2de6.svg?style=flat" height="22px"/>
-</a> (USD $10-50+/mo, <a href="https://fly.io/docs/hands-on/start/">instructions</a>)</li>
-<li><a href="https://aws.amazon.com/marketplace/pp/Linnovate-Open-Source-Innovation-Support-For-Archi/B08RVW6MJ2"><img src="https://img.shields.io/badge/Unmanaged_VPS-AWS-%23ee8135.svg?style=flat" height="22px"/></a> (USD $60-200+/mo)</li>
-<li><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/meanio.archivebox?ocid=gtmrewards_whatsnewblog_archivebox_vol118"><img src="https://img.shields.io/badge/Unmanaged_VPS-Azure-%237cb300.svg?style=flat" height="22px"/></a> (USD $60-200+/mo)</li>
-<br/>
-<sub><i>Referral links marked 🎗 provide $5-10 of free credit for new users and help pay for our <a href="https://demo.archivebox.io">demo server</a> hosting costs.</i></sub>
+<summary><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117448723-1663b180-af0d-11eb-837f-d43959227810.png"><img src="https://user-images.githubusercontent.com/511499/117448723-1663b180-af0d-11eb-837f-d43959227810.png" alt="有薪酬的" height="27px" align="top" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">付费托管解决方案（云VPS）</font></font></summary>
+<br>
+<ul dir="auto">
+<li><a href="https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102" rel="nofollow">
+ <img src="https://camo.githubusercontent.com/fff35836d9dc2337a10a9312636c1a04e279f4e7478d89f58792205ef659cc3f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f437573746f6d5f446576656c6f706d656e742d41726368697665426f782e696f2d2532333161316131612e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Custom_Development-ArchiveBox.io-%231a1a1a.svg?style=flat" style="max-width: 100%;">
+</a> (<a href="https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102" rel="nofollow">get hosting, support, and feature customization directy from us</a>)</li>
+<li><a href="https://monadical.com" rel="nofollow">
+ <img src="https://camo.githubusercontent.com/cac6ca9ed93ab81e4af1dca7f2d117e5fde71249728f7d382100992d2405caa8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f47656e6572616c5f4465765f436f6e73756c74696e672d4d6f6e61646963616c2e636f6d2d2532333161316131612e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/General_Dev_Consulting-Monadical.com-%231a1a1a.svg?style=flat" style="max-width: 100%;">
+</a> (<a href="https://monadical.com/contact-us.html" rel="nofollow">for a generalist software consultancy that helps with ArchiveBox maintainance</a>)</li>
+<br>
+Other providers of paid ArchiveBox hosting (not officially endorsed):<br>
+<br><br>
+<li><a href="https://elest.io/open-source/archivebox" rel="nofollow"><img src="https://camo.githubusercontent.com/818721a200df28ad2b0f26f5207a92730e90e58881687f2030f53bb44f360963/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d616e616765645f486f7374696e672d456c6573742e696f2d2532333139336637652e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Managed_Hosting-Elest.io-%23193f7e.svg?style=flat" style="max-width: 100%;"></a></li>
+<li><a href="https://www.stellarhosted.com/archivebox/" rel="nofollow"><img src="https://camo.githubusercontent.com/795c07fe4648b132bd67f301e0a26678d5c0f60d5d89b90d2c0539709610ac40/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53656d695f4d616e616765645f486f7374696e672d5374656c6c6172486f737465642e636f6d2d2532333139336637652e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Semi_Managed_Hosting-StellarHosted.com-%23193f7e.svg?style=flat" style="max-width: 100%;"></a> (USD $29-250/mo, <a href="https://www.stellarhosted.com/archivebox/#pricing" rel="nofollow">pricing</a>)</li>
+<li><a href="https://www.pikapods.com/pods?run=archivebox" rel="nofollow"><img src="https://camo.githubusercontent.com/c5be6d3722eea6eb9bd4728338ed8592d59930b8af22d03b27aa96547caaea4e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53656d695f4d616e616765645f486f7374696e672d50696b61506f64732e636f6d2d2532333433613034372e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Semi_Managed_Hosting-PikaPods.com-%2343a047.svg?style=flat" style="max-width: 100%;"></a> (from USD $2.6/mo)</li>
+<li><a href="https://m.do.co/c/cbc4c0c17840" rel="nofollow">
+ <img src="https://camo.githubusercontent.com/a62abed6acb890ec42865232b4cf0d846d413cef59159b9fc4c6ed2c693526f8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f556e6d616e616765645f5650532d4469676974616c4f6365616e2e636f6d2d2532333266376366372e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Unmanaged_VPS-DigitalOcean.com-%232f7cf7.svg?style=flat" style="max-width: 100%;">
+</a> (USD $5-50+/mo, <a href="https://m.do.co/c/cbc4c0c17840" rel="nofollow">🎗&nbsp; referral link</a>, <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04" rel="nofollow">instructions</a>)</li>
+<li><a href="https://www.vultr.com/?ref=7130289" rel="nofollow">
+ <img src="https://camo.githubusercontent.com/560eb9a590449eaaf8b6ef0066446f4590a550f5a6c303673aaf1bd4ae67ea36/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f556e6d616e616765645f5650532d56756c74722e636f6d2d2532333233333761382e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Unmanaged_VPS-Vultr.com-%232337a8.svg?style=flat" style="max-width: 100%;">
+</a> (USD $2.5-50+/mo, <a href="https://www.vultr.com/?ref=7130289" rel="nofollow">🎗&nbsp; referral link</a>, <a href="https://www.vultr.com/docs/install-docker-compose-on-ubuntu-20-04" rel="nofollow">instructions</a>)</li>
+<li><a href="https://fly.io/" rel="nofollow">
+ <img src="https://camo.githubusercontent.com/c63aa5cba0012ebf44d8f6975b8d7ba4debe4f4e4fc1457994b43a42105088d4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f556e6d616e616765645f4170702d466c792e696f2d2532333961326465362e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Unmanaged_App-Fly.io-%239a2de6.svg?style=flat" style="max-width: 100%;">
+</a> (USD $10-50+/mo, <a href="https://fly.io/docs/hands-on/start/" rel="nofollow">instructions</a>)</li>
+<li><a href="https://aws.amazon.com/marketplace/pp/Linnovate-Open-Source-Innovation-Support-For-Archi/B08RVW6MJ2" rel="nofollow"><img src="https://camo.githubusercontent.com/39d881fbe25dcc028b7d830d02e6cac4f118aaf944b391300f9f4cd835fbee82/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f556e6d616e616765645f5650532d4157532d2532336565383133352e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Unmanaged_VPS-AWS-%23ee8135.svg?style=flat" style="max-width: 100%;"></a> (USD $60-200+/mo)</li>
+<li><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/meanio.archivebox?ocid=gtmrewards_whatsnewblog_archivebox_vol118" rel="nofollow"><img src="https://camo.githubusercontent.com/f82e2aca898cfcc24b0cac0f4ead923d3868064d24fd51484d44a1ef29d01638/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f556e6d616e616765645f5650532d417a7572652d2532333763623330302e7376673f7374796c653d666c6174" height="22px" data-canonical-src="https://img.shields.io/badge/Unmanaged_VPS-Azure-%237cb300.svg?style=flat" style="max-width: 100%;"></a> (USD $60-200+/mo)</li>
+<br>
+<sub><i>Referral links marked 🎗 provide $5-10 of free credit for new users and help pay for our <a href="https://demo.archivebox.io" rel="nofollow">demo server</a> hosting costs.</i></sub>
 </ul>
-
-For more discussion on managed and paid hosting options see here: <a href="https://github.com/ArchiveBox/ArchiveBox/issues/531">Issue #531</a>.
-
+<p dir="auto">For more discussion on managed and paid hosting options see here: <a href="https://github.com/ArchiveBox/ArchiveBox/issues/531" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/531/hovercard">Issue #531</a>.</p>
 </details>
+<br>
+<h4 tabindex="-1" dir="auto"><a id="user-content-️-next-steps" class="anchor" aria-hidden="true" tabindex="-1" href="#️-next-steps"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">➡️后续步骤</font></font></h4>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从某些支持的</font></font><a href="#input-formats"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入格式</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">导入 URL或查看支持的</font></font><a href="#output-formats"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输出格式</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">调整您的 UI 或存档行为</font></font><a href="#configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或阅读一些</font></font><a href="#caveats"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意事项</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和故障排除步骤...</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解</font><font style="vertical-align: inherit;">用于归档的</font></font><a href="#dependencies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖项、</font></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级过程</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或磁盘上的</font></font><a href="#archive-layout"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">归档布局</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者查看我们的完整</font></font><a href="#documentation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="#internet-archiving-ecosystem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区 Wiki</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ...</font></font></li>
+</ul>
+<br>
+<h3 tabindex="-1" dir="auto"><a id="user-content-usage" class="anchor" aria-hidden="true" tabindex="-1" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></h3>
+<h4 tabindex="-1" dir="auto"><a id="user-content-️-cli-usage" class="anchor" aria-hidden="true" tabindex="-1" href="#️-cli-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚡️ CLI 用法</font></font></h4>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> archivebox [subcommand] [--args]</span>
+<span class="pl-c"><span class="pl-c">#</span> docker-compose run archivebox [subcommand] [--args]</span>
+<span class="pl-c"><span class="pl-c">#</span> docker run -v $PWD:/data -it [subcommand] [--args]</span>
 
-<br/>
-
-#### ➡️&nbsp; Next Steps
-
-- Import URLs from some of the supported [Input Formats](#input-formats) or view the supported [Output Formats](#output-formats)...
-- Tweak your UI or archiving behavior [Configuration](#configuration) or read about some of the [Caveats](#caveats) and troubleshooting steps...
-- Read about the [Dependencies](#dependencies) used for archiving, the [Upgrading Process](https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives), or the [Archive Layout](#archive-layout) on disk...
-- Or check out our full [Documentation](#documentation) or [Community Wiki](#internet-archiving-ecosystem)...
-
-<br/>
-
-### Usage
-
-#### ⚡️&nbsp; CLI Usage
-
-```bash
-# archivebox [subcommand] [--args]
+archivebox init --setup      <span class="pl-c"><span class="pl-c">#</span> safe to run init multiple times (also how you update versions)</span>
+archivebox --version
+archivebox <span class="pl-c1">help</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# archivebox [subcommand] [--args]
 # docker-compose run archivebox [subcommand] [--args]
 # docker run -v $PWD:/data -it [subcommand] [--args]
 
 archivebox init --setup      # safe to run init multiple times (also how you update versions)
 archivebox --version
-archivebox help
-```
+archivebox help" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<ul dir="auto">
+<li><code>archivebox setup/init/config/status/manage</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理您的收藏</font></font></li>
+<li><code>archivebox add/schedule/remove/update/list/shell/oneshot</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理存档中的快照</font></font></li>
+<li><code>archivebox schedule</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定期从书签/历史记录/Pocket/Pinboard/RSS/等中提取新的 URL </font></font><a href="#input-formats"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></a></li>
+</ul>
+<h4 tabindex="-1" dir="auto"><a id="user-content--web-ui-usage" class="anchor" aria-hidden="true" tabindex="-1" href="#-web-ui-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🖥 Web UI 使用</font></font></h4>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox manage createsuperuser  <span class="pl-c"><span class="pl-c">#</span> set an admin password</span>
+archivebox server 0.0.0.0:8000     <span class="pl-c"><span class="pl-c">#</span> open http://127.0.0.1:8000 to view it</span>
 
-- `archivebox setup/init/config/status/manage` to administer your collection
-- `archivebox add/schedule/remove/update/list/shell/oneshot` to manage Snapshots in the archive
-- `archivebox schedule` to pull in fresh URLs regularly from [bookmarks/history/Pocket/Pinboard/RSS/etc.](#input-formats)
-
-#### 🖥&nbsp; Web UI Usage
-
-```bash
-archivebox manage createsuperuser  # set an admin password
+<span class="pl-c"><span class="pl-c">#</span> you can also configure whether or not login is required for most features</span>
+archivebox config --set PUBLIC_INDEX=False
+archivebox config --set PUBLIC_SNAPSHOTS=False
+archivebox config --set PUBLIC_ADD_VIEW=False</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox manage createsuperuser  # set an admin password
 archivebox server 0.0.0.0:8000     # open http://127.0.0.1:8000 to view it
 
 # you can also configure whether or not login is required for most features
 archivebox config --set PUBLIC_INDEX=False
 archivebox config --set PUBLIC_SNAPSHOTS=False
-archivebox config --set PUBLIC_ADD_VIEW=False
-```
-
-#### 🗄&nbsp; SQL/Python/Filesystem Usage
-
-```bash
-sqlite3 ./index.sqlite3    # run SQL queries on your index
+archivebox config --set PUBLIC_ADD_VIEW=False" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h4 tabindex="-1" dir="auto"><a id="user-content--sqlpythonfilesystem-usage" class="anchor" aria-hidden="true" tabindex="-1" href="#-sqlpythonfilesystem-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🗄 SQL/Python/文件系统使用</font></font></h4>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>sqlite3 ./index.sqlite3    <span class="pl-c"><span class="pl-c">#</span> run SQL queries on your index</span>
+archivebox shell           <span class="pl-c"><span class="pl-c">#</span> explore the Python API in a REPL</span>
+ls ./archive/<span class="pl-k">*</span>/index.html  <span class="pl-c"><span class="pl-c">#</span> or inspect snapshots on the filesystem</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="sqlite3 ./index.sqlite3    # run SQL queries on your index
 archivebox shell           # explore the Python API in a REPL
-ls ./archive/*/index.html  # or inspect snapshots on the filesystem
-```
-
-<br/>
-<div align="center">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/65f82532-18dd-49c5-86f1-02b1f3100e1e" width="49%" alt="grass"/><img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/65f82532-18dd-49c5-86f1-02b1f3100e1e" width="49%" alt="grass"/>
+ls ./archive/*/index.html  # or inspect snapshots on the filesystem" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<br>
+<div align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289550-65f82532-18dd-49c5-86f1-02b1f3100e1e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTUwLTY1ZjgyNTMyLTE4ZGQtNDljNS04NmYxLTAyYjFmMzEwMGUxZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYTgyNzgwNTYxMGIzOGIwODE4NjRiN2Q3NDEyNzhjN2Y5OGZlZTQ4OTMyZjVjMmVkZTZiMGE3NGNjMmUwODU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.rCXogdHx4Y98Wji7opvsR_eacHztppxr0jfen6Pxybw"><img src="https://private-user-images.githubusercontent.com/511499/294289550-65f82532-18dd-49c5-86f1-02b1f3100e1e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTUwLTY1ZjgyNTMyLTE4ZGQtNDljNS04NmYxLTAyYjFmMzEwMGUxZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYTgyNzgwNTYxMGIzOGIwODE4NjRiN2Q3NDEyNzhjN2Y5OGZlZTQ4OTMyZjVjMmVkZTZiMGE3NGNjMmUwODU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.rCXogdHx4Y98Wji7opvsR_eacHztppxr0jfen6Pxybw" width="49%" alt="草" style="max-width: 100%;"></a><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289550-65f82532-18dd-49c5-86f1-02b1f3100e1e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTUwLTY1ZjgyNTMyLTE4ZGQtNDljNS04NmYxLTAyYjFmMzEwMGUxZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYTgyNzgwNTYxMGIzOGIwODE4NjRiN2Q3NDEyNzhjN2Y5OGZlZTQ4OTMyZjVjMmVkZTZiMGE3NGNjMmUwODU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.rCXogdHx4Y98Wji7opvsR_eacHztppxr0jfen6Pxybw"><img src="https://private-user-images.githubusercontent.com/511499/294289550-65f82532-18dd-49c5-86f1-02b1f3100e1e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTUwLTY1ZjgyNTMyLTE4ZGQtNDljNS04NmYxLTAyYjFmMzEwMGUxZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYTgyNzgwNTYxMGIzOGIwODE4NjRiN2Q3NDEyNzhjN2Y5OGZlZTQ4OTMyZjVjMmVkZTZiMGE3NGNjMmUwODU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.rCXogdHx4Y98Wji7opvsR_eacHztppxr0jfen6Pxybw" width="49%" alt="草" style="max-width: 100%;"></a>
 </div>
-<br/>
-
-<div align="center">
-<sub>. . . . . . . . . . . . . . . . . . . . . . . . . . . .</sub>
-<br/><br/>
-<a href="https://demo.archivebox.io">DEMO: <code>https://demo.archivebox.io</code></a><br/>
-<a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage">Usage</a> | <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration">Configuration</a> | <a href="#Caveats">Caveats</a>
-<br/>
+<br>
+<div align="center" dir="auto">
+<sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">。</font></font></sub>
+<br><br>
+<a href="https://demo.archivebox.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示：</font></font><code>https://demo.archivebox.io</code></a><br>
+<a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="#Caveats"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意事项</font></font></a>
+<br>
 </div>
-
-<br/>
-
----
-
-<div align="center">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ac1f897a-8baa-4f8b-8ee8-7443611f258b" width="96%" alt="lego">
+<br>
+<hr>
+<div align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289561-ac1f897a-8baa-4f8b-8ee8-7443611f258b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTYxLWFjMWY4OTdhLThiYWEtNGY4Yi04ZWU4LTc0NDM2MTFmMjU4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YmViOTRkZWI5YjI4Y2IzYWExNDQxNTIyYmVkMjM4YTU3MzllM2E3ZDNkZWIxZGUzMDhkYjU2Y2M3MDViNGYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Aqr2T3Yv39_GOhEidQyP7ZiVCAR-eBQxAyYGWmk1U84"><img src="https://private-user-images.githubusercontent.com/511499/294289561-ac1f897a-8baa-4f8b-8ee8-7443611f258b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTYxLWFjMWY4OTdhLThiYWEtNGY4Yi04ZWU4LTc0NDM2MTFmMjU4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YmViOTRkZWI5YjI4Y2IzYWExNDQxNTIyYmVkMjM4YTU3MzllM2E3ZDNkZWIxZGUzMDhkYjU2Y2M3MDViNGYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Aqr2T3Yv39_GOhEidQyP7ZiVCAR-eBQxAyYGWmk1U84" width="96%" alt="乐高" style="max-width: 100%;"></a>
 </div>
+<br>
+<h1 tabindex="-1" dir="auto"><a id="user-content-overview" class="anchor" aria-hidden="true" tabindex="-1" href="#overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></h1>
+<h2 tabindex="-1" dir="auto"><a id="user-content-input-formats" class="anchor" aria-hidden="true" tabindex="-1" href="#input-formats"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输入格式</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 支持多种 URL 输入格式，包括 Pocket 和 Pinboard 导出、浏览器书签、浏览器历史记录、纯文本、HTML、Markdown 等等！</font></font></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击这些链接以获取有关如何从这些来源准备链接的说明：</font></font></em></p>
+<ul dir="auto">
+<li><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294291889-64078483-21d7-4eb1-aa6e-9ad55afe45b8.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0MjkxODg5LTY0MDc4NDgzLTIxZDctNGViMS1hYTZlLTlhZDU1YWZlNDViOC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYjIwYzExN2VjOWU1OGU2MTRkMDcxN2Y4M2VjZTI2ZDExYTRlYjVmNGQ4YTBkM2Q3MDkwMzgxZDE4ZGJhNzRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.WCxP_ZQpBgJC5qAK-q76lKvWo1947Cs5_fT2lFl128I"><img src="https://private-user-images.githubusercontent.com/511499/294291889-64078483-21d7-4eb1-aa6e-9ad55afe45b8.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0MjkxODg5LTY0MDc4NDgzLTIxZDctNGViMS1hYTZlLTlhZDU1YWZlNDViOC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYjIwYzExN2VjOWU1OGU2MTRkMDcxN2Y4M2VjZTI2ZDExYTRlYjVmNGQ4YTBkM2Q3MDkwMzgxZDE4ZGJhNzRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.WCxP_ZQpBgJC5qAK-q76lKvWo1947Cs5_fT2lFl128I" height="22px" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TXT、RSS、XML、JSON、CSV、SQL、HTML、Markdown 或</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#Import-a-list-of-URLs-from-a-text-file"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何其他基于文本的格式...</font></font></a></li>
+<li><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294291676-32b494e6-4de1-4984-8d88-dc02f18e5c34.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0MjkxNjc2LTMyYjQ5NGU2LTRkZTEtNDk4NC04ZDg4LWRjMDJmMThlNWMzNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YWNiZGZlYmE3YzIxMjJiYjc4YjlkMmUxNmU3NGFmZDk3M2VlNDRkMmM5Y2YzZGRhMzc5YTFlMTAwMjQ3NjRjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.goe8vf7N9JhVesIoMzdir6B4lKc68ol88IrN1K1V9IA"><img src="https://private-user-images.githubusercontent.com/511499/294291676-32b494e6-4de1-4984-8d88-dc02f18e5c34.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0MjkxNjc2LTMyYjQ5NGU2LTRkZTEtNDk4NC04ZDg4LWRjMDJmMThlNWMzNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YWNiZGZlYmE3YzIxMjJiYjc4YjlkMmUxNmU3NGFmZDk3M2VlNDRkMmM5Y2YzZGRhMzc5YTFlMTAwMjQ3NjRjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.goe8vf7N9JhVesIoMzdir6B4lKc68ol88IrN1K1V9IA" height="22px" style="max-width: 100%;"></a> <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">浏览器历史记录</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">浏览器书签</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（请参阅以下说明：</font></font><a href="https://support.google.com/chrome/answer/96816?hl=en" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chrome</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://support.mozilla.org/en-US/kb/export-firefox-bookmarks-to-backup-or-transfer" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Firefox</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/assets/511499/24ad068e-0fa6-41f4-a7ff-4c26fc91f71a"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Safari</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://support.microsoft.com/en-us/help/211089/how-to-import-and-export-the-internet-explorer-favorites-folder-to-a-32-bit-version-of-windows" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IE</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://help.opera.com/en/latest/features/#bookmarks:~:text=Click%20the%20import/-,export%20button,-on%20the%20bottom" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Opera</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289585-ff20d251-5347-4b85-ae9b-83037d0ac01e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTg1LWZmMjBkMjUxLTUzNDctNGI4NS1hZTliLTgzMDM3ZDBhYzAxZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MzA5ZTdiYjU1YzlhNDI1OGJlYWU4MWQ1ZDgzOWQyYzc3NzA3MmIyNDkxMTc5ZTk1ZGYwMWFhNzJhZDQ5MGRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.f-CUTXCqBmZ3Q7QyIC1wErWsPQPSW3YFc3t1u7AHMdU"><img src="https://private-user-images.githubusercontent.com/511499/294289585-ff20d251-5347-4b85-ae9b-83037d0ac01e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTg1LWZmMjBkMjUxLTUzNDctNGI4NS1hZTliLTgzMDM3ZDBhYzAxZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MzA5ZTdiYjU1YzlhNDI1OGJlYWU4MWQ1ZDgzOWQyYzc3NzA3MmIyNDkxMTc5ZTk1ZGYwMWFhNzJhZDQ5MGRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.f-CUTXCqBmZ3Q7QyIC1wErWsPQPSW3YFc3t1u7AHMdU" height="22px" style="max-width: 100%;"></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">浏览器扩展</font></font><a href="https://github.com/tjhorner/archivebox-exporter"><code>archivebox-exporter</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（Chrome/Chromium/Firefox 实时存档）</font></font></li>
+<li><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e2c7f9f37040522bedcdd9589017189e8f20f4a39525fbdca0b24f571389dc65/68747470733a2f2f676574706f636b65742e636f6d2f66617669636f6e2e69636f"><img src="https://camo.githubusercontent.com/e2c7f9f37040522bedcdd9589017189e8f20f4a39525fbdca0b24f571389dc65/68747470733a2f2f676574706f636b65742e636f6d2f66617669636f6e2e69636f" height="22px" data-canonical-src="https://getpocket.com/favicon.ico" style="max-width: 100%;"></a> <a href="https://getpocket.com/export" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pocket</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://pinboard.in/export/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pinboard</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.instapaper.com/user" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instapaper</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://shaarli.readthedocs.io/en/master/Usage/#importexport" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shaarli</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.groovypost.com/howto/howto/export-delicious-bookmarks-xml/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Delicious</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://github.com/csu/export-saved-reddit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reddit Saved</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://doc.wallabag.org/en/user/import/wallabagv2.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wallabag</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="http://help.unmark.it/import-export" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unmark.it</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.addictivetips.com/web/onetab-save-close-all-chrome-tabs-to-restore-export-or-import/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OneTab</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等等</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></a></li>
+</ul>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289497-e1e5bd78-b0b6-45dc-914c-e1046fee4bc4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDk3LWUxZTViZDc4LWIwYjYtNDVkYy05MTRjLWUxMDQ2ZmVlNGJjNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDIyMzNlNzIwNzE2NTQyMzQ1NTVjOTYwZWFlYWM0NDU2ODVlNzMzYzIyMWVlZGJhYzkzYWUwMzdhNDFmM2I5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.dk8zycKWg_sbDEq-KkpntHFpB-oEHWn_fAE5q-LeJsQ"><img src="https://private-user-images.githubusercontent.com/511499/294289497-e1e5bd78-b0b6-45dc-914c-e1046fee4bc4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDk3LWUxZTViZDc4LWIwYjYtNDVkYy05MTRjLWUxMDQ2ZmVlNGJjNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDIyMzNlNzIwNzE2NTQyMzQ1NTVjOTYwZWFlYWM0NDU2ODVlNzMzYzIyMWVlZGJhYzkzYWUwMzdhNDFmM2I5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.dk8zycKWg_sbDEq-KkpntHFpB-oEHWn_fAE5q-LeJsQ" width="330px" align="right" style="max-width: 100%;"></a>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> archivebox add --help</span>
+archivebox add <span class="pl-s"><span class="pl-pds">'</span>https://example.com/some/page<span class="pl-pds">'</span></span>
+archivebox add <span class="pl-k">&lt;</span> <span class="pl-k">~</span>/Downloads/firefox_bookmarks_export.html
+archivebox add --depth=1 <span class="pl-s"><span class="pl-pds">'</span>https://news.ycombinator.com#2020-12-12<span class="pl-pds">'</span></span>
+<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">'</span>http://example.com<span class="pl-pds">'</span></span> <span class="pl-k">|</span> archivebox add
+<span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">'</span>any_text_with [urls](https://example.com) in it<span class="pl-pds">'</span></span> <span class="pl-k">|</span> archivebox add
 
-<br/>
-
-# Overview
-
-## Input Formats
-
-ArchiveBox supports many input formats for URLs, including Pocket & Pinboard exports, Browser bookmarks, Browser history, plain text, HTML, markdown, and more!
-
-
-*Click these links for instructions on how to prepare your links from these sources:*
-
-- <img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/64078483-21d7-4eb1-aa6e-9ad55afe45b8" height="22px"/> TXT, RSS, XML, JSON, CSV, SQL, HTML, Markdown, or [any other text-based format...](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#Import-a-list-of-URLs-from-a-text-file)
-- <img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/32b494e6-4de1-4984-8d88-dc02f18e5c34" height="22px"/> [Browser history](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive) or [browser bookmarks](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive) (see instructions for: [Chrome](https://support.google.com/chrome/answer/96816?hl=en), [Firefox](https://support.mozilla.org/en-US/kb/export-firefox-bookmarks-to-backup-or-transfer), [Safari](https://github.com/ArchiveBox/ArchiveBox/assets/511499/24ad068e-0fa6-41f4-a7ff-4c26fc91f71a), [IE](https://support.microsoft.com/en-us/help/211089/how-to-import-and-export-the-internet-explorer-favorites-folder-to-a-32-bit-version-of-windows), [Opera](https://help.opera.com/en/latest/features/#bookmarks:~:text=Click%20the%20import/-,export%20button,-on%20the%20bottom), [and more...](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive))
-- <img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ff20d251-5347-4b85-ae9b-83037d0ac01e" height="22px"/> Browser extension [`archivebox-exporter`](https://github.com/tjhorner/archivebox-exporter) (realtime archiving from Chrome/Chromium/Firefox)
-- <img src="https://getpocket.com/favicon.ico" height="22px"/> [Pocket](https://getpocket.com/export), [Pinboard](https://pinboard.in/export/), [Instapaper](https://www.instapaper.com/user), [Shaarli](https://shaarli.readthedocs.io/en/master/Usage/#importexport), [Delicious](https://www.groovypost.com/howto/howto/export-delicious-bookmarks-xml/), [Reddit Saved](https://github.com/csu/export-saved-reddit), [Wallabag](https://doc.wallabag.org/en/user/import/wallabagv2.html), [Unmark.it](http://help.unmark.it/import-export), [OneTab](https://www.addictivetips.com/web/onetab-save-close-all-chrome-tabs-to-restore-export-or-import/), [and more...](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive)
-
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/e1e5bd78-b0b6-45dc-914c-e1046fee4bc4" width="330px" align="right">
-
-
-```bash
-# archivebox add --help
+<span class="pl-c"><span class="pl-c">#</span> if using Docker, add -i when piping stdin:</span>
+<span class="pl-c"><span class="pl-c">#</span> echo 'https://example.com' | docker run -v $PWD:/data -i archivebox/archivebox add</span>
+<span class="pl-c"><span class="pl-c">#</span> if using Docker Compose, add -T when piping stdin / stdout:</span>
+<span class="pl-c"><span class="pl-c">#</span> echo 'https://example.com' | docker compose run -T archivebox add</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# archivebox add --help
 archivebox add 'https://example.com/some/page'
 archivebox add < ~/Downloads/firefox_bookmarks_export.html
 archivebox add --depth=1 'https://news.ycombinator.com#2020-12-12'
@@ -491,68 +642,88 @@ echo 'any_text_with [urls](https://example.com) in it' | archivebox add
 # if using Docker, add -i when piping stdin:
 # echo 'https://example.com' | docker run -v $PWD:/data -i archivebox/archivebox add
 # if using Docker Compose, add -T when piping stdin / stdout:
-# echo 'https://example.com' | docker compose run -T archivebox add
-```
+# echo 'https://example.com' | docker compose run -T archivebox add" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#CLI-Usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法：CLI</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面以获取文档和示例。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它还包括带有浏览器书签的内置计划导入功能</font></font><code>archivebox schedule</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，因此您可以定期/按需从 RSS 源、网站或文件系统中提取 URL。</font></font></p>
+<br>
+<h2 tabindex="-1" dir="auto"><a id="user-content-output-formats" class="anchor" aria-hidden="true" tabindex="-1" href="#output-formats"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输出格式</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在每个 Snapshot 文件夹中，ArchiveBox 将这些不同类型的提取器输出保存为纯文件：</font></font></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289449-ace0954a-ddac-4520-9d18-1c77b1ec50b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDQ5LWFjZTA5NTRhLWRkYWMtNDUyMC05ZDE4LTFjNzdiMWVjNTBiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMTQwZTU0MDIwNTcxYTQ5Yzk0ZWU3MzM1ZGFkNmRkODQ2NzgyMjEyZmZhY2JlZWNlZWM1ZmYwNzEwMjVjODg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bM5rkh1t5WtFe-Pa3FkKtUva7VO06ogEiNFANUpvb2c"><img src="https://private-user-images.githubusercontent.com/511499/294289449-ace0954a-ddac-4520-9d18-1c77b1ec50b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDQ5LWFjZTA5NTRhLWRkYWMtNDUyMC05ZDE4LTFjNzdiMWVjNTBiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMTQwZTU0MDIwNTcxYTQ5Yzk0ZWU3MzM1ZGFkNmRkODQ2NzgyMjEyZmZhY2JlZWNlZWM1ZmYwNzEwMjVjODg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bM5rkh1t5WtFe-Pa3FkKtUva7VO06ogEiNFANUpvb2c" width="330px" align="right" style="max-width: 100%;"></a>
+<p dir="auto"><code>./archive/&lt;timestamp&gt;/*</code></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">索引：</font></font></strong> <code>index.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包含</font></font><code>index.json</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">元数据和详细信息的 HTML 和 JSON 索引文件</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Title</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Favicon</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Headers</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">响应标头、站点图标和解析的站点标题</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SingleFile：</font></font></strong> <code>singlefile.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 SingleFile 通过无头 Chrome 渲染 HTML 快照</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wget Clone：</font></font></strong> <code>example.com/page-name.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站的 wget 克隆  </font></font><code>warc/&lt;timestamp&gt;.gz</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chrome 无头
+</font></font><ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PDF：</font></font></strong> <code>output.pdf</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 headless chrome 打印的网站 PDF</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">屏幕截图：</font></font></strong> <code>screenshot.png</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Headless Chrome 的 1440x900 网站屏幕截图</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DOM Dump：</font></font></strong> <code>output.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 headless chrome 渲染后 HTML 的 DOM 转储</font></font></li>
+</ul>
+</li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文章文本：</font></font></strong> <code>article.html/json</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Readability 和 Mercury 提取文章文本</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Archive.org 固定链接：</font></font></strong> <code>archive.org.txt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指向 archive.org 上已保存网站的链接</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">音频和视频：</font></font></strong> <code>media/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有音频/视频文件 + 播放列表，包括 youtube-dl（或 yt-dlp）的字幕和元数据</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">源代码：</font></font></strong> <code>git/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克隆在 GitHub、Bitbucket 或 GitLab 链接上找到的任何存储库</font></font></li>
+<li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多即将推出！</font><font style="vertical-align: inherit;">请参阅</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></em></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，它会执行开箱即用的所有操作，但您可以通过环境变量/配置禁用或调整</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">各个存档方法</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<br>
+<h2 tabindex="-1" dir="auto"><a id="user-content-configuration" class="anchor" aria-hidden="true" tabindex="-1" href="#configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></h2>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289507-ea672e6b-4df5-49d8-b550-7f450951fd27.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTA3LWVhNjcyZTZiLTRkZjUtNDlkOC1iNTUwLTdmNDUwOTUxZmQyNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYWI2YzMzZTkxMzVhZDhjMTFjOGJmNzYxYjYxMzE4NmU4YzMyOWEyMzQ5NDVhMmU5YzAzNTA1MzQ5MTZkOWZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3ED14d4StKgMJ28FfAhohsZbABRc7_Szjgac6bTqU_Y"><img src="https://private-user-images.githubusercontent.com/511499/294289507-ea672e6b-4df5-49d8-b550-7f450951fd27.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTA3LWVhNjcyZTZiLTRkZjUtNDlkOC1iNTUwLTdmNDUwOTUxZmQyNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYWI2YzMzZTkxMzVhZDhjMTFjOGJmNzYxYjYxMzE4NmU4YzMyOWEyMzQ5NDVhMmU5YzAzNTA1MzQ5MTZkOWZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3ED14d4StKgMJ28FfAhohsZbABRc7_Szjgac6bTqU_Y" width="330px" align="right" style="max-width: 100%;"></a>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 可以通过环境变量、使用</font></font><code>archivebox config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 或</font></font><code>ArchiveBox.conf</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">直接编辑配置文件进行配置。</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox config                               <span class="pl-c"><span class="pl-c">#</span> view the entire config</span>
+archivebox config --get CHROME_BINARY           <span class="pl-c"><span class="pl-c">#</span> view a specific value</span>
 
-See the [Usage: CLI](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#CLI-Usage) page for documentation and examples.
-
-It also includes a built-in scheduled import feature with `archivebox schedule` and browser bookmarklet, so you can pull in URLs from RSS feeds, websites, or the filesystem regularly/on-demand.
-
-<br/>
-
-## Output Formats
-
-Inside each Snapshot folder, ArchiveBox saves these different types of extractor outputs as plain files:
-
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ace0954a-ddac-4520-9d18-1c77b1ec50b2" width="330px" align="right">
-
-`./archive/<timestamp>/*`
-
-- **Index:** `index.html` & `index.json` HTML and JSON index files containing metadata and details
-- **Title**, **Favicon**, **Headers** Response headers, site favicon, and parsed site title
-- **SingleFile:** `singlefile.html` HTML snapshot rendered with headless Chrome using SingleFile
-- **Wget Clone:** `example.com/page-name.html` wget clone of the site with  `warc/<timestamp>.gz`
-- Chrome Headless
-  - **PDF:** `output.pdf` Printed PDF of site using headless chrome
-  - **Screenshot:** `screenshot.png` 1440x900 screenshot of site using headless chrome
-  - **DOM Dump:** `output.html` DOM Dump of the HTML after rendering using headless chrome
-- **Article Text:** `article.html/json` Article text extraction using Readability & Mercury
-- **Archive.org Permalink:** `archive.org.txt` A link to the saved site on archive.org
-- **Audio & Video:** `media/` all audio/video files + playlists, including subtitles & metadata with youtube-dl (or yt-dlp)
-- **Source Code:** `git/` clone of any repository found on GitHub, Bitbucket, or GitLab links
-- _More coming soon! See the [Roadmap](https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap)..._
-
-It does everything out-of-the-box by default, but you can disable or tweak [individual archive methods](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration) via environment variables / config.
-
-<br/>
-
-## Configuration
-
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ea672e6b-4df5-49d8-b550-7f450951fd27" width="330px" align="right">
-
-ArchiveBox can be configured via environment variables, by using the `archivebox config` CLI, or by editing the `ArchiveBox.conf` config file directly.
-
-```bash
-archivebox config                               # view the entire config
+archivebox config --set CHROME_BINARY=chromium  <span class="pl-c"><span class="pl-c">#</span> persist a config using CLI</span>
+<span class="pl-c"><span class="pl-c">#</span> OR</span>
+<span class="pl-c1">echo</span> CHROME_BINARY=chromium <span class="pl-k">&gt;&gt;</span> ArchiveBox.conf  <span class="pl-c"><span class="pl-c">#</span> persist a config using file</span>
+<span class="pl-c"><span class="pl-c">#</span> OR</span>
+env CHROME_BINARY=chromium archivebox ...       <span class="pl-c"><span class="pl-c">#</span> run with a one-off config</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox config                               # view the entire config
 archivebox config --get CHROME_BINARY           # view a specific value
 
 archivebox config --set CHROME_BINARY=chromium  # persist a config using CLI
 # OR
 echo CHROME_BINARY=chromium >> ArchiveBox.conf  # persist a config using file
 # OR
-env CHROME_BINARY=chromium archivebox ...       # run with a one-off config
-```
+env CHROME_BINARY=chromium archivebox ...       # run with a one-off config" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些方法在 Docker 内部运行时也以相同的方式工作，有关详细信息，请参阅</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Docker#configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 配置</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wiki 页面。</font></font></sup></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定义了所有选项的配置加载逻辑位于：</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/config.py"><code>archivebox/config.py</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大多数选项也记录在</font></font><strong><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置 Wiki 页面</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上。</font></font></p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-most-common-options-to-tweak" class="anchor" aria-hidden="true" tabindex="-1" href="#most-common-options-to-tweak"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最常见的调整选项</font></font></h4>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> e.g. archivebox config --set TIMEOUT=120</span>
 
-<sup>These methods also work the same way when run inside Docker, see the <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Docker#configuration">Docker Configuration</a> wiki page for details.</sup>
+TIMEOUT=120                <span class="pl-c"><span class="pl-c">#</span> default: 60    add more seconds on slower networks</span>
+CHECK_SSL_VALIDITY=True    <span class="pl-c"><span class="pl-c">#</span> default: False True = allow saving URLs w/ bad SSL</span>
+SAVE_ARCHIVE_DOT_ORG=False <span class="pl-c"><span class="pl-c">#</span> default: True  False = disable Archive.org saving</span>
+MAX_MEDIA_SIZE=1500m       <span class="pl-c"><span class="pl-c">#</span> default: 750m  raise/lower youtubedl output size</span>
 
-**The config loading logic with all the options defined is here: [`archivebox/config.py`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/config.py).**
+PUBLIC_INDEX=True          <span class="pl-c"><span class="pl-c">#</span> default: True  whether anon users can view index</span>
+PUBLIC_SNAPSHOTS=True      <span class="pl-c"><span class="pl-c">#</span> default: True  whether anon users can view pages</span>
+PUBLIC_ADD_VIEW=False      <span class="pl-c"><span class="pl-c">#</span> default: False whether anon users can add new URLs</span>
 
-Most options are also documented on the **[Configuration Wiki page](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration)**.
-
-#### Most Common Options to Tweak
-
-```bash
-# e.g. archivebox config --set TIMEOUT=120
+CHROME_USER_AGENT=<span class="pl-s"><span class="pl-pds">"</span>Mozilla/5.0 ...<span class="pl-pds">"</span></span>  <span class="pl-c"><span class="pl-c">#</span> change these to get around bot blocking</span>
+WGET_USER_AGENT=<span class="pl-s"><span class="pl-pds">"</span>Mozilla/5.0 ...<span class="pl-pds">"</span></span>
+CURL_USER_AGENT=<span class="pl-s"><span class="pl-pds">"</span>Mozilla/5.0 ...<span class="pl-pds">"</span></span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# e.g. archivebox config --set TIMEOUT=120
 
 TIMEOUT=120                # default: 60    add more seconds on slower networks
 CHECK_SSL_VALIDITY=True    # default: False True = allow saving URLs w/ bad SSL
@@ -563,86 +734,89 @@ PUBLIC_INDEX=True          # default: True  whether anon users can view index
 PUBLIC_SNAPSHOTS=True      # default: True  whether anon users can view pages
 PUBLIC_ADD_VIEW=False      # default: False whether anon users can add new URLs
 
-CHROME_USER_AGENT="Mozilla/5.0 ..."  # change these to get around bot blocking
-WGET_USER_AGENT="Mozilla/5.0 ..."
-CURL_USER_AGENT="Mozilla/5.0 ..."
-```
-
-<br/>
-
-## Dependencies
-
-To achieve high-fidelity archives in as many situations as possible, ArchiveBox depends on a variety of high-quality 3rd-party tools and libraries that specialize in extracting different types of content.
-
-<br/>
+CHROME_USER_AGENT=&quot;Mozilla/5.0 ...&quot;  # change these to get around bot blocking
+WGET_USER_AGENT=&quot;Mozilla/5.0 ...&quot;
+CURL_USER_AGENT=&quot;Mozilla/5.0 ...&quot;" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<br>
+<h2 tabindex="-1" dir="auto"><a id="user-content-dependencies" class="anchor" aria-hidden="true" tabindex="-1" href="#dependencies"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖关系</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了在尽可能多的情况下实现高保真存档，ArchiveBox 依赖于各种高质量的第三方工具和库，专门提取不同类型的内容。</font></font></p>
+<br>
 <details>
-<summary><i>Expand to learn more about ArchiveBox's dependencies...</i></summary>
-<br/>
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">展开以了解有关 ArchiveBox 依赖项的更多信息...</font></font></i></summary>
+<br>
+<p dir="auto">For better security, easier updating, and to avoid polluting your host system with extra dependencies, <strong>it is strongly recommended to use the official <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Docker">Docker image</a></strong> with everything pre-installed for the best experience.</p>
+<p dir="auto">These optional dependencies used for archiving sites include:</p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294283098-62a02155-05d7-4f3e-8de5-75a50a145c4f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0MjgzMDk4LTYyYTAyMTU1LTA1ZDctNGYzZS04ZGU1LTc1YTUwYTE0NWM0Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YzI1ZTczNDcxMDBkNTAwN2Q5MTg0ZTc4NDg1OGIxN2U0YzgwNzc4MDIyZmYzNmVkM2Y5ZDE0ZmVjYTYxNjZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.CrXtOXpkRiAAGEeOIF4LpJ9exXi1fwpMxgAEihH4lOw"><img src="https://private-user-images.githubusercontent.com/511499/294283098-62a02155-05d7-4f3e-8de5-75a50a145c4f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0MjgzMDk4LTYyYTAyMTU1LTA1ZDctNGYzZS04ZGU1LTc1YTUwYTE0NWM0Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YzI1ZTczNDcxMDBkNTAwN2Q5MTg0ZTc4NDg1OGIxN2U0YzgwNzc4MDIyZmYzNmVkM2Y5ZDE0ZmVjYTYxNjZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.CrXtOXpkRiAAGEeOIF4LpJ9exXi1fwpMxgAEihH4lOw" alt="archivebox --version CLI output screenshot showing dependencies installed" width="330px" align="right" style="max-width: 100%;"></a>
+<ul dir="auto">
+<li><code>chromium</code> / <code>chrome</code> (for screenshots, PDF, DOM HTML, and headless JS scripts)</li>
+<li><code>node</code> &amp; <code>npm</code> (for readability, mercury, and singlefile)</li>
+<li><code>wget</code> (for plain HTML, static files, and WARC saving)</li>
+<li><code>curl</code> (for fetching headers, favicon, and posting to Archive.org)</li>
+<li><code>youtube-dl</code> or <code>yt-dlp</code> (for audio, video, and subtitles)</li>
+<li><code>git</code> (for cloning git repos)</li>
+<li>and more as we grow...</li>
+</ul>
+<p dir="auto">You don't need to install every dependency to use ArchiveBox. ArchiveBox will automatically disable extractors that rely on dependencies that aren't installed, based on what is configured and available in your <code>$PATH</code>.</p>
+<p dir="auto">If not using Docker, make sure to keep the dependencies up-to-date yourself and check that ArchiveBox isn't reporting any incompatibility with the versions you install.</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> install python3 and archivebox with your system package manager</span>
+<span class="pl-c"><span class="pl-c">#</span> apt/brew/pip/etc install ... (see Quickstart instructions above)</span>
 
-For better security, easier updating, and to avoid polluting your host system with extra dependencies, **it is strongly recommended to use the official [Docker image](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker)** with everything pre-installed for the best experience.
-
-These optional dependencies used for archiving sites include:
-
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/62a02155-05d7-4f3e-8de5-75a50a145c4f" alt="archivebox --version CLI output screenshot showing dependencies installed" width="330px" align="right">
-
-
-- `chromium` / `chrome` (for screenshots, PDF, DOM HTML, and headless JS scripts)
-- `node` & `npm` (for readability, mercury, and singlefile)
-- `wget` (for plain HTML, static files, and WARC saving)
-- `curl` (for fetching headers, favicon, and posting to Archive.org)
-- `youtube-dl` or `yt-dlp` (for audio, video, and subtitles)
-- `git` (for cloning git repos)
-- and more as we grow...
-
-You don't need to install every dependency to use ArchiveBox. ArchiveBox will automatically disable extractors that rely on dependencies that aren't installed, based on what is configured and available in your `$PATH`.
-
-If not using Docker, make sure to keep the dependencies up-to-date yourself and check that ArchiveBox isn't reporting any incompatibility with the versions you install.
-
-```bash
-# install python3 and archivebox with your system package manager
+archivebox setup       <span class="pl-c"><span class="pl-c">#</span> auto install all the extractors and extras</span>
+archivebox --version   <span class="pl-c"><span class="pl-c">#</span> see info and check validity of installed dependencies</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# install python3 and archivebox with your system package manager
 # apt/brew/pip/etc install ... (see Quickstart instructions above)
 
 archivebox setup       # auto install all the extractors and extras
-archivebox --version   # see info and check validity of installed dependencies
-```
-
-Installing directly on **Windows without Docker or WSL/WSL2/Cygwin is not officially supported** (I cannot respond to Windows support tickets), but some advanced users have reported getting it working.
-
-#### Learn More
-
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Install#dependencies
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Troubleshooting#installing
-
+archivebox --version   # see info and check validity of installed dependencies" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">Installing directly on <strong>Windows without Docker or WSL/WSL2/Cygwin is not officially supported</strong> (I cannot respond to Windows support tickets), but some advanced users have reported getting it working.</p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-learn-more" class="anchor" aria-hidden="true" tabindex="-1" href="#learn-more"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Learn More</h4>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Install#dependencies">https://github.com/ArchiveBox/ArchiveBox/wiki/Install#dependencies</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install">https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives">https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Troubleshooting#installing">https://github.com/ArchiveBox/ArchiveBox/wiki/Troubleshooting#installing</a></li>
+</ul>
 </details>
-
-<br/>
-
-## Archive Layout
-
-All of ArchiveBox's state (including the SQLite DB, archived assets, config, logs, etc.) is stored in a single folder called the "ArchiveBox Data Folder".  
-Data folders can be created anywhere (`~/archivebox` or `$PWD/data` as seen in our examples), and you can create more than one for different collections.
-
-<br/>
+<br>
+<h2 tabindex="-1" dir="auto"><a id="user-content-archive-layout" class="anchor" aria-hidden="true" tabindex="-1" href="#archive-layout"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案布局</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 的所有状态（包括 SQLite DB、存档资产、配置、日志等）都存储在名为“ArchiveBox 数据文件夹”的单个文件夹中。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+数据文件夹可以在任何地方创建（</font></font><code>~/archivebox</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者</font></font><code>$PWD/data</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如我们的示例中所示），并且您可以为不同的集合创建多个文件夹。</font></font></p>
+<br>
 <details>
-<summary><i>Expand to learn more about the layout of Archivebox's data on-disk...</i></summary>
-<br/>
-
-All `archivebox` CLI commands are designed to be run from inside an ArchiveBox data folder, starting with `archivebox init` to initialize a new collection inside an empty directory.
-
-```bash
-mkdir ~/archivebox && cd ~/archivebox   # just an example, can be anywhere
-archivebox init
-```
-
-The on-disk layout is optimized to be easy to browse by hand and durable long-term. The main index is a standard `index.sqlite3` database in the root of the data folder (it can also be [exported as static JSON/HTML](https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive#2-export-and-host-it-as-static-html)), and the archive snapshots are organized by date-added timestamp in the `./archive/` subfolder.
-
-<img src="https://user-images.githubusercontent.com/511499/117453293-c7b91600-af12-11eb-8a3f-aa48b0f9da3c.png" width="400px" align="right">
-
-
-```bash
-/data/
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">展开以了解有关 Archivebox 磁盘上数据布局的更多信息...</font></font></i></summary>
+<br>
+<p dir="auto">All <code>archivebox</code> CLI commands are designed to be run from inside an ArchiveBox data folder, starting with <code>archivebox init</code> to initialize a new collection inside an empty directory.</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>mkdir <span class="pl-k">~</span>/archivebox <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">cd</span> <span class="pl-k">~</span>/archivebox   <span class="pl-c"><span class="pl-c">#</span> just an example, can be anywhere</span>
+archivebox init</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir ~/archivebox &amp;&amp; cd ~/archivebox   # just an example, can be anywhere
+archivebox init" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">The on-disk layout is optimized to be easy to browse by hand and durable long-term. The main index is a standard <code>index.sqlite3</code> database in the root of the data folder (it can also be <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive#2-export-and-host-it-as-static-html">exported as static JSON/HTML</a>), and the archive snapshots are organized by date-added timestamp in the <code>./archive/</code> subfolder.</p>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/117453293-c7b91600-af12-11eb-8a3f-aa48b0f9da3c.png"><img src="https://user-images.githubusercontent.com/511499/117453293-c7b91600-af12-11eb-8a3f-aa48b0f9da3c.png" width="400px" align="right" style="max-width: 100%;"></a>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>/data/
     index.sqlite3
     ArchiveBox.conf
     archive/
@@ -654,79 +828,107 @@ The on-disk layout is optimized to be easy to browse by hand and durable long-te
             media/some_video.mp4
             warc/1617687755.warc.gz
             git/somerepo.git
-            ...
-```
-
-Each snapshot subfolder `./archive/<timestamp>/` includes a static `index.json` and `index.html` describing its contents, and the snapshot extractor outputs are plain files within the folder.
-
-#### Learn More
-
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#Disk-Layout
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#large-archives
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#output-folder
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives
-
+            ...</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="/data/
+    index.sqlite3
+    ArchiveBox.conf
+    archive/
+        ...
+        1617687755/
+            index.html
+            index.json
+            screenshot.png
+            media/some_video.mp4
+            warc/1617687755.warc.gz
+            git/somerepo.git
+            ..." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">Each snapshot subfolder <code>./archive/&lt;timestamp&gt;/</code> includes a static <code>index.json</code> and <code>index.html</code> describing its contents, and the snapshot extractor outputs are plain files within the folder.</p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-learn-more-1" class="anchor" aria-hidden="true" tabindex="-1" href="#learn-more-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Learn More</h4>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#Disk-Layout">https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#Disk-Layout</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#large-archives">https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#large-archives</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#output-folder">https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#output-folder</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive">https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives">https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives</a></li>
+</ul>
 </details>
-
-<br/>
-
-## Static Archive Exporting
-
-You can export the main index to browse it statically as plain HTML files in a folder (without needing to run a server).
-
-<br/>
+<br>
+<h2 tabindex="-1" dir="auto"><a id="user-content-static-archive-exporting" class="anchor" aria-hidden="true" tabindex="-1" href="#static-archive-exporting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">静态存档导出</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以导出主索引，以将其作为文件夹中的纯 HTML 文件进行静态浏览（无需运行服务器）。</font></font></p>
+<br>
 <details>
-<summary><i>Expand to learn how to export your ArchiveBox collection...</i></summary>
-<br/>
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">展开以了解如何导出您的 ArchiveBox 收藏...</font></font></i></summary>
+<br>
+<blockquote>
+<p dir="auto"><strong>Note</strong>
+These exports are not paginated, exporting many URLs or the entire archive at once may be slow. Use the filtering CLI flags on the <code>archivebox list</code> command to export specific Snapshots or ranges.</p>
+</blockquote>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> archivebox list --help</span>
+archivebox list --html --with-headers <span class="pl-k">&gt;</span> index.html     <span class="pl-c"><span class="pl-c">#</span> export to static html table</span>
+archivebox list --json --with-headers <span class="pl-k">&gt;</span> index.json     <span class="pl-c"><span class="pl-c">#</span> export to json blob</span>
+archivebox list --csv=timestamp,url,title <span class="pl-k">&gt;</span> index.csv  <span class="pl-c"><span class="pl-c">#</span> export to csv spreadsheet</span>
 
-> **Note**
-> These exports are not paginated, exporting many URLs or the entire archive at once may be slow. Use the filtering CLI flags on the `archivebox list` command to export specific Snapshots or ranges.
-
-```bash
-# archivebox list --help
+<span class="pl-c"><span class="pl-c">#</span> (if using Docker Compose, add the -T flag when piping)</span>
+<span class="pl-c"><span class="pl-c">#</span> docker compose run -T archivebox list --html --filter-type=search snozzberries &gt; index.json</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# archivebox list --help
 archivebox list --html --with-headers > index.html     # export to static html table
 archivebox list --json --with-headers > index.json     # export to json blob
 archivebox list --csv=timestamp,url,title > index.csv  # export to csv spreadsheet
 
 # (if using Docker Compose, add the -T flag when piping)
-# docker compose run -T archivebox list --html --filter-type=search snozzberries > index.json
-```
-
-The paths in the static exports are relative, make sure to keep them next to your `./archive` folder when backing them up or viewing them.
-
-#### Learn More
-
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive#2-export-and-host-it-as-static-html
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#publishing
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#public_index--public_snapshots--public_add_view
-
-
+# docker compose run -T archivebox list --html --filter-type=search snozzberries > index.json" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">The paths in the static exports are relative, make sure to keep them next to your <code>./archive</code> folder when backing them up or viewing them.</p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-learn-more-2" class="anchor" aria-hidden="true" tabindex="-1" href="#learn-more-2"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Learn More</h4>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive#2-export-and-host-it-as-static-html">https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive#2-export-and-host-it-as-static-html</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#publishing">https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#publishing</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#public_index--public_snapshots--public_add_view">https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#public_index--public_snapshots--public_add_view</a></li>
+</ul>
 </details>
-
-<br/>
-
----
-
-<div align="center">
-<img src="https://docs.monadical.com/uploads/upload_b6900afc422ae699bfefa2dcda3306f3.png" width="100%" alt="security graphic"/>
+<br>
+<hr>
+<div align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7284952b86a5e57fd68599377336e7dba8a7052d94cebcc59fc1c1142f934377/68747470733a2f2f646f63732e6d6f6e61646963616c2e636f6d2f75706c6f6164732f75706c6f61645f62363930306166633432326165363939626665666132646364613333303666332e706e67"><img src="https://camo.githubusercontent.com/7284952b86a5e57fd68599377336e7dba8a7052d94cebcc59fc1c1142f934377/68747470733a2f2f646f63732e6d6f6e61646963616c2e636f6d2f75706c6f6164732f75706c6f61645f62363930306166633432326165363939626665666132646364613333303666332e706e67" width="100%" alt="安全图形" data-canonical-src="https://docs.monadical.com/uploads/upload_b6900afc422ae699bfefa2dcda3306f3.png" style="max-width: 100%;"></a>
 </div>
-
-## Caveats
-
-### Archiving Private Content
-
-<a id="archiving-private-urls"></a>
-
-If you're importing pages with private content or URLs containing secret tokens you don't want public (e.g Google Docs, paywalled content, unlisted videos, etc.), **you may want to disable some of the extractor methods to avoid leaking that content to 3rd party APIs or the public**.
-
-<br/>
+<h2 tabindex="-1" dir="auto"><a id="user-content-caveats" class="anchor" aria-hidden="true" tabindex="-1" href="#caveats"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意事项</font></font></h2>
+<h3 tabindex="-1" dir="auto"><a id="user-content-archiving-private-content" class="anchor" aria-hidden="true" tabindex="-1" href="#archiving-private-content"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">归档私人内容</font></font></h3>
+<p dir="auto"><a id="user-content-archiving-private-urls"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您要导入的页面包含您不希望公开的私有内容或包含秘密令牌的 URL（例如 Google 文档、付费内容、不公开的视频等），</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可能需要禁用某些提取器方法以避免泄露该内容向第 3 方 API 或公众提供</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<br>
 <details>
-<summary><i>Click to expand...</i></summary>
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> don't save private content to ArchiveBox, e.g.:</span>
+archivebox add <span class="pl-s"><span class="pl-pds">'</span>https://docs.google.com/document/d/12345somePrivateDocument<span class="pl-pds">'</span></span>
+archivebox add <span class="pl-s"><span class="pl-pds">'</span>https://vimeo.com/somePrivateVideo<span class="pl-pds">'</span></span>
 
+<span class="pl-c"><span class="pl-c">#</span> without first disabling saving to Archive.org:</span>
+archivebox config --set SAVE_ARCHIVE_DOT_ORG=False  <span class="pl-c"><span class="pl-c">#</span> disable saving all URLs in Archive.org</span>
 
-```bash
-# don't save private content to ArchiveBox, e.g.:
+<span class="pl-c"><span class="pl-c">#</span> restrict the main index, Snapshot content, and Add Page to authenticated users as-needed:</span>
+archivebox config --set PUBLIC_INDEX=False
+archivebox config --set PUBLIC_SNAPSHOTS=False
+archivebox config --set PUBLIC_ADD_VIEW=False 
+
+<span class="pl-c"><span class="pl-c">#</span> if extra paranoid or anti-Google:</span>
+archivebox config --set SAVE_FAVICON=False          <span class="pl-c"><span class="pl-c">#</span> disable favicon fetching (it calls a Google API passing the URL's domain part only)</span>
+archivebox config --set CHROME_BINARY=chromium      <span class="pl-c"><span class="pl-c">#</span> ensure it's using Chromium instead of Chrome</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# don't save private content to ArchiveBox, e.g.:
 archivebox add 'https://docs.google.com/document/d/12345somePrivateDocument'
 archivebox add 'https://vimeo.com/somePrivateVideo'
 
@@ -740,376 +942,332 @@ archivebox config --set PUBLIC_ADD_VIEW=False
 
 # if extra paranoid or anti-Google:
 archivebox config --set SAVE_FAVICON=False          # disable favicon fetching (it calls a Google API passing the URL's domain part only)
-archivebox config --set CHROME_BINARY=chromium      # ensure it's using Chromium instead of Chrome
-```
-
-#### Learn More
-
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install#setting-up-a-chromium-user-profile
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#chrome_user_data_dir
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#cookies_file
-
+archivebox config --set CHROME_BINARY=chromium      # ensure it's using Chromium instead of Chrome" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h4 tabindex="-1" dir="auto"><a id="user-content-learn-more-3" class="anchor" aria-hidden="true" tabindex="-1" href="#learn-more-3"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Learn More</h4>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive">https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview">https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install#setting-up-a-chromium-user-profile">https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install#setting-up-a-chromium-user-profile</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#chrome_user_data_dir">https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#chrome_user_data_dir</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#cookies_file">https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#cookies_file</a></li>
+</ul>
 </details>
-<br/>
-
-
-### Security Risks of Viewing Archived JS
-
-Be aware that malicious archived JS can access the contents of other pages in your archive when viewed. Because the Web UI serves all viewed snapshots from a single domain, they share a request context and **typical CSRF/CORS/XSS/CSP protections do not work to prevent cross-site request attacks**. See the [Security Overview](https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#stealth-mode) page and [Issue #239](https://github.com/ArchiveBox/ArchiveBox/issues/239) for more details.
-
-<br/>
+<br>
+<h3 tabindex="-1" dir="auto"><a id="user-content-security-risks-of-viewing-archived-js" class="anchor" aria-hidden="true" tabindex="-1" href="#security-risks-of-viewing-archived-js"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看归档JS的安全风险</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，恶意存档 JS 在查看时可以访问您存档中其他页面的内容。</font><font style="vertical-align: inherit;">由于 Web UI 为来自单个域的所有查看的快照提供服务，因此它们共享请求上下文，并且</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">典型的 CSRF/CORS/XSS/CSP 保护无法防止跨站点请求攻击</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">有关更多详细信息，</font><font style="vertical-align: inherit;">请参阅</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#stealth-mode"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全概述</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面和</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues/239" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/239/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题 #239 。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<br>
 <details>
-<summary><i>Click to expand...</i></summary>
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> visiting an archived page with malicious JS:</span>
+https://127.0.0.1:8000/archive/1602401954/example.com/index.html
 
-
-```bash
-# visiting an archived page with malicious JS:
+<span class="pl-c"><span class="pl-c">#</span> example.com/index.js can now make a request to read everything from:</span>
+https://127.0.0.1:8000/index.html
+https://127.0.0.1:8000/archive/<span class="pl-k">*</span>
+<span class="pl-c"><span class="pl-c">#</span> then example.com/index.js can send it off to some evil server</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# visiting an archived page with malicious JS:
 https://127.0.0.1:8000/archive/1602401954/example.com/index.html
 
 # example.com/index.js can now make a request to read everything from:
 https://127.0.0.1:8000/index.html
 https://127.0.0.1:8000/archive/*
-# then example.com/index.js can send it off to some evil server
-```
-
-The admin UI is also served from the same origin as replayed JS, so malicious pages could also potentially use your ArchiveBox login cookies to perform admin actions (e.g. adding/removing links, running extractors, etc.). We are planning to fix this security shortcoming in a future version by using separate ports/origins to serve the Admin UI and archived content (see [Issue #239](https://github.com/ArchiveBox/ArchiveBox/issues/239)).
-
-*Note: Only the `wget` & `dom` extractor methods execute archived JS when viewing snapshots, all other archive methods produce static output that does not execute JS on viewing. If you are worried about these issues ^ you should disable these extractors using `archivebox config --set SAVE_WGET=False SAVE_DOM=False`.*
-
-#### Learn More
-
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview
-- https://github.com/ArchiveBox/ArchiveBox/issues/239
-- https://github.com/ArchiveBox/ArchiveBox/security/advisories/GHSA-cr45-98w9-gwqx (`CVE-2023-45815`)
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#publishing
-
-
+# then example.com/index.js can send it off to some evil server" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">The admin UI is also served from the same origin as replayed JS, so malicious pages could also potentially use your ArchiveBox login cookies to perform admin actions (e.g. adding/removing links, running extractors, etc.). We are planning to fix this security shortcoming in a future version by using separate ports/origins to serve the Admin UI and archived content (see <a href="https://github.com/ArchiveBox/ArchiveBox/issues/239" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/239/hovercard">Issue #239</a>).</p>
+<p dir="auto"><em>Note: Only the <code>wget</code> &amp; <code>dom</code> extractor methods execute archived JS when viewing snapshots, all other archive methods produce static output that does not execute JS on viewing. If you are worried about these issues ^ you should disable these extractors using <code>archivebox config --set SAVE_WGET=False SAVE_DOM=False</code>.</em></p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-learn-more-4" class="anchor" aria-hidden="true" tabindex="-1" href="#learn-more-4"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Learn More</h4>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview">https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview</a></li>
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="443817484" data-permission-text="Title is private" data-url="https://github.com/ArchiveBox/ArchiveBox/issues/239" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/239/hovercard" href="https://github.com/ArchiveBox/ArchiveBox/issues/239">#239</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/security/advisories/GHSA-cr45-98w9-gwqx">https://github.com/ArchiveBox/ArchiveBox/security/advisories/GHSA-cr45-98w9-gwqx</a> (<code>CVE-2023-45815</code>)</li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#publishing">https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#publishing</a></li>
+</ul>
 </details>
-<br/>
-
-### Working Around Sites that Block Archiving
-
-For various reasons, many large sites (Reddit, Twitter, Cloudflare, etc.) actively block archiving or bots in general. There are a number of approaches to work around this.
-
-<br/>
+<br>
+<h3 tabindex="-1" dir="auto"><a id="user-content-working-around-sites-that-block-archiving" class="anchor" aria-hidden="true" tabindex="-1" href="#working-around-sites-that-block-archiving"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">绕过阻止存档的站点</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由于各种原因，许多大型网站（Reddit、Twitter、Cloudflare 等）通常会积极阻止归档或机器人。</font><font style="vertical-align: inherit;">有多种方法可以解决这个问题。</font></font></p>
+<br>
 <details>
-<summary><i>Click to expand...</i></summary>
-<br/>
-
-- Set [`CHROME_USER_AGENT`, `WGET_USER_AGENT`, `CURL_USER_AGENT`](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#curl_user_agent) to impersonate a real browser (instead of an ArchiveBox bot)
-- Set up a logged-in browser session for archiving using [`CHROME_DATA_DIR` & `COOKIES_FILE`](https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install#setting-up-a-chromium-user-profile)
-- Rewrite your URLs before archiving to swap in an alternative frontend thats more bot-friendly e.g.  
-  `reddit.com/some/url` -> `teddit.net/some/url`: https://github.com/mendel5/alternative-front-ends
-
-
-In the future we plan on adding support for running JS scripts during archiving to block ads, cookie popups, modals, and fix other issues. Follow here for progress: [Issue #51](https://github.com/ArchiveBox/ArchiveBox/issues/51).
-
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<br>
+<ul dir="auto">
+<li>Set <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#curl_user_agent"><code>CHROME_USER_AGENT</code>, <code>WGET_USER_AGENT</code>, <code>CURL_USER_AGENT</code></a> to impersonate a real browser (instead of an ArchiveBox bot)</li>
+<li>Set up a logged-in browser session for archiving using <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install#setting-up-a-chromium-user-profile"><code>CHROME_DATA_DIR</code> &amp; <code>COOKIES_FILE</code></a></li>
+<li>Rewrite your URLs before archiving to swap in an alternative frontend thats more bot-friendly e.g.<br>
+<code>reddit.com/some/url</code> -&gt; <code>teddit.net/some/url</code>: <a href="https://github.com/mendel5/alternative-front-ends">https://github.com/mendel5/alternative-front-ends</a></li>
+</ul>
+<p dir="auto">In the future we plan on adding support for running JS scripts during archiving to block ads, cookie popups, modals, and fix other issues. Follow here for progress: <a href="https://github.com/ArchiveBox/ArchiveBox/issues/51" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/51/hovercard">Issue #51</a>.</p>
 </details>
-<br/>
-
-
-### Saving Multiple Snapshots of a Single URL
-
-ArchiveBox appends a hash with the current date `https://example.com#2020-10-24` to differentiate when a single URL is archived multiple times.
-
-<br/>
+<br>
+<h3 tabindex="-1" dir="auto"><a id="user-content-saving-multiple-snapshots-of-a-single-url" class="anchor" aria-hidden="true" tabindex="-1" href="#saving-multiple-snapshots-of-a-single-url"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保存单个 URL 的多个快照</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 附加一个带有当前日期的哈希值，</font></font><code>https://example.com#2020-10-24</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以区分单个 URL 是否被多次存档。</font></font></p>
+<br>
 <details>
-<summary><i>Click to expand...</i></summary>
-<br/>
-
-Because ArchiveBox uniquely identifies snapshots by URL, it must use a workaround to take multiple snapshots of the same URL (otherwise they would show up as a single Snapshot entry). It makes the URLs of repeated snapshots unique by adding a hash with the archive date at the end:
-
-```bash
-archivebox add 'https://example.com#2020-10-24'
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<br>
+<p dir="auto">Because ArchiveBox uniquely identifies snapshots by URL, it must use a workaround to take multiple snapshots of the same URL (otherwise they would show up as a single Snapshot entry). It makes the URLs of repeated snapshots unique by adding a hash with the archive date at the end:</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox add <span class="pl-s"><span class="pl-pds">'</span>https://example.com#2020-10-24<span class="pl-pds">'</span></span>
 ...
-archivebox add 'https://example.com#2020-10-25'
-```
-
-The <img src="https://user-images.githubusercontent.com/511499/115942091-73c02300-a476-11eb-958e-5c1fc04da488.png" alt="Re-Snapshot Button" height="24px"/> button in the Admin UI is a shortcut for this hash-date multi-snapshotting workaround.
-
-Improved support for saving multiple snapshots of a single URL without this hash-date workaround will be [added eventually](https://github.com/ArchiveBox/ArchiveBox/issues/179) (along with the ability to view diffs of the changes between runs).
-
-#### Learn More
-
-- https://github.com/ArchiveBox/ArchiveBox/issues/179
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#explanation-of-buttons-in-the-web-ui---admin-snapshots-list
-
-
+archivebox add <span class="pl-s"><span class="pl-pds">'</span>https://example.com#2020-10-25<span class="pl-pds">'</span></span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox add 'https://example.com#2020-10-24'
+...
+archivebox add 'https://example.com#2020-10-25'" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">The <a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/511499/115942091-73c02300-a476-11eb-958e-5c1fc04da488.png"><img src="https://user-images.githubusercontent.com/511499/115942091-73c02300-a476-11eb-958e-5c1fc04da488.png" alt="Re-Snapshot Button" height="24px" style="max-width: 100%;"></a> button in the Admin UI is a shortcut for this hash-date multi-snapshotting workaround.</p>
+<p dir="auto">Improved support for saving multiple snapshots of a single URL without this hash-date workaround will be <a href="https://github.com/ArchiveBox/ArchiveBox/issues/179" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/179/hovercard">added eventually</a> (along with the ability to view diffs of the changes between runs).</p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-learn-more-5" class="anchor" aria-hidden="true" tabindex="-1" href="#learn-more-5"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Learn More</h4>
+<ul dir="auto">
+<li><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="422517784" data-permission-text="Title is private" data-url="https://github.com/ArchiveBox/ArchiveBox/issues/179" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/179/hovercard" href="https://github.com/ArchiveBox/ArchiveBox/issues/179">#179</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#explanation-of-buttons-in-the-web-ui---admin-snapshots-list">https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#explanation-of-buttons-in-the-web-ui---admin-snapshots-list</a></li>
+</ul>
 </details>
-<br/>
-
-### Storage Requirements
-
-Because ArchiveBox is designed to ingest a large volume of URLs with multiple copies of each URL stored by different 3rd-party tools, it can be quite disk-space intensive.  
-There also also some special requirements when using filesystems like NFS/SMB/FUSE.
-
-<br/>
+<br>
+<h3 tabindex="-1" dir="auto"><a id="user-content-storage-requirements" class="anchor" aria-hidden="true" tabindex="-1" href="#storage-requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储要求</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由于 ArchiveBox 旨在摄取大量 URL，并且每个 URL 的多个副本由不同的第 3 方工具存储，因此它可能会占用大量磁盘空间。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+使用 NFS/SMB/FUSE 等文件系统时还有一些特殊要求。</font></font></p>
+<br>
 <details>
-<summary><i>Click to expand...</i></summary>
-<br/>
-
-**ArchiveBox can use anywhere from ~1gb per 1000 articles, to ~50gb per 1000 articles**, mostly dependent on whether you're saving audio & video using `SAVE_MEDIA=True` and whether you lower `MEDIA_MAX_SIZE=750mb`.
-
-Disk usage can be reduced by using a compressed/deduplicated filesystem like ZFS/BTRFS, or by turning off extractors methods you don't need. You can also deduplicate content with a tool like [fdupes](https://github.com/adrianlopezroche/fdupes) or [rdfind](https://github.com/pauldreik/rdfind). **Don't store large collections on older filesystems like EXT3/FAT** as they may not be able to handle more than 50k directory entries in the `archive/` folder. **Try to keep the `index.sqlite3` file on local drive (not a network mount)** or SSD for maximum performance, however the `archive/` folder can be on a network mount or slower HDD.
-
-If using Docker or NFS/SMB/FUSE for the `data/archive/` folder, you may need to set [`PUID` & `PGID`](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#puid--pgid) and [disable `root_squash`](https://github.com/ArchiveBox/ArchiveBox/issues/1304) on your fileshare server.
-
-
-#### Learn More
-
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#Disk-Layout
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#output-folder
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#large-archives
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#puid--pgid
-- https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#do-not-run-as-root
-
-
-
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<br>
+<p dir="auto"><strong>ArchiveBox can use anywhere from ~1gb per 1000 articles, to ~50gb per 1000 articles</strong>, mostly dependent on whether you're saving audio &amp; video using <code>SAVE_MEDIA=True</code> and whether you lower <code>MEDIA_MAX_SIZE=750mb</code>.</p>
+<p dir="auto">Disk usage can be reduced by using a compressed/deduplicated filesystem like ZFS/BTRFS, or by turning off extractors methods you don't need. You can also deduplicate content with a tool like <a href="https://github.com/adrianlopezroche/fdupes">fdupes</a> or <a href="https://github.com/pauldreik/rdfind">rdfind</a>. <strong>Don't store large collections on older filesystems like EXT3/FAT</strong> as they may not be able to handle more than 50k directory entries in the <code>archive/</code> folder. <strong>Try to keep the <code>index.sqlite3</code> file on local drive (not a network mount)</strong> or SSD for maximum performance, however the <code>archive/</code> folder can be on a network mount or slower HDD.</p>
+<p dir="auto">If using Docker or NFS/SMB/FUSE for the <code>data/archive/</code> folder, you may need to set <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#puid--pgid"><code>PUID</code> &amp; <code>PGID</code></a> and <a href="https://github.com/ArchiveBox/ArchiveBox/issues/1304" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/1304/hovercard">disable <code>root_squash</code></a> on your fileshare server.</p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-learn-more-6" class="anchor" aria-hidden="true" tabindex="-1" href="#learn-more-6"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Learn More</h4>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#Disk-Layout">https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#Disk-Layout</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#output-folder">https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#output-folder</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#large-archives">https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#large-archives</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#puid--pgid">https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#puid--pgid</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#do-not-run-as-root">https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview#do-not-run-as-root</a></li>
+</ul>
 </details>
-<br/>
-
----
-
-<br/>
-
-## Screenshots
-
-<div align="center" width="80%">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/0362bcd1-1dfd-43c6-b4ec-db5e78da07b2" width="80%"/>
+<br>
+<hr>
+<br>
+<h2 tabindex="-1" dir="auto"><a id="user-content-screenshots" class="anchor" aria-hidden="true" tabindex="-1" href="#screenshots"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截图</font></font></h2>
+<div align="center" width="80%" dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289559-0362bcd1-1dfd-43c6-b4ec-db5e78da07b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTU5LTAzNjJiY2QxLTFkZmQtNDNjNi1iNGVjLWRiNWU3OGRhMDdiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYzVhZDM4NTBiNWNiNjgwYTAzMzE0NTkwZmQ2YzE5NzBkYmU5MDNkYzUwY2Q2NmU3NTNlZGViMDIyM2E4MWQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RuBbK6z5gvcsBKKPI-6tebu4Qd8HorQpAyTF5Mu7BaA"><img src="https://private-user-images.githubusercontent.com/511499/294289559-0362bcd1-1dfd-43c6-b4ec-db5e78da07b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTU5LTAzNjJiY2QxLTFkZmQtNDNjNi1iNGVjLWRiNWU3OGRhMDdiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYzVhZDM4NTBiNWNiNjgwYTAzMzE0NTkwZmQ2YzE5NzBkYmU5MDNkYzUwY2Q2NmU3NTNlZGViMDIyM2E4MWQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.RuBbK6z5gvcsBKKPI-6tebu4Qd8HorQpAyTF5Mu7BaA" width="80%" style="max-width: 100%;"></a>
 <table>
 <tbody>
 <tr>
 <td>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/e9fdcb16-344e-48c8-8be0-efa48ec155d5" alt="brew install archivebox"><br/>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/e235c9d8-fda9-499d-a6a5-59b0e6a0efce" alt="archivebox version">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289500-e9fdcb16-344e-48c8-8be0-efa48ec155d5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTAwLWU5ZmRjYjE2LTM0NGUtNDhjOC04YmUwLWVmYTQ4ZWMxNTVkNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzhiNTRlMTczODM4ZTA3MDdjY2Y1NDg4ZjM2ODcwNjUxZjkxZDNkN2JmZTBhZTU3NTRiNWY2MGEzNzNmYTcyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.qrNxYHqVFvPATIDgH57A7h-fHPNt-6DOBsp71Cnfjdw"><img src="https://private-user-images.githubusercontent.com/511499/294289500-e9fdcb16-344e-48c8-8be0-efa48ec155d5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTAwLWU5ZmRjYjE2LTM0NGUtNDhjOC04YmUwLWVmYTQ4ZWMxNTVkNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzhiNTRlMTczODM4ZTA3MDdjY2Y1NDg4ZjM2ODcwNjUxZjkxZDNkN2JmZTBhZTU3NTRiNWY2MGEzNzNmYTcyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.qrNxYHqVFvPATIDgH57A7h-fHPNt-6DOBsp71Cnfjdw" alt="酿造安装档案盒" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289503-e235c9d8-fda9-499d-a6a5-59b0e6a0efce.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTAzLWUyMzVjOWQ4LWZkYTktNDk5ZC1hNmE1LTU5YjBlNmEwZWZjZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yOGMyYzVkZjQwOWQwOWQ2MzJlNDEwOWYwMDM4MGY3NjIwMjMzZDRhMWQwNjUyMjY1MzgwNDA3MWQ1ODc3MjdkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.wfGP-zgE9OBzyUqAaJZpThOV0DOSqjQLzXtDTUT6M9Y"><img src="https://private-user-images.githubusercontent.com/511499/294289503-e235c9d8-fda9-499d-a6a5-59b0e6a0efce.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTAzLWUyMzVjOWQ4LWZkYTktNDk5ZC1hNmE1LTU5YjBlNmEwZWZjZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yOGMyYzVkZjQwOWQwOWQ2MzJlNDEwOWYwMDM4MGY3NjIwMjMzZDRhMWQwNjUyMjY1MzgwNDA3MWQ1ODc3MjdkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.wfGP-zgE9OBzyUqAaJZpThOV0DOSqjQLzXtDTUT6M9Y" alt="存档盒版本" style="max-width: 100%;"></a>
 </td>
 <td>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/0e3da0c7-d2c2-4a71-b096-6caedafd6ef7" alt="archivebox init"><br/>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289512-0e3da0c7-d2c2-4a71-b096-6caedafd6ef7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTEyLTBlM2RhMGM3LWQyYzItNGE3MS1iMDk2LTZjYWVkYWZkNmVmNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYzQzMzJhZDg2MzYxZjZjZDVmMTNiNDQwNDlhYzc1ZjAzZDcyNWQ4NWI3MzJmY2I5YWU1MTQxN2M2Y2E0MTgxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.DdTTcrv8wCuvTjuWcJeGO-g_H6KdjZfeo1LGDyPt5EY"><img src="https://private-user-images.githubusercontent.com/511499/294289512-0e3da0c7-d2c2-4a71-b096-6caedafd6ef7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTEyLTBlM2RhMGM3LWQyYzItNGE3MS1iMDk2LTZjYWVkYWZkNmVmNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYzQzMzJhZDg2MzYxZjZjZDVmMTNiNDQwNDlhYzc1ZjAzZDcyNWQ4NWI3MzJmY2I5YWU1MTQxN2M2Y2E0MTgxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.DdTTcrv8wCuvTjuWcJeGO-g_H6KdjZfeo1LGDyPt5EY" alt="归档盒初始化" style="max-width: 100%;"></a><br>
 </td>
 <td>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/31c47440-ec14-4a02-99a3-aae8a9078d46" alt="archivebox add">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289526-31c47440-ec14-4a02-99a3-aae8a9078d46.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTI2LTMxYzQ3NDQwLWVjMTQtNGEwMi05OWEzLWFhZThhOTA3OGQ0Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MmYwMDg4NWIyZjYxOTUyNGZlMDc5NGE5NWViNGYyYzczODkwYmRjMDIxY2ZhMzE5Nzc4ZDhlOWEwYjJhMjA4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-i9eBpCwZIvpbOSUFoRLVB0C-6kZJHzZgySkJiiXfOQ"><img src="https://private-user-images.githubusercontent.com/511499/294289526-31c47440-ec14-4a02-99a3-aae8a9078d46.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTI2LTMxYzQ3NDQwLWVjMTQtNGEwMi05OWEzLWFhZThhOTA3OGQ0Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MmYwMDg4NWIyZjYxOTUyNGZlMDc5NGE5NWViNGYyYzczODkwYmRjMDIxY2ZhMzE5Nzc4ZDhlOWEwYjJhMjA4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-i9eBpCwZIvpbOSUFoRLVB0C-6kZJHzZgySkJiiXfOQ" alt="档案箱添加" style="max-width: 100%;"></a>
 </td>
 <td>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ebcdc21d-e2af-4bf8-ad4b-bc4f3151bbef" alt="archivebox data dir">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289527-ebcdc21d-e2af-4bf8-ad4b-bc4f3151bbef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTI3LWViY2RjMjFkLWUyYWYtNGJmOC1hZDRiLWJjNGYzMTUxYmJlZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNDA4YzQ1ZTFlZDkyNGUwMWM0MjIwOGI3ZjE1MzRmNjZhODM4MjBhNzlhYTcwM2Q5MjVjMzZkZWVjNTkzMDkyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.h33JWTEheS74d9WZrkpGpmgIsYMQ9T9HphKOK01OiFY"><img src="https://private-user-images.githubusercontent.com/511499/294289527-ebcdc21d-e2af-4bf8-ad4b-bc4f3151bbef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTI3LWViY2RjMjFkLWUyYWYtNGJmOC1hZDRiLWJjNGYzMTUxYmJlZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNDA4YzQ1ZTFlZDkyNGUwMWM0MjIwOGI3ZjE1MzRmNjZhODM4MjBhNzlhYTcwM2Q5MjVjMzZkZWVjNTkzMDkyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.h33JWTEheS74d9WZrkpGpmgIsYMQ9T9HphKOK01OiFY" alt="archivebox数据目录" style="max-width: 100%;"></a>
 </td>
 </tr>
 <tr>
 <td>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ea672e6b-4df5-49d8-b550-7f450951fd27" alt="archivebox server">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289507-ea672e6b-4df5-49d8-b550-7f450951fd27.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTA3LWVhNjcyZTZiLTRkZjUtNDlkOC1iNTUwLTdmNDUwOTUxZmQyNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYWI2YzMzZTkxMzVhZDhjMTFjOGJmNzYxYjYxMzE4NmU4YzMyOWEyMzQ5NDVhMmU5YzAzNTA1MzQ5MTZkOWZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3ED14d4StKgMJ28FfAhohsZbABRc7_Szjgac6bTqU_Y"><img src="https://private-user-images.githubusercontent.com/511499/294289507-ea672e6b-4df5-49d8-b550-7f450951fd27.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTA3LWVhNjcyZTZiLTRkZjUtNDlkOC1iNTUwLTdmNDUwOTUxZmQyNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYWI2YzMzZTkxMzVhZDhjMTFjOGJmNzYxYjYxMzE4NmU4YzMyOWEyMzQ5NDVhMmU5YzAzNTA1MzQ5MTZkOWZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3ED14d4StKgMJ28FfAhohsZbABRc7_Szjgac6bTqU_Y" alt="档案箱服务器" style="max-width: 100%;"></a>
 </td>
 <td>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/e1e5bd78-b0b6-45dc-914c-e1046fee4bc4" alt="archivebox server add">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289497-e1e5bd78-b0b6-45dc-914c-e1046fee4bc4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDk3LWUxZTViZDc4LWIwYjYtNDVkYy05MTRjLWUxMDQ2ZmVlNGJjNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDIyMzNlNzIwNzE2NTQyMzQ1NTVjOTYwZWFlYWM0NDU2ODVlNzMzYzIyMWVlZGJhYzkzYWUwMzdhNDFmM2I5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.dk8zycKWg_sbDEq-KkpntHFpB-oEHWn_fAE5q-LeJsQ"><img src="https://private-user-images.githubusercontent.com/511499/294289497-e1e5bd78-b0b6-45dc-914c-e1046fee4bc4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDk3LWUxZTViZDc4LWIwYjYtNDVkYy05MTRjLWUxMDQ2ZmVlNGJjNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDIyMzNlNzIwNzE2NTQyMzQ1NTVjOTYwZWFlYWM0NDU2ODVlNzMzYzIyMWVlZGJhYzkzYWUwMzdhNDFmM2I5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.dk8zycKWg_sbDEq-KkpntHFpB-oEHWn_fAE5q-LeJsQ" alt="Archivebox服务器添加" style="max-width: 100%;"></a>
 </td>
 <td>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/e8e0b6f8-8fdf-4b7f-8124-c10d8699bdb2" alt="archivebox server list">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289510-e8e0b6f8-8fdf-4b7f-8124-c10d8699bdb2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTEwLWU4ZTBiNmY4LThmZGYtNGI3Zi04MTI0LWMxMGQ4Njk5YmRiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNTlhZDk1YmM2YWJhYzFmMjBhZmJlOTVmMzE4YWE5MThlZjVhY2M0NzUxMTU5MTg0Y2RiMmRjMTYyMTdjZGU2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.e2SmOxcxgofGygXp9QximBFxpul_YrHAWmmNoF-Om9E"><img src="https://private-user-images.githubusercontent.com/511499/294289510-e8e0b6f8-8fdf-4b7f-8124-c10d8699bdb2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTEwLWU4ZTBiNmY4LThmZGYtNGI3Zi04MTI0LWMxMGQ4Njk5YmRiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNTlhZDk1YmM2YWJhYzFmMjBhZmJlOTVmMzE4YWE5MThlZjVhY2M0NzUxMTU5MTg0Y2RiMmRjMTYyMTdjZGU2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.e2SmOxcxgofGygXp9QximBFxpul_YrHAWmmNoF-Om9E" alt="archivebox服务器列表" style="max-width: 100%;"></a>
 </td>
 <td>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ace0954a-ddac-4520-9d18-1c77b1ec50b2" alt="archivebox server detail">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289449-ace0954a-ddac-4520-9d18-1c77b1ec50b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDQ5LWFjZTA5NTRhLWRkYWMtNDUyMC05ZDE4LTFjNzdiMWVjNTBiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMTQwZTU0MDIwNTcxYTQ5Yzk0ZWU3MzM1ZGFkNmRkODQ2NzgyMjEyZmZhY2JlZWNlZWM1ZmYwNzEwMjVjODg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bM5rkh1t5WtFe-Pa3FkKtUva7VO06ogEiNFANUpvb2c"><img src="https://private-user-images.githubusercontent.com/511499/294289449-ace0954a-ddac-4520-9d18-1c77b1ec50b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NDQ5LWFjZTA5NTRhLWRkYWMtNDUyMC05ZDE4LTFjNzdiMWVjNTBiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMTQwZTU0MDIwNTcxYTQ5Yzk0ZWU3MzM1ZGFkNmRkODQ2NzgyMjEyZmZhY2JlZWNlZWM1ZmYwNzEwMjVjODg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.bM5rkh1t5WtFe-Pa3FkKtUva7VO06ogEiNFANUpvb2c" alt="Archivebox服务器详细信息" style="max-width: 100%;"></a>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<br/>
-
----
-
-<br/>
-
-<div align="center">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/ca85432e-a2df-40c6-968f-51a1ef99b24e" width="100%" alt="paisley graphic">
+<br>
+<hr>
+<br>
+<div align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289542-ca85432e-a2df-40c6-968f-51a1ef99b24e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTQyLWNhODU0MzJlLWEyZGYtNDBjNi05NjhmLTUxYTFlZjk5YjI0ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjBlNmViY2M3ZWZhOTRjN2I3NjQ0ZThjZTgxZWI0MmQ3Nzc1M2Y2NDJlODZiMjM2ZDg3YWM4NWE5OTY2Y2ZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._9TOM3Nh7_EAf7t1zBLYOp9i6jeS5inUZmliqjpDrqI"><img src="https://private-user-images.githubusercontent.com/511499/294289542-ca85432e-a2df-40c6-968f-51a1ef99b24e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTQyLWNhODU0MzJlLWEyZGYtNDBjNi05NjhmLTUxYTFlZjk5YjI0ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjBlNmViY2M3ZWZhOTRjN2I3NjQ0ZThjZTgxZWI0MmQ3Nzc1M2Y2NDJlODZiMjM2ZDg3YWM4NWE5OTY2Y2ZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._9TOM3Nh7_EAf7t1zBLYOp9i6jeS5inUZmliqjpDrqI" width="100%" alt="佩斯利图案" style="max-width: 100%;"></a>
 </div>
-
-# Background & Motivation
-
-ArchiveBox aims to enable more of the internet to be saved from deterioration by empowering people to self-host their own archives. The intent is for all the web content you care about to be viewable with common software in 50 - 100 years without needing to run ArchiveBox or other specialized software to replay it.
-
-<br/>
+<h1 tabindex="-1" dir="auto"><a id="user-content-background--motivation" class="anchor" aria-hidden="true" tabindex="-1" href="#background--motivation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">背景与动机</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 的目标是让人们能够自行托管自己的档案，从而使更多的互联网免遭恶化。</font><font style="vertical-align: inherit;">目的是让您关心的所有网络内容在 50 - 100 年内都可以使用通用软件查看，而无需运行 ArchiveBox 或其他专用软件来重播。</font></font></p>
+<br>
 <details>
-<summary><i>Click to read more...</i></summary>
-<br/>
-
-Vast treasure troves of knowledge are lost every day on the internet to link rot. As a society, we have an imperative to preserve some important parts of that treasure, just like we preserve our books, paintings, and music in physical libraries long after the originals go out of print or fade into obscurity.
-
-Whether it's to resist censorship by saving articles before they get taken down or edited, or just to save a collection of early 2010's flash games you love to play, having the tools to archive internet content enables to you save the stuff you care most about before it disappears.
-
-<div align="center">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/71e36bc5-1c94-44e2-92b6-405fa898c734" width="40%"/><br/>
- <sup><i>Image from <a href="https://perma.cc/">Perma.cc</a>...</i><br/></sup>
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">点击阅读更多...</font></font></i></summary>
+<br>
+<p dir="auto">Vast treasure troves of knowledge are lost every day on the internet to link rot. As a society, we have an imperative to preserve some important parts of that treasure, just like we preserve our books, paintings, and music in physical libraries long after the originals go out of print or fade into obscurity.</p>
+<p dir="auto">Whether it's to resist censorship by saving articles before they get taken down or edited, or just to save a collection of early 2010's flash games you love to play, having the tools to archive internet content enables to you save the stuff you care most about before it disappears.</p>
+<div align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289521-71e36bc5-1c94-44e2-92b6-405fa898c734.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTIxLTcxZTM2YmM1LTFjOTQtNDRlMi05MmI2LTQwNWZhODk4YzczNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZjdmMzFhMDdmZmZjM2Y2YTExN2M3NGI4Njk3YWE3ZjRmOGUxMDcyNGIxZmFjZjgzOGY0Yzk3MDFjMDZmMjAwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.12vK8HW9bB-tDa5RGzCDjRXpXyBGmwLLbliaDG10aZY"><img src="https://private-user-images.githubusercontent.com/511499/294289521-71e36bc5-1c94-44e2-92b6-405fa898c734.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTIxLTcxZTM2YmM1LTFjOTQtNDRlMi05MmI2LTQwNWZhODk4YzczNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZjdmMzFhMDdmZmZjM2Y2YTExN2M3NGI4Njk3YWE3ZjRmOGUxMDcyNGIxZmFjZjgzOGY0Yzk3MDFjMDZmMjAwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.12vK8HW9bB-tDa5RGzCDjRXpXyBGmwLLbliaDG10aZY" width="40%" style="max-width: 100%;"></a><br>
+ <sup><i>Image from <a href="https://perma.cc/" rel="nofollow">Perma.cc</a>...</i><br></sup>
 </div>
-
-The balance between the permanence and ephemeral nature of content on the internet is part of what makes it beautiful. I don't think everything should be preserved in an automated fashion--making all content permanent and never removable, but I do think people should be able to decide for themselves and effectively archive specific content that they care about.
-
-Because modern websites are complicated and often rely on dynamic content,
-ArchiveBox archives the sites in **several different formats** beyond what public archiving services like Archive.org/Archive.is save. Using multiple methods and the market-dominant browser to execute JS ensures we can save even the most complex, finicky websites in at least a few high-quality, long-term data formats.
-
+<p dir="auto">The balance between the permanence and ephemeral nature of content on the internet is part of what makes it beautiful. I don't think everything should be preserved in an automated fashion--making all content permanent and never removable, but I do think people should be able to decide for themselves and effectively archive specific content that they care about.</p>
+<p dir="auto">Because modern websites are complicated and often rely on dynamic content,
+ArchiveBox archives the sites in <strong>several different formats</strong> beyond what public archiving services like Archive.org/Archive.is save. Using multiple methods and the market-dominant browser to execute JS ensures we can save even the most complex, finicky websites in at least a few high-quality, long-term data formats.</p>
 </details>
-<br/>
-
-## Comparison to Other Projects
-
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/4cac62a9-e8fb-425b-85a3-ca644aa6dd42" width="5%" align="right" alt="comparison"/> 
-
-
-> [!TIP]
-> **Check out our [community page](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community) for an index of web archiving initiatives and projects.**
-
-A variety of open and closed-source archiving projects exist, but few provide a nice UI and CLI to manage a large, high-fidelity archive collection over time.
-
-ArchiveBox tries to be a robust, set-and-forget archiving solution suitable for archiving RSS feeds, bookmarks, or your entire browsing history (beware, it may be too big to store), ~~including private/authenticated content that you wouldn't otherwise share with a centralized service~~ (this is not recommended due to JS replay security concerns).
-
-### Comparison With Centralized Public Archives
-
-Not all content is suitable to be archived in a centralized collection, whether because it's private, copyrighted, too large, or too complex. ArchiveBox hopes to fill that gap.
-
-By having each user store their own content locally, we can save much larger portions of everyone's browsing history than a shared centralized service would be able to handle. The eventual goal is to work towards federated archiving where users can share portions of their collections with each other.
-
-### Comparison With Other Self-Hosted Archiving Options
-
-ArchiveBox differentiates itself from [similar self-hosted projects](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#Web-Archiving-Projects) by providing both a comprehensive CLI interface for managing your archive, a Web UI that can be used either independently or together with the CLI, and a simple on-disk data format that can be used without either.
-
+<br>
+<h2 tabindex="-1" dir="auto"><a id="user-content-comparison-to-other-projects" class="anchor" aria-hidden="true" tabindex="-1" href="#comparison-to-other-projects"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与其他项目的比较</font></font></h2>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289573-4cac62a9-e8fb-425b-85a3-ca644aa6dd42.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTczLTRjYWM2MmE5LWU4ZmItNDI1Yi04NWEzLWNhNjQ0YWE2ZGQ0Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YjFkNzViNDE4ODZmYmRhMWEzYTA1YWZkMWU5MDJmYjg3YTUwOTU4NGIyZmYxMzcwYzViNmY2YjU1YWZmNmY2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.4Dqf4be3A3h5U-iko-UAk0wNq0H_nggwCrWKxrjdBQM"><img src="https://private-user-images.githubusercontent.com/511499/294289573-4cac62a9-e8fb-425b-85a3-ca644aa6dd42.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTczLTRjYWM2MmE5LWU4ZmItNDI1Yi04NWEzLWNhNjQ0YWE2ZGQ0Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YjFkNzViNDE4ODZmYmRhMWEzYTA1YWZkMWU5MDJmYjg3YTUwOTU4NGIyZmYxMzcwYzViNmY2YjU1YWZmNmY2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.4Dqf4be3A3h5U-iko-UAk0wNq0H_nggwCrWKxrjdBQM" width="5%" align="right" alt="比较" style="max-width: 100%;"></a> 
+<div class="markdown-alert markdown-alert-tip" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提示</font></font></p><p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看我们的</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，获取网络归档计划和项目的索引。</font></font></strong></p>
+</div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存在各种开源和闭源归档项目，但很少有提供良好的 UI 和 CLI 来随着时间的推移管理大型、高保真归档集合。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 试图成为一个强大的、一劳永逸的归档解决方案，适合归档 RSS 提要、书签或整个浏览历史记录（注意，它可能太大而无法存储），</font></font><del><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包括您不会与集中服务共享的私人/经过身份验证的内容</font></font></del><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（出于 JS 重放安全考虑，不建议这样做）。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-comparison-with-centralized-public-archives" class="anchor" aria-hidden="true" tabindex="-1" href="#comparison-with-centralized-public-archives"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与集中式公共档案馆的比较</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并非所有内容都适合归档在集中式集合中，无论是因为它是私有的、受版权保护的、太大还是太复杂。</font><font style="vertical-align: inherit;">ArchiveBox 希望填补这一空白。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过让每个用户在本地存储自己的内容，我们可以保存每个人的浏览历史记录中比共享集中式服务能够处理的更大的部分。</font><font style="vertical-align: inherit;">最终目标是致力于联合归档，用户可以彼此共享部分收藏。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-comparison-with-other-self-hosted-archiving-options" class="anchor" aria-hidden="true" tabindex="-1" href="#comparison-with-other-self-hosted-archiving-options"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与其他自托管归档选项的比较</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#Web-Archiving-Projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox 与类似的自托管项目</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不同，它</font><font style="vertical-align: inherit;">提供了一个用于管理存档的综合 CLI 界面、一个可以独立使用或与 CLI 一起使用的 Web UI，以及一个简单的磁盘数据格式，可以在不使用任何选项的情况下使用。</font></font></p>
 <details>
-<summary><i>Click to see the <b>⭐️ officially recommended</b> alternatives to ArchiveBox...</i></summary>
-<br/>
-
-
-*If you want better fidelity for very complex interactive pages with heavy JS/streams/API requests, check out [ArchiveWeb.page](https://archiveweb.page) and [ReplayWeb.page](https://replayweb.page).*
-
-*If you want more bookmark categorization and note-taking features, check out [Archivy](https://archivy.github.io/), [Memex](https://github.com/WorldBrain/Memex), [Polar](https://getpolarized.io/), or [LinkAce](https://www.linkace.org/).*
-
-*If you need more advanced recursive spider/crawling ability beyond `--depth=1`, check out [Browsertrix](https://github.com/webrecorder/browsertrix-crawler), [Photon](https://github.com/s0md3v/Photon), or [Scrapy](https://scrapy.org/) and pipe the outputted URLs into ArchiveBox.*
-
-For more alternatives, see our [list here](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#Web-Archiving-Projects)...
-
-ArchiveBox is neither the highest fidelity nor the simplest tool available for self-hosted archiving, rather it's a jack-of-all-trades that tries to do most things well by default. We encourage you to try these other tools made by our friends if ArchiveBox isn't suited to your needs.
-
+<summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">点击查看</font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⭐️官方推荐的</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox替代品...</font></font></i></summary>
+<br>
+<p dir="auto"><em>If you want better fidelity for very complex interactive pages with heavy JS/streams/API requests, check out <a href="https://archiveweb.page" rel="nofollow">ArchiveWeb.page</a> and <a href="https://replayweb.page" rel="nofollow">ReplayWeb.page</a>.</em></p>
+<p dir="auto"><em>If you want more bookmark categorization and note-taking features, check out <a href="https://archivy.github.io/" rel="nofollow">Archivy</a>, <a href="https://github.com/WorldBrain/Memex">Memex</a>, <a href="https://getpolarized.io/" rel="nofollow">Polar</a>, or <a href="https://www.linkace.org/" rel="nofollow">LinkAce</a>.</em></p>
+<p dir="auto"><em>If you need more advanced recursive spider/crawling ability beyond <code>--depth=1</code>, check out <a href="https://github.com/webrecorder/browsertrix-crawler">Browsertrix</a>, <a href="https://github.com/s0md3v/Photon">Photon</a>, or <a href="https://scrapy.org/" rel="nofollow">Scrapy</a> and pipe the outputted URLs into ArchiveBox.</em></p>
+<p dir="auto">For more alternatives, see our <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#Web-Archiving-Projects">list here</a>...</p>
+<p dir="auto">ArchiveBox is neither the highest fidelity nor the simplest tool available for self-hosted archiving, rather it's a jack-of-all-trades that tries to do most things well by default. We encourage you to try these other tools made by our friends if ArchiveBox isn't suited to your needs.</p>
 </details>
-
-<br/>
-
-<div align="center">
-<br/>
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/04808ac2-3133-44fd-8703-3387e06dc851" width="100%" alt="dependencies graphic">
+<br>
+<div align="center" dir="auto">
+<br>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289535-04808ac2-3133-44fd-8703-3387e06dc851.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTM1LTA0ODA4YWMyLTMxMzMtNDRmZC04NzAzLTMzODdlMDZkYzg1MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MDIyZGNjNTgwODYwMjdjZWM0Y2NiZWI3ZDhlNjY4NjhjZDI4MjBmNDVhYmI3NjJjZjZlZjFjZmMxOWZiNDgxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.FT0XMMxPit-9jTknIQZ50NJhD3Lqy3_oQXQpOPxn1EE"><img src="https://private-user-images.githubusercontent.com/511499/294289535-04808ac2-3133-44fd-8703-3387e06dc851.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTM1LTA0ODA4YWMyLTMxMzMtNDRmZC04NzAzLTMzODdlMDZkYzg1MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MDIyZGNjNTgwODYwMjdjZWM0Y2NiZWI3ZDhlNjY4NjhjZDI4MjBmNDVhYmI3NjJjZjZlZjFjZmMxOWZiNDgxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.FT0XMMxPit-9jTknIQZ50NJhD3Lqy3_oQXQpOPxn1EE" width="100%" alt="依赖关系图" style="max-width: 100%;"></a>
 </div>
-
-## Internet Archiving Ecosystem
-
-Whether you want to learn which organizations are the big players in the web archiving space, want to find a specific open-source tool for your web archiving need, or just want to see where archivists hang out online, our Community Wiki page serves as an index of the broader web archiving community. Check it out to learn about some of the coolest web archiving projects and communities on the web!
-
-
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/78d8a725-97f4-47f5-b983-1f62843ddc51" width="14%" align="right"/>
-
-- [Community Wiki](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community)
-  - [The Master Lists](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#the-master-lists)  
-    _Community-maintained indexes of archiving tools and institutions._
-  - [Web Archiving Software](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#web-archiving-projects)  
-    _Open source tools and projects in the internet archiving space._
-  - [Reading List](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#reading-list)  
-    _Articles, posts, and blogs relevant to ArchiveBox and web archiving in general._
-  - [Communities](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#communities)  
-    _A collection of the most active internet archiving communities and initiatives._
-- Check out the ArchiveBox [Roadmap](https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap) and [Changelog](https://github.com/ArchiveBox/ArchiveBox/wiki/Changelog)
-- Learn why archiving the internet is important by reading the "[On the Importance of Web Archiving](https://items.ssrc.org/parameters/on-the-importance-of-web-archiving/)" blog post.
-- Reach out to me for questions and comments via [@ArchiveBoxApp](https://twitter.com/ArchiveBoxApp) or [@theSquashSH](https://twitter.com/thesquashSH) on Twitter
-
-
-<br/>
-
-**Need help building a custom archiving solution?**
-
-> ✨ **[Hire the team that built Archivebox](https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102) to work on your project.** ([@ArchiveBoxApp](https://twitter.com/ArchiveBoxApp))
-
-<sup>(We also offer general software consulting across many industries)</sup>
-
-<br/>
-
----
-
-<div align="center">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/897f7a88-1265-4aab-b80c-b1640afaad1f" width="100%" alt="documentation graphic">
+<h2 tabindex="-1" dir="auto"><a id="user-content-internet-archiving-ecosystem" class="anchor" aria-hidden="true" tabindex="-1" href="#internet-archiving-ecosystem"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">互联网归档生态系统</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无论您是想了解哪些组织是网络归档领域的主要参与者，还是想找到满足您的网络归档需求的特定开源工具，或者只是想了解档案管理员在网上闲逛的地方，我们的社区 Wiki 页面都可以作为您的门户。更广泛的网络归档社区的索引。</font><font style="vertical-align: inherit;">查看以了解网络上一些最酷的网络归档项目和社区！</font></font></p>
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289581-78d8a725-97f4-47f5-b983-1f62843ddc51.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTgxLTc4ZDhhNzI1LTk3ZjQtNDdmNS1iOTgzLTFmNjI4NDNkZGM1MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYzMyMzc5NTUxNzJkZjI0NzMyY2U5Y2M5ODlmZjJiNDk4NmNlNmE4OWNjYWJlOWQ0MmVhNzlkZThiZjg5ZTk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.atpqyPG7b85ASLrKGhFNzyPWnaz3Pmz5mfjRhEc0qls"><img src="https://private-user-images.githubusercontent.com/511499/294289581-78d8a725-97f4-47f5-b983-1f62843ddc51.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTgxLTc4ZDhhNzI1LTk3ZjQtNDdmNS1iOTgzLTFmNjI4NDNkZGM1MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYzMyMzc5NTUxNzJkZjI0NzMyY2U5Y2M5ODlmZjJiNDk4NmNlNmE4OWNjYWJlOWQ0MmVhNzlkZThiZjg5ZTk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.atpqyPG7b85ASLrKGhFNzyPWnaz3Pmz5mfjRhEc0qls" width="14%" align="right" style="max-width: 100%;"></a>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区维基</font></font></a>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#the-master-lists"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总表</font></font></a><br>
+<em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列出了社区维护的归档工具和机构的索引。</font></font></em></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#web-archiving-projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络归档软件</font></font></a><br>
+<em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">互联网归档领域的开源工具和项目。</font></font></em></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#reading-list"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阅读列表</font></font></a><br>
+<em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与 ArchiveBox 和一般网络归档相关的文章、帖子和博客。</font></font></em></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community#communities"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区</font></font></a><br>
+<em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最活跃的互联网归档社区和倡议的集合。</font></font></em></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看 ArchiveBox</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Changelog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变更日志</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阅读“</font></font><a href="https://items.ssrc.org/parameters/on-the-importance-of-web-archiving/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论网络归档的重要性</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">”博客文章，了解为什么互联网归档如此重要。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果有问题和意见，请通过Twitter 上的</font></font><a href="https://twitter.com/ArchiveBoxApp" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@ArchiveBoxApp</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://twitter.com/thesquashSH" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@theSquashSH</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与我联系</font></font></li>
+</ul>
+<br>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需要帮助构建自定义归档解决方案吗？</font></font></strong></p>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✨</font></font><strong><a href="https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">聘请构建 Archivebox 的团队</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来处理您的项目。</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><a href="https://twitter.com/ArchiveBoxApp" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@ArchiveBoxApp</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></p>
+</blockquote>
+<p dir="auto"><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（我们还提供跨多个行业的通用软件咨询）</font></font></sup></p>
+<br>
+<hr>
+<div align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289529-897f7a88-1265-4aab-b80c-b1640afaad1f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTI5LTg5N2Y3YTg4LTEyNjUtNGFhYi1iODBjLWIxNjQwYWZhYWQxZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNmM3YmU4YjA5ODU2NTVlMmFmM2RmNGI1ZTU5NGMxMThiNjZhNmM2NjhiOTBjNmI2ZmI5MTYyNmIzNTk5YmIzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.cNaw8CND2vdD0lzNf2A7EnGIZ5ycpystvQDhI5Fwtt4"><img src="https://private-user-images.githubusercontent.com/511499/294289529-897f7a88-1265-4aab-b80c-b1640afaad1f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTI5LTg5N2Y3YTg4LTEyNjUtNGFhYi1iODBjLWIxNjQwYWZhYWQxZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNmM3YmU4YjA5ODU2NTVlMmFmM2RmNGI1ZTU5NGMxMThiNjZhNmM2NjhiOTBjNmI2ZmI5MTYyNmIzNTk5YmIzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.cNaw8CND2vdD0lzNf2A7EnGIZ5ycpystvQDhI5Fwtt4" width="100%" alt="文档图形" style="max-width: 100%;"></a>
 </div>
-
-# Documentation
-
-<img src="https://read-the-docs-guidelines.readthedocs-hosted.com/_images/logo-dark.png" width="13%" align="right"/>
-
-We use the [GitHub wiki system](https://github.com/ArchiveBox/ArchiveBox/wiki) and [Read the Docs](https://archivebox.readthedocs.io/en/latest/) (WIP) for documentation.
-
-You can also access the docs locally by looking in the [`ArchiveBox/docs/`](https://github.com/ArchiveBox/ArchiveBox/wiki/Home) folder.
-
-## Getting Started
-
-- [Quickstart](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart)
-- [Install](https://github.com/ArchiveBox/ArchiveBox/wiki/Install)
-- [Docker](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker)
-- [Usage](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage)
-- [Configuration](https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration)
-- [Supported Sources](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive)
-- [Supported Outputs](https://github.com/ArchiveBox/ArchiveBox/wiki#can-save-these-things-for-each-site)
-
-## Advanced
-
-- [Troubleshooting](https://github.com/ArchiveBox/ArchiveBox/wiki/Troubleshooting)
-- [Scheduled Archiving](https://github.com/ArchiveBox/ArchiveBox/wiki/Scheduled-Archiving)
-- [Publishing Your Archive](https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive)
-- [Chromium Install](https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install)
-- [Cookies & Sessions Setup](https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install#setting-up-a-chromium-user-profile)
-- [Security Overview](https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview)
-- [Upgrading or Merging Archives](https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives)
-
-## Developers
-
-- [Developer Documentation](https://github.com/ArchiveBox/ArchiveBox#archivebox-development)
-- [Python API](https://docs.archivebox.io/en/latest/modules.html) (alpha)
-- [REST API](https://github.com/ArchiveBox/ArchiveBox/issues/496) (alpha)
-
-## More Info
-
-- [Bug Tracker](https://github.com/ArchiveBox/ArchiveBox/issues)
-- [Roadmap](https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap)
-- [Changelog](https://github.com/ArchiveBox/ArchiveBox/releases)
-- [Donations](https://github.com/ArchiveBox/ArchiveBox/wiki/Donations)
-- [Background & Motivation](https://github.com/ArchiveBox/ArchiveBox#background--motivation)
-- [Web Archiving Community](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community)
-
-<br/>
-
----
-
-<div align="center">
-<img src="https://github.com/ArchiveBox/ArchiveBox/assets/511499/e895e79f-5c7d-429b-ad8a-7df2cc183ca3" width="100%" alt="development">
+<h1 tabindex="-1" dir="auto"><a id="user-content-documentation" class="anchor" aria-hidden="true" tabindex="-1" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h1>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a00f6cc78e9d2709139d51969ce8b57085f33e688063345655685eadebf701fe/68747470733a2f2f726561642d7468652d646f63732d67756964656c696e65732e72656164746865646f63732d686f737465642e636f6d2f5f696d616765732f6c6f676f2d6461726b2e706e67"><img src="https://camo.githubusercontent.com/a00f6cc78e9d2709139d51969ce8b57085f33e688063345655685eadebf701fe/68747470733a2f2f726561642d7468652d646f63732d67756964656c696e65732e72656164746865646f63732d686f737465642e636f6d2f5f696d616765732f6c6f676f2d6461726b2e706e67" width="13%" align="right" data-canonical-src="https://read-the-docs-guidelines.readthedocs-hosted.com/_images/logo-dark.png" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们使用</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub wiki 系统</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并</font></font><a href="https://archivebox.readthedocs.io/en/latest/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阅读文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(WIP) 来获取文档。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以通过查看文件</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Home"><code>ArchiveBox/docs/</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">夹来本地访问文档。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-getting-started" class="anchor" aria-hidden="true" tabindex="-1" href="#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></h2>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Install"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Docker"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">码头工人</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Usage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart#2-get-your-list-of-urls-to-archive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持的来源</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki#can-save-these-things-for-each-site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持的输出</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-advanced" class="anchor" aria-hidden="true" tabindex="-1" href="#advanced"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">先进的</font></font></h2>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Troubleshooting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故障排除</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Scheduled-Archiving"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预定归档</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布您的档案</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">铬安装</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Chromium-Install#setting-up-a-chromium-user-profile"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie 和会话设置</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Security-Overview"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全概述</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Upgrading-or-Merging-Archives"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级或合并档案</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-developers" class="anchor" aria-hidden="true" tabindex="-1" href="#developers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发商</font></font></h2>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox#archivebox-development"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发者文档</font></font></a></li>
+<li><a href="https://docs.archivebox.io/en/latest/modules.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（阿尔法）</font></font></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/issues/496" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/496/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">REST API</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（阿尔法）</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-more-info" class="anchor" aria-hidden="true" tabindex="-1" href="#more-info"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多信息</font></font></h2>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误追踪器</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变更日志</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Donations"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">捐款</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox#background--motivation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">背景与动机</font></font></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络存档社区</font></font></a></li>
+</ul>
+<br>
+<hr>
+<div align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/511499/294289570-e895e79f-5c7d-429b-ad8a-7df2cc183ca3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTcwLWU4OTVlNzlmLTVjN2QtNDI5Yi1hZDhhLTdkZjJjYzE4M2NhMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMDgwNmRiZjk5YThkYWIzMjE3MjlmZmJjZWM4MzI5MjM3MGEzNGE4YTk0MzU3Y2E2MjJkZWI3ODIwNTYzYTliJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ImmvvKwslEt4BQ__dY9E3dTgh7Te3JmT__5SYgEQj1Y"><img src="https://private-user-images.githubusercontent.com/511499/294289570-e895e79f-5c7d-429b-ad8a-7df2cc183ca3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU4MDI5OTMsIm5iZiI6MTcwNTgwMjY5MywicGF0aCI6Ii81MTE0OTkvMjk0Mjg5NTcwLWU4OTVlNzlmLTVjN2QtNDI5Yi1hZDhhLTdkZjJjYzE4M2NhMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyMVQwMjA0NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMDgwNmRiZjk5YThkYWIzMjE3MjlmZmJjZWM4MzI5MjM3MGEzNGE4YTk0MzU3Y2E2MjJkZWI3ODIwNTYzYTliJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ImmvvKwslEt4BQ__dY9E3dTgh7Te3JmT__5SYgEQj1Y" width="100%" alt="发展" style="max-width: 100%;"></a>
 </div>
-
-# ArchiveBox Development
-
-All contributions to ArchiveBox are welcomed! Check our [issues](https://github.com/ArchiveBox/ArchiveBox/issues) and [Roadmap](https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap) for things to work on, and please open an issue to discuss your proposed implementation before working on things! Otherwise we may have to close your PR if it doesn't align with our roadmap.
-
-For low hanging fruit / easy first tickets, see: <a href="https://github.com/ArchiveBox/ArchiveBox/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22help+wanted%22">ArchiveBox/Issues `#good first ticket` `#help wanted`</a>.
-
-**Python API Documentation:** https://docs.archivebox.io/en/dev/archivebox.html#module-archivebox.main
-
-### Setup the dev environment
-
-<details><summary><i>Click to expand...</i></summary>
-
-#### 1. Clone the main code repo (making sure to pull the submodules as well)
-
-```bash
-git clone --recurse-submodules https://github.com/ArchiveBox/ArchiveBox
+<h1 tabindex="-1" dir="auto"><a id="user-content-archivebox-development" class="anchor" aria-hidden="true" tabindex="-1" href="#archivebox-development"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案盒开发</font></font></h1>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欢迎所有对 ArchiveBox 的贡献！</font><font style="vertical-align: inherit;">检查我们的</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Roadmap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以了解要处理的事情，并请在处理事情之前打开一个问题来讨论您建议的实施！</font><font style="vertical-align: inherit;">否则，如果您的 PR 与我们的路线图不符，我们可能不得不关闭您的 PR。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于容易实现的目标/轻松的第一张门票，请参阅：</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22help+wanted%22"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox/Issues</font></font><code>#good first ticket</code> <code>#help wanted</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python API 文档：</font></font></strong> <a href="https://docs.archivebox.io/en/dev/archivebox.html#module-archivebox.main" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://docs.archivebox.io/en/dev/archivebox.html#module-archivebox.main</font></font></a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-setup-the-dev-environment" class="anchor" aria-hidden="true" tabindex="-1" href="#setup-the-dev-environment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置开发环境</font></font></h3>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<h4 tabindex="-1" dir="auto"><a id="user-content-1-clone-the-main-code-repo-making-sure-to-pull-the-submodules-as-well" class="anchor" aria-hidden="true" tabindex="-1" href="#1-clone-the-main-code-repo-making-sure-to-pull-the-submodules-as-well"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>1. Clone the main code repo (making sure to pull the submodules as well)</h4>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>git clone --recurse-submodules https://github.com/ArchiveBox/ArchiveBox
+<span class="pl-c1">cd</span> ArchiveBox
+git checkout dev  <span class="pl-c"><span class="pl-c">#</span> or the branch you want to test</span>
+git submodule update --init --recursive
+git pull --recurse-submodules</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone --recurse-submodules https://github.com/ArchiveBox/ArchiveBox
 cd ArchiveBox
 git checkout dev  # or the branch you want to test
 git submodule update --init --recursive
-git pull --recurse-submodules
-```
+git pull --recurse-submodules" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h4 tabindex="-1" dir="auto"><a id="user-content-2-option-a-install-the-python-js-and-system-dependencies-directly-on-your-machine" class="anchor" aria-hidden="true" tabindex="-1" href="#2-option-a-install-the-python-js-and-system-dependencies-directly-on-your-machine"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>2. Option A: Install the Python, JS, and system dependencies directly on your machine</h4>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> Install ArchiveBox + python dependencies</span>
+python3 -m venv .venv <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">source</span> .venv/bin/activate <span class="pl-k">&amp;&amp;</span> pip install -e <span class="pl-s"><span class="pl-pds">'</span>.[dev]<span class="pl-pds">'</span></span>
+<span class="pl-c"><span class="pl-c">#</span> or: pipenv install --dev &amp;&amp; pipenv shell</span>
 
-#### 2. Option A: Install the Python, JS, and system dependencies directly on your machine
+<span class="pl-c"><span class="pl-c">#</span> Install node dependencies</span>
+npm install
+<span class="pl-c"><span class="pl-c">#</span> or</span>
+archivebox setup
 
-```bash
-# Install ArchiveBox + python dependencies
-python3 -m venv .venv && source .venv/bin/activate && pip install -e '.[dev]'
-# or: pipenv install --dev && pipenv shell
+<span class="pl-c"><span class="pl-c">#</span> Check to see if anything is missing</span>
+archivebox --version
+<span class="pl-c"><span class="pl-c">#</span> install any missing dependencies manually, or use the helper script:</span>
+./bin/setup.sh</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# Install ArchiveBox + python dependencies
+python3 -m venv .venv &amp;&amp; source .venv/bin/activate &amp;&amp; pip install -e '.[dev]'
+# or: pipenv install --dev &amp;&amp; pipenv shell
 
 # Install node dependencies
 npm install
@@ -1119,13 +1277,31 @@ archivebox setup
 # Check to see if anything is missing
 archivebox --version
 # install any missing dependencies manually, or use the helper script:
-./bin/setup.sh
-```
+./bin/setup.sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h4 tabindex="-1" dir="auto"><a id="user-content-2-option-b-build-the-docker-container-and-use-that-for-development-instead" class="anchor" aria-hidden="true" tabindex="-1" href="#2-option-b-build-the-docker-container-and-use-that-for-development-instead"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>2. Option B: Build the docker container and use that for development instead</h4>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> Optional: develop via docker by mounting the code dir into the container</span>
+<span class="pl-c"><span class="pl-c">#</span> if you edit e.g. ./archivebox/core/models.py on the docker host, runserver</span>
+<span class="pl-c"><span class="pl-c">#</span> inside the container will reload and pick up your changes</span>
+docker build <span class="pl-c1">.</span> -t archivebox
+docker run -it \
+    -v <span class="pl-smi">$PWD</span>/data:/data \
+    archivebox init --setup
+docker run -it -p 8000:8000 \
+    -v <span class="pl-smi">$PWD</span>/data:/data \
+    -v <span class="pl-smi">$PWD</span>/archivebox:/app/archivebox \
+    archivebox server 0.0.0.0:8000 --debug --reload
 
-#### 2. Option B: Build the docker container and use that for development instead
-
-```bash
-# Optional: develop via docker by mounting the code dir into the container
+<span class="pl-c"><span class="pl-c">#</span> (remove the --reload flag and add the --nothreading flag when profiling with the django debug toolbar)</span>
+<span class="pl-c"><span class="pl-c">#</span> When using --reload, make sure any files you create can be read by the user in the Docker container, eg with 'chmod a+rX'.</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# Optional: develop via docker by mounting the code dir into the container
 # if you edit e.g. ./archivebox/core/models.py on the docker host, runserver
 # inside the container will reload and pick up your changes
 docker build . -t archivebox
@@ -1138,50 +1314,72 @@ docker run -it -p 8000:8000 \
     archivebox server 0.0.0.0:8000 --debug --reload
 
 # (remove the --reload flag and add the --nothreading flag when profiling with the django debug toolbar)
-# When using --reload, make sure any files you create can be read by the user in the Docker container, eg with 'chmod a+rX'.
-```
-
+# When using --reload, make sure any files you create can be read by the user in the Docker container, eg with 'chmod a+rX'." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </details>
-
-### Common development tasks
-
-See the `./bin/` folder and read the source of the bash scripts within.
-You can also run all these in Docker. For more examples see the GitHub Actions CI/CD tests that are run: `.github/workflows/*.yaml`.
-
-#### Run in DEBUG mode
-
-<details><summary><i>Click to expand...</i></summary>
-
-```bash
-archivebox config --set DEBUG=True
+<h3 tabindex="-1" dir="auto"><a id="user-content-common-development-tasks" class="anchor" aria-hidden="true" tabindex="-1" href="#common-development-tasks"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常见的开发任务</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看该</font></font><code>./bin/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件夹并阅读其中的 bash 脚本的源代码。</font><font style="vertical-align: inherit;">您还可以在 Docker 中运行所有这些。</font><font style="vertical-align: inherit;">有关更多示例，请参阅运行的 GitHub Actions CI/CD 测试：</font></font><code>.github/workflows/*.yaml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h4 tabindex="-1" dir="auto"><a id="user-content-run-in-debug-mode" class="anchor" aria-hidden="true" tabindex="-1" href="#run-in-debug-mode"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在调试模式下运行</font></font></h4>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>archivebox config --set DEBUG=True
+<span class="pl-c"><span class="pl-c">#</span> or</span>
+archivebox server --debug ...</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="archivebox config --set DEBUG=True
 # or
-archivebox server --debug ...
-```
-
-https://stackoverflow.com/questions/1074212/how-can-i-see-the-raw-sql-queries-django-is-running
-
+archivebox server --debug ..." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><a href="https://stackoverflow.com/questions/1074212/how-can-i-see-the-raw-sql-queries-django-is-running" rel="nofollow">https://stackoverflow.com/questions/1074212/how-can-i-see-the-raw-sql-queries-django-is-running</a></p>
 </details>
-
-#### Install and run a specific GitHub branch
-
-<details><summary><i>Click to expand...</i></summary>
-
-##### Use a Pre-Built Image
-
-If you're looking for the latest `dev` Docker image, it's often available pre-built on Docker Hub, simply pull and use `archivebox/archivebox:dev`.
-
-```bash
-docker pull archivebox/archivebox:dev
+<h4 tabindex="-1" dir="auto"><a id="user-content-install-and-run-a-specific-github-branch" class="anchor" aria-hidden="true" tabindex="-1" href="#install-and-run-a-specific-github-branch"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装并运行特定的 GitHub 分支</font></font></h4>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<h5 tabindex="-1" dir="auto"><a id="user-content-use-a-pre-built-image" class="anchor" aria-hidden="true" tabindex="-1" href="#use-a-pre-built-image"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Use a Pre-Built Image</h5>
+<p dir="auto">If you're looking for the latest <code>dev</code> Docker image, it's often available pre-built on Docker Hub, simply pull and use <code>archivebox/archivebox:dev</code>.</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>docker pull archivebox/archivebox:dev
 docker run archivebox/archivebox:dev version
-# verify the BUILD_TIME and COMMIT_HASH in the output are recent
-```
+<span class="pl-c"><span class="pl-c">#</span> verify the BUILD_TIME and COMMIT_HASH in the output are recent</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="docker pull archivebox/archivebox:dev
+docker run archivebox/archivebox:dev version
+# verify the BUILD_TIME and COMMIT_HASH in the output are recent" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h5 tabindex="-1" dir="auto"><a id="user-content-build-branch-from-source" class="anchor" aria-hidden="true" tabindex="-1" href="#build-branch-from-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Build Branch from Source</h5>
+<p dir="auto">You can also build and run any branch yourself from source, for example to build &amp; use <code>dev</code> locally:</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">#</span> docker-compose.yml:</span>
+services:
+    archivebox:
+        image: archivebox/archivebox:dev
+        build: <span class="pl-s"><span class="pl-pds">'</span>https://github.com/ArchiveBox/ArchiveBox.git#dev<span class="pl-pds">'</span></span>
+        ...
 
-##### Build Branch from Source
-  
-You can also build and run any branch yourself from source, for example to build & use `dev` locally:
+<span class="pl-c"><span class="pl-c">#</span> or with plain Docker:</span>
+docker build -t archivebox:dev https://github.com/ArchiveBox/ArchiveBox.git#dev
+docker run -it -v <span class="pl-smi">$PWD</span>:/data archivebox:dev init --setup
 
-```bash
-# docker-compose.yml:
+<span class="pl-c"><span class="pl-c">#</span> or with pip:</span>
+pip install <span class="pl-s"><span class="pl-pds">'</span>git+https://github.com/pirate/ArchiveBox@dev<span class="pl-pds">'</span></span>
+npm install <span class="pl-s"><span class="pl-pds">'</span>git+https://github.com/ArchiveBox/ArchiveBox.git#dev<span class="pl-pds">'</span></span>
+archivebox init --setup</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="# docker-compose.yml:
 services:
     archivebox:
         image: archivebox/archivebox:dev
@@ -1195,164 +1393,188 @@ docker run -it -v $PWD:/data archivebox:dev init --setup
 # or with pip:
 pip install 'git+https://github.com/pirate/ArchiveBox@dev'
 npm install 'git+https://github.com/ArchiveBox/ArchiveBox.git#dev'
-archivebox init --setup
-```
-
+archivebox init --setup" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </details>
-
-#### Run the linters
-
-<details><summary><i>Click to expand...</i></summary>
-
-```bash
-./bin/lint.sh
-```
-(uses `flake8` and `mypy`)
-
+<h4 tabindex="-1" dir="auto"><a id="user-content-run-the-linters" class="anchor" aria-hidden="true" tabindex="-1" href="#run-the-linters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行 linter</font></font></h4>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>./bin/lint.sh</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./bin/lint.sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">(uses <code>flake8</code> and <code>mypy</code>)</p>
 </details>
-
-#### Run the integration tests
-
-<details><summary><i>Click to expand...</i></summary>
-
-```bash
-./bin/test.sh
-```
-(uses `pytest -s`)
-
+<h4 tabindex="-1" dir="auto"><a id="user-content-run-the-integration-tests" class="anchor" aria-hidden="true" tabindex="-1" href="#run-the-integration-tests"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行集成测试</font></font></h4>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>./bin/test.sh</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./bin/test.sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">(uses <code>pytest -s</code>)</p>
 </details>
+<h4 tabindex="-1" dir="auto"><a id="user-content-make-migrations-or-enter-a-django-shell" class="anchor" aria-hidden="true" tabindex="-1" href="#make-migrations-or-enter-a-django-shell"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进行迁移或进入 django shell</font></font></h4>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<p dir="auto">Make sure to run this whenever you change things in <code>models.py</code>.</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c1">cd</span> archivebox/
+./manage.py makemigrations
 
-#### Make migrations or enter a django shell
-
-<details><summary><i>Click to expand...</i></summary>
-
-Make sure to run this whenever you change things in `models.py`.
-
-```bash
-cd archivebox/
+<span class="pl-c1">cd</span> path/to/test/data/
+archivebox shell
+archivebox manage dbshell</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="cd archivebox/
 ./manage.py makemigrations
 
 cd path/to/test/data/
 archivebox shell
-archivebox manage dbshell
-```
-
-(uses `pytest -s`)  
-https://stackoverflow.com/questions/1074212/how-can-i-see-the-raw-sql-queries-django-is-running
-
+archivebox manage dbshell" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto">(uses <code>pytest -s</code>)<br>
+<a href="https://stackoverflow.com/questions/1074212/how-can-i-see-the-raw-sql-queries-django-is-running" rel="nofollow">https://stackoverflow.com/questions/1074212/how-can-i-see-the-raw-sql-queries-django-is-running</a></p>
 </details>
-
-#### Contributing a new extractor
-
-<details><summary><i>Click to expand...</i></summary>
-
-<br/><br/>
-
-ArchiveBox [`extractors`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/extractors/media.py) are external binaries or Python/Node scripts that ArchiveBox runs to archive content on a page.
-
-Extractors take the URL of a page to archive, write their output to the filesystem `archive/<timestamp>/<extractorname>/...`, and return an [`ArchiveResult`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/core/models.py#:~:text=return%20qs-,class%20ArchiveResult,-(models.Model)%3A) entry which is saved to the database (visible on the `Log` page in the UI).
-
-*Check out how we added **[`archivebox/extractors/singlefile.py`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/extractors/singlefile.py)** as an example of the process: [Issue #399](https://github.com/ArchiveBox/ArchiveBox/issues/399) + [PR #403](https://github.com/ArchiveBox/ArchiveBox/pull/403).*
-
-<br/>
-
-
-**The process to contribute a new extractor is like this:**
-
-1. [Open an issue](https://github.com/ArchiveBox/ArchiveBox/issues/new?assignees=&labels=changes%3A+behavior%2Cstatus%3A+idea+phase&template=feature_request.md&title=Feature+Request%3A+...) with your propsoed implementation (please link to the pages of any new external dependencies you plan on using)
-2. Ensure any dependencies needed are easily installable via a package managers like `apt`, `brew`, `pip3`, `npm`
-   (Ideally, prefer to use external programs available via `pip3` or `npm`, however we do support using any binary installable via package manager that exposes a CLI/Python API and writes output to stdout or the filesystem.)
-3. Create a new file in [`archivebox/extractors/<extractorname>.py`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/extractors) (copy an existing extractor like [`singlefile.py`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/extractors/singlefile.py) as a template)
-4. Add config settings to enable/disable any new dependencies and the extractor as a whole, e.g. `USE_DEPENDENCYNAME`, `SAVE_EXTRACTORNAME`, `EXTRACTORNAME_SOMEOTHEROPTION` in [`archivebox/config.py`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/config.py)
-5. Add a preview section to [`archivebox/templates/core/snapshot.html`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/templates/core/snapshot.html) to view the output, and a column to [`archivebox/templates/core/index_row.html`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/templates/core/index_row.html) with an icon for your extractor
-6. Add an integration test for your extractor in [`tests/test_extractors.py`](https://github.com/ArchiveBox/ArchiveBox/blob/dev/tests/test_extractors.py)
-7. [Submit your PR for review!](https://github.com/ArchiveBox/ArchiveBox/blob/dev/.github/CONTRIBUTING.md) 🎉
-8. Once merged, please document it in these places and anywhere else you see info about other extractors:
-  - https://github.com/ArchiveBox/ArchiveBox#output-formats
-  - https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#archive-method-toggles
-  - https://github.com/ArchiveBox/ArchiveBox/wiki/Install#dependencies
-
-<br/><br/>
-
+<h4 tabindex="-1" dir="auto"><a id="user-content-contributing-a-new-extractor" class="anchor" aria-hidden="true" tabindex="-1" href="#contributing-a-new-extractor"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献一个新的提取器</font></font></h4>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<p dir="auto"><br><br></p>
+<p dir="auto">ArchiveBox <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/extractors/media.py"><code>extractors</code></a> are external binaries or Python/Node scripts that ArchiveBox runs to archive content on a page.</p>
+<p dir="auto">Extractors take the URL of a page to archive, write their output to the filesystem <code>archive/&lt;timestamp&gt;/&lt;extractorname&gt;/...</code>, and return an <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/core/models.py#:~:text=return%20qs-,class%20ArchiveResult,-(models.Model)%3A"><code>ArchiveResult</code></a> entry which is saved to the database (visible on the <code>Log</code> page in the UI).</p>
+<p dir="auto"><em>Check out how we added <strong><a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/extractors/singlefile.py"><code>archivebox/extractors/singlefile.py</code></a></strong> as an example of the process: <a href="https://github.com/ArchiveBox/ArchiveBox/issues/399" data-hovercard-type="issue" data-hovercard-url="/ArchiveBox/ArchiveBox/issues/399/hovercard">Issue #399</a> + <a href="https://github.com/ArchiveBox/ArchiveBox/pull/403" data-hovercard-type="pull_request" data-hovercard-url="/ArchiveBox/ArchiveBox/pull/403/hovercard">PR #403</a>.</em></p>
+<br>
+<p dir="auto"><strong>The process to contribute a new extractor is like this:</strong></p>
+<ol dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/issues/new?assignees=&amp;labels=changes%3A+behavior%2Cstatus%3A+idea+phase&amp;template=feature_request.md&amp;title=Feature+Request%3A+...">Open an issue</a> with your propsoed implementation (please link to the pages of any new external dependencies you plan on using)</li>
+<li>Ensure any dependencies needed are easily installable via a package managers like <code>apt</code>, <code>brew</code>, <code>pip3</code>, <code>npm</code>
+(Ideally, prefer to use external programs available via <code>pip3</code> or <code>npm</code>, however we do support using any binary installable via package manager that exposes a CLI/Python API and writes output to stdout or the filesystem.)</li>
+<li>Create a new file in <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/extractors"><code>archivebox/extractors/&lt;extractorname&gt;.py</code></a> (copy an existing extractor like <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/extractors/singlefile.py"><code>singlefile.py</code></a> as a template)</li>
+<li>Add config settings to enable/disable any new dependencies and the extractor as a whole, e.g. <code>USE_DEPENDENCYNAME</code>, <code>SAVE_EXTRACTORNAME</code>, <code>EXTRACTORNAME_SOMEOTHEROPTION</code> in <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/config.py"><code>archivebox/config.py</code></a></li>
+<li>Add a preview section to <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/templates/core/snapshot.html"><code>archivebox/templates/core/snapshot.html</code></a> to view the output, and a column to <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/archivebox/templates/core/index_row.html"><code>archivebox/templates/core/index_row.html</code></a> with an icon for your extractor</li>
+<li>Add an integration test for your extractor in <a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/tests/test_extractors.py"><code>tests/test_extractors.py</code></a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/blob/dev/.github/CONTRIBUTING.md">Submit your PR for review!</a> 🎉</li>
+<li>Once merged, please document it in these places and anywhere else you see info about other extractors:</li>
+</ol>
+<ul dir="auto">
+<li><a href="https://github.com/ArchiveBox/ArchiveBox#output-formats">https://github.com/ArchiveBox/ArchiveBox#output-formats</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#archive-method-toggles">https://github.com/ArchiveBox/ArchiveBox/wiki/Configuration#archive-method-toggles</a></li>
+<li><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Install#dependencies">https://github.com/ArchiveBox/ArchiveBox/wiki/Install#dependencies</a></li>
+</ul>
+<p dir="auto"><br><br></p>
 </details>
+<h4 tabindex="-1" dir="auto"><a id="user-content-build-the-docs-pip-package-and-docker-image" class="anchor" aria-hidden="true" tabindex="-1" href="#build-the-docs-pip-package-and-docker-image"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建文档、pip 包和 docker 镜像</font></font></h4>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<p dir="auto">(Normally CI takes care of this, but these scripts can be run to do it manually)</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>./bin/build.sh
 
-#### Build the docs, pip package, and docker image
-
-<details><summary><i>Click to expand...</i></summary>
-
-(Normally CI takes care of this, but these scripts can be run to do it manually)
-```bash
-./bin/build.sh
+<span class="pl-c"><span class="pl-c">#</span> or individually:</span>
+./bin/build_docs.sh
+./bin/build_pip.sh
+./bin/build_deb.sh
+./bin/build_brew.sh
+./bin/build_docker.sh</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./bin/build.sh
 
 # or individually:
 ./bin/build_docs.sh
 ./bin/build_pip.sh
 ./bin/build_deb.sh
 ./bin/build_brew.sh
-./bin/build_docker.sh
-```
-
+./bin/build_docker.sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </details>
+<h4 tabindex="-1" dir="auto"><a id="user-content-roll-a-release" class="anchor" aria-hidden="true" tabindex="-1" href="#roll-a-release"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">滚动发布</font></font></h4>
+<details><summary><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单击展开...</font></font></i></summary>
+<p dir="auto">(Normally CI takes care of this, but these scripts can be run to do it manually)</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>./bin/release.sh
 
-#### Roll a release
-
-<details><summary><i>Click to expand...</i></summary>
-
-(Normally CI takes care of this, but these scripts can be run to do it manually)
-```bash
-./bin/release.sh
+<span class="pl-c"><span class="pl-c">#</span> or individually:</span>
+./bin/release_docs.sh
+./bin/release_pip.sh
+./bin/release_deb.sh
+./bin/release_brew.sh
+./bin/release_docker.sh</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./bin/release.sh
 
 # or individually:
 ./bin/release_docs.sh
 ./bin/release_pip.sh
 ./bin/release_deb.sh
 ./bin/release_brew.sh
-./bin/release_docker.sh
-```
-
+./bin/release_docker.sh" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
 </details>
-
----
-
-## Further Reading
-
-- Home: [ArchiveBox.io](https://archivebox.io)
-- Demo: [Demo.ArchiveBox.io](https://demo.archivebox.io)
-- Docs: [Docs.ArchiveBox.io](https://docs.archivebox.io)
-- Releases: [Github.com/ArchiveBox/ArchiveBox/releases](https://github.com/ArchiveBox/ArchiveBox/releases)
-- Wiki: [Github.com/ArchiveBox/ArchiveBox/wiki](https://github.com/ArchiveBox/ArchiveBox/wiki)
-- Issues: [Github.com/ArchiveBox/ArchiveBox/issues](https://github.com/ArchiveBox/ArchiveBox/issues)
-- Discussions: [Github.com/ArchiveBox/ArchiveBox/discussions](https://github.com/ArchiveBox/ArchiveBox/discussions)
-- Community Chat: [Zulip Chat (preferred)](https://zulip.archivebox.io) or [Matrix Chat (old)](https://app.element.io/#/room/#archivebox:matrix.org)
-- Social Media: [Twitter](https://twitter.com/ArchiveBoxApp), [LinkedIn](https://www.linkedin.com/company/archivebox/), [YouTube](https://www.youtube.com/@ArchiveBoxApp), [Alternative.to](https://alternativeto.net/software/archivebox/about/), [Reddit](https://www.reddit.com/r/ArchiveBox/)
-- Donations: [Github.com/ArchiveBox/ArchiveBox/wiki/Donations](https://github.com/ArchiveBox/ArchiveBox/wiki/Donations)
-
----
-
-<div align="center">
-<br/><br/>
-<img src="https://raw.githubusercontent.com/Monadical-SAS/redux-time/HEAD/examples/static/jeremy.jpg" height="40px"/>
-<br/>
-<i><sub>
-This project is maintained mostly in <a href="https://docs.sweeting.me/s/blog#About">my spare time</a> with the help from generous <a href="https://github.com/ArchiveBox/ArchiveBox/graphs/contributors">contributors</a> and <a href="https://monadical.com">Monadical Consulting</a>.
-</sub>
+<hr>
+<h2 tabindex="-1" dir="auto"><a id="user-content-further-reading" class="anchor" aria-hidden="true" tabindex="-1" href="#further-reading"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进一步阅读</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主页：</font></font><a href="https://archivebox.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ArchiveBox.io</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">演示：</font></font><a href="https://demo.archivebox.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Demo.ArchiveBox.io</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档：</font></font><a href="https://docs.archivebox.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs.ArchiveBox.io</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布：</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Github.com/ArchiveBox/ArchiveBox/releases</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维基：</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Github.com/ArchiveBox/ArchiveBox/wiki</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题：</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Github.com/ArchiveBox/ArchiveBox/issues</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讨论：</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/discussions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Github.com/ArchiveBox/ArchiveBox/discussions</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区聊天：</font></font><a href="https://zulip.archivebox.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zulip Chat（首选）</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://app.element.io/#/room/#archivebox:matrix.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Matrix Chat（旧）</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社交媒体：</font></font><a href="https://twitter.com/ArchiveBoxApp" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitter</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.linkedin.com/company/archivebox/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LinkedIn</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.youtube.com/@ArchiveBoxApp" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YouTube</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://alternativeto.net/software/archivebox/about/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alternative.to</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.reddit.com/r/ArchiveBox/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reddit</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">捐赠：</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Donations"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Github.com/ArchiveBox/ArchiveBox/wiki/Donations</font></font></a></li>
+</ul>
+<hr>
+<div align="center" dir="auto">
+<br><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/Monadical-SAS/redux-time/HEAD/examples/static/jeremy.jpg"><img src="https://raw.githubusercontent.com/Monadical-SAS/redux-time/HEAD/examples/static/jeremy.jpg" height="40px" style="max-width: 100%;"></a>
+<br>
+<i><sub><font style="vertical-align: inherit;"><a href="https://github.com/ArchiveBox/ArchiveBox/graphs/contributors"><font style="vertical-align: inherit;">在慷慨的贡献者</font></a><font style="vertical-align: inherit;">和</font><a href="https://monadical.com" rel="nofollow"><font style="vertical-align: inherit;">Monadical Consulting</font></a><font style="vertical-align: inherit;">的帮助下，</font><font style="vertical-align: inherit;">
+这个项目主要是在</font></font><a href="https://docs.sweeting.me/s/blog#About" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我的业余时间</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维护的。
+</font></font><a href="https://github.com/ArchiveBox/ArchiveBox/graphs/contributors"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://monadical.com" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></sub>
 </i>
-<br/><br/>
-
-<br/>
-<a href="https://github.com/sponsors/pirate">Sponsor this project on GitHub</a>
+<br><br>
+<br>
+<a href="https://github.com/sponsors/pirate"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 GitHub 上赞助该项目</font></font></a>
 <br>
 <br>
-<a href="https://www.patreon.com/theSquashSH"><img src="https://img.shields.io/badge/Donate_to_support_development-via_Patreon-%23DD5D76.svg?style=flat"/></a>
-<br/>
-
-<b><sub>(网站存档 / 爬虫)</sub></b>
-
-<a href="https://twitter.com/ArchiveBoxApp"><img src="https://img.shields.io/badge/Tweet-%40ArchiveBoxApp-blue.svg?style=flat"/></a>
-<a href="https://github.com/ArchiveBox/ArchiveBox"><img src="https://img.shields.io/github/stars/ArchiveBox/ArchiveBox.svg?style=flat&label=Star+on+Github"/></a>
-
-<br/>
-<br/>
-<i>✨ Have spare CPU/disk/bandwidth and want to help the world?<br/>Check out our <a href="https://github.com/ArchiveBox/good-karma-kit">Good Karma Kit</a>...</i>
-<br/>
+<a href="https://www.patreon.com/theSquashSH" rel="nofollow"><img src="https://camo.githubusercontent.com/f9119b0a1957cd229c861e9bd49e3624681f8e728586f6d9402e883d8e51edcf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f6e6174655f746f5f737570706f72745f646576656c6f706d656e742d7669615f50617472656f6e2d2532334444354437362e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Donate_to_support_development-via_Patreon-%23DD5D76.svg?style=flat" style="max-width: 100%;"></a>
+<br>
+<p dir="auto"><b><sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（网站文档/爬虫）</font></font></sub></b></p>
+<p dir="auto"><a href="https://twitter.com/ArchiveBoxApp" rel="nofollow"><img src="https://camo.githubusercontent.com/6827675b65e6d040b43166dae0bc82ba2521490db47844d97e2205c5b8d48cef/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f54776565742d25343041726368697665426f784170702d626c75652e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Tweet-%40ArchiveBoxApp-blue.svg?style=flat" style="max-width: 100%;"></a>
+<a href="https://github.com/ArchiveBox/ArchiveBox"><img src="https://camo.githubusercontent.com/f102dbb9d28f1ad575006721b662728d62cec4ba80766f1e6d884b8559792f64/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f41726368697665426f782f41726368697665426f782e7376673f7374796c653d666c6174266c6162656c3d537461722b6f6e2b476974687562" data-canonical-src="https://img.shields.io/github/stars/ArchiveBox/ArchiveBox.svg?style=flat&amp;label=Star+on+Github" style="max-width: 100%;"></a></p>
+<br>
+<br>
+<i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">✨ 有空闲的 CPU/磁盘/带宽并想帮助世界吗？</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看我们的</font></font><a href="https://github.com/ArchiveBox/good-karma-kit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Good Karma 套件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></i>
+<br>
 </div>
+</article></div>
